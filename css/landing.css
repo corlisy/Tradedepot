@@ -1,0 +1,98 @@
+.intro {
+    width: 100%;
+    height: 100%;
+    padding: 180px 0;
+    text-align: center;
+    color: #484848;
+    background: url('/img/landing-bg.jpg') no-repeat bottom center scroll;
+    background-color: #d4c9b6;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.brand-heading {
+    font-size: 46px;
+}
+.intro-text {
+    font-size: 28px;
+}
+
+.content-section .media-heading {
+    color: #43656b;
+    font-weight: bold;
+}
+.content-section .media-body {
+    font-size: 18px;
+    line-height:36px;
+    color: #999999;
+    padding-top: 30px;
+}
+.content-section .section-head {
+    padding: 60px 0;
+
+}
+.content-section .section-header {
+    color: #f07e2c;
+    font-weight: 100;
+    background: url('/img/landing-head-ico.png') no-repeat center top;
+    padding-top: 50px;
+}
+.content-section .section-descr {
+    color: #999999;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.btn-primary.btn-lg {
+    padding: 16px 40px;
+}
+
+
+.content-section {
+
+}
+#request {
+    padding: 50px 0;
+    background-color: #43656b;
+}
+#request h2 {
+    color: #fff;
+}
+#request p {
+    color: #c1c0c0;
+}
+
+.ldg-ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/img/landing-icons.png');
+    background-position: 0 0;
+    background-color: transparent;
+    width: 400px;
+    height: 320px;
+    position: relative;
+}
+.ldg-ico.shop {
+    background-position: 0 0;
+}
+.ldg-ico.comp {
+    background-position: -400px 0;
+}
+.ldg-ico.form {
+    background-position: -800px 0;
+}
+.ldg-ico.blank {
+    background-position: -1200px 0;
+}
+
+.clients-list {
+    margin-bottom: 40px;
+}
+
+.clients-list .clients-elem {
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+}

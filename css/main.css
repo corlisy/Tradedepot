@@ -1,0 +1,266 @@
+.soc-ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/img/social-icons.png');
+    background-position: 0 0;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #b1b1b1;
+    position: relative;
+    text-decoration: none;
+    margin: 0 2px;
+}
+.soc-ico:hover {
+    text-decoration: none;
+}
+.soc-ico.fb {
+    background-position: 0 0;
+}
+.soc-ico.tw {
+    background-position: -35px 0;
+}
+.soc-ico.g {
+    background-position: -70px 0;
+}
+.soc-ico.in {
+    background-position: -105px 0;
+}
+
+.big-ico {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/img/big-icons.png');
+    background-position: 0 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.big-ico.forgot {
+    background-position: 0 0;
+}
+.big-ico.auth {
+    background-position: -40px 0;
+}
+
+.navbar-custom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navbar-custom .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-top {
+    z-index: 2;
+    position: absolute;
+}
+.divider-vertical {
+    height: 5px;
+    width: 5px;
+    margin: 0 9px;
+    background: #ec6906;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-toggle {
+    padding: 0 6px;
+    font-size: 24px;
+}
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom .navbar-nav li>a {
+    color: #43656b;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li > a:hover {
+    outline: 0;
+    color: #ec6906;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #ec6906;
+}
+.navbar-custom .navbar-collapse.collapsing,
+.navbar-custom .navbar-collapse.collapse.in {
+    background: #fff;
+    border-top: 2px solid #ec6906;
+}
+@media(min-width:768px) {
+    .navbar-custom {
+        letter-spacing: 1px;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+@media (max-width: 767px) {
+    .divider-vertical {
+        display: none!important;
+    }
+}
+
+
+.modal-content {
+    border-radius: 0;
+    border-top: 5px solid #ec6906;
+    border-left: 0;
+    border-right: 0;
+}
+.modal-body {
+    padding: 50px;
+}
+.modal-title {
+    font-size: 30px;
+    color: #43656b;
+    font-weight: 600;
+}
+
+footer {
+    color: #999999;
+}
+
+footer .social-block,
+footer .lang-block {
+    margin-bottom: 10px;
+}
+
+.page-header {
+    background: url('/img/landing-head-ico.png') no-repeat 0 7px;
+    padding-left: 50px;
+    color: #484848;
+}
+
+.inner-addon {
+    position: relative;
+}
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    z-index: 10;
+}
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+.wizard {
+    position: relative;
+    min-height: 48px;
+}
+.wizard .steps-container {
+    overflow: hidden;
+}
+.wizard .steps {
+    list-style: none;
+    font-size: 18px;
+    color: #ec6906;
+    padding: 0;
+    margin: 0!important;
+    width: 999999px;
+}
+.wizard .steps li {
+    opacity: 0.5;
+    float: left;
+    margin-left: 0;
+    padding: 0 20px;
+}
+.wizard .steps li:first-child {
+    padding: 0 20px 0 0;
+}
+.wizard .steps li.active,
+.wizard .steps li.complete {
+    opacity: 1;
+}
+
+.wizard .badge {
+    font-size: 20px;
+    background-color: #ec6906;
+    margin: 15px;
+}
+.wizard .chevron {
+    margin-left: 15px;
+}
+.wizard .chevron:before {
+    content: '---------------------- >';
+}
+.wizard .step-content {
+    border-top: 1px solid #cccccc;
+    padding: 45px;
+    float: left;
+    width: 100%;
+}
+.wizard .step-content .step-pane {
+    display: none;
+}
+.wizard .step-content .step-pane.active {
+    display: block;
+}
+
+.wizard .actions {
+    display: block;
+    padding: 0 45px 25px 45px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    overflow: hidden;
+}
+
+.wizard .actions .btn-prev .glyphicon {
+    padding: 0 15px 0 0;
+}
+.wizard .actions .btn-next .glyphicon {
+    padding: 0 0 0 15px;
+}
+.req:before {
+    content: '*';
+    color: red;
+    margin: 2px;
+}
+
+
+
+
+
