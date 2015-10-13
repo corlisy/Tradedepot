@@ -1,0 +1,40 @@
+.main-header>.navbar {
+    min-height:60px;
+}
+
+.sidebar-collapse .sidebar-btn a {
+    padding-left: 5px;
+    font-size: 14px;
+}
+.sidebar-collapse .sidebar-btn a>span {
+    display:none;
+}
+
+.sidebar-btn {
+    margin: 20px 0;
+}
+
+
+.panel-cart .panel-heading {
+    background-color: #fff;
+}
+.panel-cart.panel-success .panel-body,
+.panel-cart.panel-success .panel-heading {
+    background-color: #5cb85c;
+    color:#fff;
+}
+.panel-cart .panel-heading .head {
+    border-bottom:1px solid #f0f0f0;
+    margin: 5px 0 0 0;
+    padding-bottom:10px;
+}
+.panel-cart.panel-success .panel-heading .head {
+    border-bottom:1px solid #fff;
+}
+.panel-cart .panel-body .summ {
+    margin:5px 0 10px 0 ;
+}
+.panel-cart.panel-success .panel-body .summ small {
+    color:#fff;
+    opacity:0.6;
+}

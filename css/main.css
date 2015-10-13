@@ -49,6 +49,7 @@
 .navbar-custom {
     width: 100%;
     margin-top: 20px;
+    box-shadow: none;
 }
 
 .navbar-custom .navbar-brand {
@@ -203,7 +204,7 @@ footer .lang-block {
     width: 999999px;
 }
 .wizard .steps li {
-    opacity: 0.5;
+    opacity: 0.3;
     float: left;
     margin-left: 0;
     padding: 0 20px;
@@ -260,7 +261,30 @@ footer .lang-block {
     margin: 2px;
 }
 
+.breadcrumb {
+    background-color: transparent;
+    padding-left:0;
+}
+
+.table.table-non-bordered>tbody>tr>td,
+.table.table-non-bordered>tbody>tr>th,
+.table.table-non-bordered>tfoot>tr>td,
+.table.table-non-bordered>tfoot>tr>th,
+.table.table-non-bordered>thead>tr>td,
+.table.table-non-bordered>thead>tr>th {
+    border-top: 0 solid transparent;
+}
+
+.table.table-content-middle td {
+    vertical-align: middle;
+}
 
 
 
+address .glyphicon {
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 28px;
+    vertical-align: middle;
+}
 

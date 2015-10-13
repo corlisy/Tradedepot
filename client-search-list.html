@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TradeDepot</title>
+
+    <!-- Bootstrap -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/client.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script data-main="/js/app/client" src="/js/require.js" async></script>
+</head>
+<body class="fuelux">
+<nav class="navbar navbar-custom" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </button>
+            <a class="navbar-brand" href="/client-index.html">
+                <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
+                <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/client-shopping-cart.html" class="user-menu">
+                        <span class="summ">$ 9,100</span>
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="user-menu dropdown-toggle pull-left" data-toggle="dropdown" role="button">
+                        <span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;
+                        <span class="label label-primary" style="font-size: 10px;position: absolute;top: 0;right: 0">42</span>
+                    </a>
+                    <div class="clearfix"></div>
+                    <ul class="dropdown-menu menu-notifications">
+                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Order status changed</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list text-success"></span> Created new Order</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#" class="btn btn-link text-uppercase" style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-top: 8px;">
+                        <img class="img-circle" src="/img/test-client/avatar.jpg" alt="" style="max-width: 35px;max-height: 35px;" /> Mai Gulera
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu text-uppercase">
+                        <li>
+                            <a href="#">
+                                <span class="lead">Financial monitor</span>
+                                <div class="" style="width: 350px;height: 150px;"></div>
+                            </a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/client-user-orders.html"><span class="glyphicon glyphicon-list"></span> Orders</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid main-nav">
+    <nav class="navbar navbar-client">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">First Category</a></li>
+                    <li><a href="#">Second Category</a></li>
+                    <li><a href="#">Third Category</a></li>
+                    <li><a href="#">Fourth Category</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Some Category</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <div class="inner-addon right-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input type="text" class="form-control" placeholder="Search Product">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container main-container">
+    <div class="row">
+        <div class="client-header text-left col-sm-6">
+            <h2><span class="text-uppercase">Search product</span></h2>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Search product</li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+            <div class="pull-right">
+                <a href="/client-search.html" class="btn btn-link btn-lg text-info">
+                    <span class="glyphicon glyphicon-th"></span>
+                </a>
+                <a href="#" class="btn btn-link btn-lg text-info disabled">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container-fluid">
+            24 results for: "sun"
+            <br/>
+            <br/>
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" aria-label="..." value="Sun">
+                <div class="input-group-btn">
+                    <a href="#" class="btn btn-info btn-lg">Search</a>
+                </div>
+            </div>
+            <br/>
+            <div class="clearfix"></div>
+
+            <div class="row product-list-table">
+                <div class="container-fluid">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th><a href="#" class="btn btn-link">Item name <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
+                            <th><a href="#" class="btn btn-link">Discount <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
+                            <th><a href="#" class="btn btn-link">Unit <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
+                            <th><a href="#" class="btn btn-link">Price <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="col-sm-8">
+                                <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
+                                <div class="name h4">Briella Sunvita&nbsp;&nbsp;<span class="label label-danger">new</span><br/><small>Non Diary Products</small></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pull-right">
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>20-200g</td>
+                            <th>from $50</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-sm-8">
+                                <div class="prev-img"><img src="/img/test-client/prod2.jpg" /></div>
+                                <div class="name h4">Long Coca-cola beverage drink&nbsp;&nbsp;<br/><small>Non Diary Products</small></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pull-right">
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td>10%</td>
+                            <td>20-200g</td>
+                            <th>from $50</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-sm-8">
+                                <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
+                                <div class="name h4">Briella Sunvita&nbsp;&nbsp;<span class="label label-danger">new</span><br/><small>Non Diary Products</small></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="pull-right">
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>20-200g</td>
+                            <th>from $50</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="text-center">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+<footer>
+    <div class="container">
+        <hr/>
+        <div class="footer-content">
+            <div class="col-sm-4">
+                <div class="row">
+                    <p class="pull-left copyrights">&copy; TradeDepot, Inc. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row text-center">
+                    Powered by &nbsp;&nbsp;<img src="/img/tradedepot-logo.png" alt="" style="max-width: 100px;" />
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="lang-block pull-right">
+                        <div class="dropup">
+                            <button style="width: 200px;text-align: left!important;text-transform: none!important;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-map-marker"></span> English
+                                <span class="caret pull-right" style="margin: 8px 0;"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">Russian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

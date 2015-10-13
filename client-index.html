@@ -8,9 +8,9 @@
     <title>TradeDepot</title>
 
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/landing.css" rel="stylesheet">
+    <link href="/css/client.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,301 +19,296 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script data-main="/js/app/index" src="/js/require.js" async></script>
+    <script data-main="/js/app/client" src="/js/require.js" async></script>
 </head>
 <body>
-<nav class="navbar navbar-custom navbar-top" role="navigation">
+<nav class="navbar navbar-custom" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
             </button>
-            <a class="navbar-brand" href="/">
-                <img src="/img/tradedepot-logo.png" alt="TradeDepot" />
+            <a class="navbar-brand" href="/client-index.html">
+                <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
+                <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
             </a>
         </div>
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse text-uppercase">
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#features">Features</a>
+                    <a href="/client-shopping-cart.html" class="user-menu">
+                        <span class="summ">$ 9,100</span>
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
                 </li>
-                <li class="divider-vertical"></li>
-                <li>
-                    <a href="#clients">Our Clients</a>
+                <li class="dropdown">
+                    <a href="#" class="user-menu dropdown-toggle pull-left" data-toggle="dropdown" role="button">
+                        <span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;
+                        <span class="label label-primary" style="font-size: 10px;position: absolute;top: 0;right: 0">42</span>
+                    </a>
+                    <div class="clearfix"></div>
+                    <ul class="dropdown-menu menu-notifications">
+                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Order status changed</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list text-success"></span> Created new Order</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#" class="btn btn-link text-uppercase" style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <div class="btn-group" style="margin: 8px 0;">
-                        <a href="#" class="btn btn-link" style="color: #f07e2c" data-toggle="modal" data-target="#signin">Sign in</a>
-                        <a href="/sign-up.html" class="btn btn-primary">Sign up</a>
-                    </div>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-top: 8px;">
+                        <img class="img-circle" src="/img/test-client/avatar.jpg" alt="" style="max-width: 35px;max-height: 35px;" /> Mai Gulera
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu text-uppercase">
+                        <li>
+                            <a href="#">
+                                <span class="lead">Financial monitor</span>
+                                <div class="" style="width: 350px;height: 150px;"></div>
+                            </a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/client-user-orders.html"><span class="glyphicon glyphicon-list"></span> Orders</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<header class="intro">
-    <div class="intro-body">
+<div class="container-fluid main-nav">
+    <nav class="navbar navbar-client">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <h1 class="brand-heading"><b>Receive Wholesale and<br/>Distributor Orders Online</b></h1>
-                    <p class="intro-text">Automate your entire route-to-market, and get your products to consumers faster</p>
-                    <a href="#" class="btn btn-primary btn-lg text-uppercase">
-                        Request your free trial
-                    </a>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">First Category</a></li>
+                <li><a href="#">Second Category</a></li>
+                <li><a href="#">Third Category</a></li>
+                <li><a href="#">Fourth Category</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Some Category</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <div class="inner-addon right-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input type="text" class="form-control" placeholder="Search Product">
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<div class="clearfix"></div>
-
-<section id="features" class="container content-section">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center section-head">
-            <h2 class="section-header">FEATURES</h2>
-            <p class="section-descr">Reach your distributors, wholesalers and retailers online,<br/>on one platform</p>
-        </div>
-        <div class="col-sm-12">
-            <div class="media">
-                <div class="media-left media-middle hidden-xs">
-                    <span class="ldg-ico shop">&nbsp;</span>
-                </div>
-                <div class="media-body">
-                    <h3 class="media-heading">Receive Bulk Orders Online</h3>
-                    <p>Distributors and wholesalers can place bulk orders from their shops and warehouses or from their mobiles, giving them more time to focus on selling your products. Your detailers can also place orders on behalf of distributors, right from their mobile phones.</p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-body">
-                    <h3 class="media-heading">Real-time Access to your Distributors' Stock Levels</h3>
-                    <p>Tradedepot provides real-time integration between your back office inventory systems and the stock held by your 3rd party logistics providers and in distributor warehouses. Now you can plan for demand with accurate stock level information.</p>
-                </div>
-                <div class="media-right media-middle hidden-xs">
-                    <span class="ldg-ico comp">&nbsp;</span>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left media-middle hidden-xs">
-                    <span class="ldg-ico form">&nbsp;</span>
-                </div>
-                <div class="media-body">
-                    <h3 class="media-heading">Integrates with your Accounting Software</h3>
-                    <p>Receive payment straight to your bank accounts, and it immediately updates the customer accounts in your back office accounting system. Apply credit limits to your credit customers to enable them order before payment, and easily apply rebates to distributors.</p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-body">
-                    <h3 class="media-heading">Auto-generate Sales Promotions to Boost Sales</h3>
-                    <p>Use market performance data to generate new promotions for different customer groups automatically. Tradedepot provides Predictive Analysis and Machine Learning to enable you decide the most effective promotions to run.</p>
-                </div>
-                <div class="media-right media-middle hidden-xs">
-                    <span class="ldg-ico blank">&nbsp;</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="clients" class="container content-section">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center section-head">
-            <h2 class="section-header">OUR CLIENTS</h2>
-            <p class="section-descr">The following brands depend on tradedepot to get their<br/>products to market</p>
-        </div>
-        <div class="col-sm-12 clients-list">
-            <div class="col-sm-3 clients-elem">
-                <img src="./img/clients/cowbell.jpg" />
-            </div>
-            <div class="col-sm-3 clients-elem">
-                <img src="./img/clients/miksi.jpg" />
-            </div>
-            <div class="col-sm-3 clients-elem">
-                <img src="./img/clients/cowbell.jpg" />
-            </div>
-            <div class="col-sm-3 clients-elem">
-                <img src="./img/clients/miksi.jpg" />
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<section id="request" class="container-fluid content-section">
-    <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2><b>Try TradeDepot Free for 30 days</b></h2>
-        <p class="intro-text">No credit card required.<br/>Upgrade or cancel at any time.</p>
-        <a href="#" class="btn btn-primary btn-lg">Request your free trial</a>
-    </div>
-</section>
-
-<footer>
-    <nav class="navbar navbar-custom" role="navigation" style="position: relative;">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">
-                    <img src="/img/tradedepot-logo.png" alt="" style="max-width: 150px;" />
-                </a>
-            </div>
-            <div class="navbar-right text-uppercase">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">FEATURES</a>
-                    </li>
-                    <li>
-                        <a href="#">DOCUMENTATION</a>
-                    </li>
-                    <li>
-                        <a href="#">SUPPORT</a>
-                    </li>
-                </ul>
+            </form>
             </div>
         </div>
     </nav>
-    <div class="clearfix"></div>
-    <div class="container">
-        <p>Ut vel oporteat mnesarchum</p>
-        <div class="col-sm-6">
-            <div class="row">
-                <div class="social-block pull-left">
-                    <a href="#" class="soc-ico fb">&nbsp;</a>
-                    <a href="#" class="soc-ico tw">&nbsp;</a>
-                    <a href="#" class="soc-ico g">&nbsp;</a>
-                    <a href="#" class="soc-ico in">&nbsp;</a>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="/img/test-client/slider-test.png" alt="">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="/img/test-client/slider-test.png" alt="">
+                    <div class="carousel-caption"></div>
                 </div>
             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="col-sm-6">
-            <div class="row">
-                <div class="lang-block pull-right">
-                    <div class="dropup">
-                        <button style="width: 200px;text-align: left!important;text-transform: none!important;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-map-marker"></span> English
-                            <span class="caret pull-right" style="margin: 8px 0;"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <li><a href="#">Russian</a></li>
-                        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <h1><span class="text-uppercase">Products</span><br/><small>Ut vel oporteat mnesarchum</small></h1>
+    </div>
+
+    <div class="row product-list">
+        <div class="col-sm-3">
+            <a class="panel panel-default" href="/client-product.html">
+                <div class="panel-body">
+                    <div class="special">
+                        <span class="pull-left label label-primary">new</span>
+                    </div>
+                    <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                    <div class="col-sm-6"><b>from $50</b></div>
+                    <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a class="panel panel-default">
+                <div class="panel-body">
+                    <div class="special">
+                        <span class="pull-right label label-info">20%</span>
+                    </div>
+                    <div class="prev-img"><img src="/img/test-client/prod2.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-6"><b>from $50</b></div>
+                        <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a class="panel panel-default">
+                <div class="special"></div>
+                <div class="panel-body">
+                    <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-6"><b>from $50</b></div>
+                        <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a class="panel panel-default">
+                <div class="special"></div>
+                <div class="panel-body">
+                    <div class="prev-img"><img src="/img/test-client/prod2.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal dsads ad aaaa</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-6"><b>from $50</b></div>
+                        <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a class="panel panel-default">
+                <div class="special"></div>
+                <div class="panel-body">
+                    <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-6"><b>from $50</b></div>
+                        <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a class="panel panel-default">
+                <div class="special"></div>
+                <div class="panel-body">
+                    <div class="prev-img"><img src="/img/test-client/prod2.jpg" /></div>
+                    <div class="name">Briella Sunvita</div>
+                    <div class="descr">Cereal dsads ad aaaa</div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-6"><b>from $50</b></div>
+                        <div class="col-sm-6">20 - 500g</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a href="#" class="loadmore btn btn-default btn-block btn-lg">Load More</a>
+
+</div>
+
+<div class="container">
+    <div class="promo-block">
+        <div class="row">
+            <div class="col-sm-8">
+                <div style="height: 200px;background: #ccc"></div>
+            </div>
+            <div class="col-sm-4">
+                <div style="height: 200px;background: #ddd"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">
+        <hr/>
+        <div class="footer-content">
+            <div class="col-sm-4">
+                <div class="row">
+                    <p class="pull-left copyrights">&copy; TradeDepot, Inc. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row text-center">
+                    Powered by &nbsp;&nbsp;<img src="/img/tradedepot-logo.png" alt="" style="max-width: 100px;" />
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="lang-block pull-right">
+                        <div class="dropup">
+                            <button style="width: 200px;text-align: left!important;text-transform: none!important;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-map-marker"></span> English
+                                <span class="caret pull-right" style="margin: 8px 0;"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">Russian</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="clearfix"></div><br/>
-
-        <p class="pull-left copyrights">&copy; TradeDepot, Inc. All rights reserved.</p>
-        <div class="pull-right hidden-xs">
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">Terms of Service</a>
-                </li>
-            </ul>
         </div>
     </div>
 </footer>
 
-<!-- Modal signin -->
-<div class="modal fade" id="signin" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title"><span class="big-ico auth"></span> Sign in</h2>
-                <br/>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
-                                        <div class="input-group">
-                                            <i class="glyphicon glyphicon-shopping-cart"></i>
-                                            <input type="text" class="form-control" placeholder="Your store">
-                                            <div class="input-group-addon">.tradedepot.co</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br/>
-                                <br/>
-                                <div class="form-group">
-                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
-                                        <i class="glyphicon glyphicon-user"></i>
-                                        <input type="email" class="form-control" placeholder="Email address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
-                                        <i class="glyphicon glyphicon glyphicon-lock"></i>
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Remember me
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary" style="padding-left: 20px;padding-right: 20px;">Log in</button>
-                                </div>
-                            </form>
-
-                        </div>
-                        <div class="col-sm-4 col-sm-offset-2">
-                            <img src="/img/sign-in.jpg" />
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <a href="#forgot" class="pull-left" data-dismiss="modal" data-toggle="modal">Forgot Your Password?</a>
-                                <p class="text-center pull-right">
-                                    Not a client? <a href="/sign-up.html">Sign up now</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal forgot -->
-<div class="modal fade" id="forgot" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title"><span class="big-ico forgot"></span> Forgot Your Password?</h2>
-                <p class="">Enter your email address to reset your password</p>
-                <br/>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
-                                        <i class="glyphicon glyphicon-user"></i>
-                                        <input type="email" class="form-control" placeholder="Email address">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 </body>
 </html>
