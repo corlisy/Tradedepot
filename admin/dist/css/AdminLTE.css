@@ -250,6 +250,22 @@ a:focus {
     border: 0;
   }
 }
+.main-header .sidebar-main-site {
+  float: left;
+  background-color: transparent;
+  background-image: none;
+  padding: 20px 15px;
+}
+.main-header .sidebar-main-site:hover {
+  color: #fff;
+}
+.main-header .sidebar-main-site:focus,
+.main-header .sidebar-main-site:active {
+  background: transparent;
+}
+.main-header .sidebar-main-site i {
+  padding-right: 10px;
+}
 .main-header .sidebar-toggle {
   float: left;
   background-color: transparent;

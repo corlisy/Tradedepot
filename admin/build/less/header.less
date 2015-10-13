@@ -62,6 +62,25 @@
       }
     }
   }
+  //link to site in sidebar
+  .sidebar-main-site {
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    //Add the fontawesome bars icon
+    &:hover {
+      color: #fff;
+    }
+    &:focus,
+    &:active {
+      background: transparent;
+    }
+    i {
+     padding-right: 10px;
+    }
+  }
+
   //Navbar toggle button
   .sidebar-toggle {
     float: left;

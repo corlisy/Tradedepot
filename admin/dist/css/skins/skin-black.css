@@ -38,6 +38,9 @@
 .skin-black .main-header > .navbar > .sidebar-toggle {
   color: #333;
 }
+.skin-black .main-header > .navbar > .sidebar-main-site {
+  color: #797979;
+}
 .skin-black .main-header > .navbar .navbar-custom-menu .navbar-nav > li > a,
 .skin-black .main-header > .navbar .navbar-right > li > a {
   border-right-width: 0;
