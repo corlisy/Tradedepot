@@ -300,7 +300,7 @@ a:focus {
   right: 7px;
   text-align: center;
   font-size: 9px;
-  padding: 2px 3px;
+  padding: 3px 6px;
   line-height: .9;
 }
 .main-header .logo {
@@ -327,6 +327,12 @@ a:focus {
 }
 .main-header .navbar-brand {
   color: #fff;
+}
+.main-header .notifications-menu a {
+  padding-right: 19px;
+}
+.main-header .notifications-menu a .label {
+  right: 0px !important;
 }
 .content-header {
   border-bottom: 1px solid #e0e0e0;
