@@ -208,6 +208,9 @@ a:focus {
 .layout-top-nav .main-header > .navbar {
   margin-left: 0;
 }
+.main-header #navbar-search-ico {
+  color: #bfc0c0;
+}
 .main-header #navbar-search-input.form-control {
   background: rgba(255, 255, 255, 0.2);
   border-color: transparent;
