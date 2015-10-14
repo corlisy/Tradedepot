@@ -229,6 +229,7 @@ footer .footer-content {
 .fuelux .spinbox input::-ms-clear {
     display: none;
 }
+
 .block-icon {
     display: block;
     margin-top: 15px;
@@ -280,7 +281,7 @@ footer .footer-content {
 }
 .panel-cart.panel-success .panel-body,
 .panel-cart.panel-success .panel-heading {
-    background-color: #5cb85c;
+    background-color: #669933;
     color:#fff;
 }
 .panel-cart .panel-heading .head {

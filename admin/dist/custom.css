@@ -1,5 +1,5 @@
 .main-header>.navbar {
-    min-height:60px;
+    height:60px;
 }
 
 .sidebar-collapse .sidebar-btn a {
@@ -20,7 +20,7 @@
 }
 .panel-cart.panel-success .panel-body,
 .panel-cart.panel-success .panel-heading {
-    background-color: #5cb85c;
+    background-color: #669933;
     color:#fff;
 }
 .panel-cart .panel-heading .head {
@@ -37,4 +37,95 @@
 .panel-cart.panel-success .panel-body .summ small {
     color:#fff;
     opacity:0.6;
+}
+
+.block-icon {
+    display: block;
+    margin-top: 15px;
+}
+.block-icon-ico {
+    width: 20px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size:16px;
+}
+.block-icon-content {
+    display: inline-block;
+}
+
+
+
+.spinbox {
+    display: inline-block;
+    position: relative;
+    max-width: 90px;
+}
+.spinbox.digits-3 {
+    width: 60px;
+}
+.spinbox.disabled .spinbox-buttons {
+    cursor: not-allowed;
+}
+.spinbox .spinbox-input {
+    float: left;
+    padding-bottom: 3px;
+    /* Magic number */
+    padding: 0px 25px 0px 7px;
+}
+.spinbox .spinbox-input::-ms-clear {
+    display: none;
+}
+.spinbox .btn {
+    position: relative;
+    width: 20px;
+    height: 13px;
+    padding-top: 0;
+    padding-right: 9px;
+    padding-left: 9px;
+}
+.spinbox .btn.disabled {
+    cursor: not-allowed;
+}
+.spinbox .spinbox-buttons {
+    position: absolute;
+    height: 28px;
+    width: 20px;
+    right: 2px;
+}
+.spinbox .spinbox-up {
+    padding: 0 0 14px 1px;
+    top: 2px;
+}
+.spinbox .spinbox-up .glyphicon-chevron-up {
+    position: relative;
+    top: 0px;
+}
+.spinbox .btn-group > .btn.spinbox-up {
+    border-top-right-radius: 4px;
+}
+.spinbox .spinbox-down {
+    padding: 0 0 8px 1px;
+    top: 2px;
+    height: 15px;
+    border-bottom-left-radius: 4px;
+}
+.spinbox .spinbox-down .glyphicon-chevron-down {
+    position: relative;
+    left: -1px;
+    top: 0px;
+}
+.spinbox input::-ms-clear {
+    display: none;
+}
+
+.input-transparent {
+    border: none;
+    background: transparent;
+    height: 100%;
+    outline: 0;
+}
+
+hr {
+    border-top: 1px solid #ccc;
 }

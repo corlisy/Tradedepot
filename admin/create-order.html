@@ -6,11 +6,10 @@
     <title>AdminLTE 2 | Starter</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/admin/dist/css/skins/skin-black.min.css">
-    <link rel="stylesheet" href="/admin/dist/custom.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/admin/dist/css/skins/skin-black.min.css">
+    <link rel="stylesheet" href="/admin/dist/custom.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
@@ -36,10 +35,18 @@
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span>
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span></a>
+            <a href="/" class="sidebar-main-site" role="button">
+                <span class=""><i class="fa fa-globe"></i>promasidorstore.tradedepot.co</span>
             </a>
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <span class="fa fa-search" id="navbar-search-ico"></span>
+                        <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
+                    </div>
+                </form>
                 <ul class="nav navbar-nav">
                     <!-- Notifications Menu -->
                     <li class="dropdown notifications-menu">
@@ -114,9 +121,9 @@
     <aside class="main-sidebar">
         <section class="sidebar">
             <div class="container-fluid">
-                <div class="sidebar-btn">
-                    <a href="/admin/create-order.html" class="btn btn-info btn-block btn-lg">
-                        <i class="fa fa-cart-plus"></i> <span>Create an Order</span>
+                <div class="sidebar-btn text-center">
+                    <a href="/admin/create-order.html" class="btn btn-info btn-block" style="color:#fff">
+                        <span>Create an Order</span>  <i class="fa fa-cart-plus"></i>
                     </a>
                 </div>
             </div>
@@ -146,51 +153,55 @@
         <section class="content">
 
 
+            <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6" style="border-right: 1px solid #ccc">
-                    <p class="lead text-uppercase">Vendor</p>
-                    <div class="block-icon">
-                        <div class="block-icon-ico">
-                            <span class="glyphicon glyphicon-map-marker"></span>
+                <div class="col-sm-8" style="border-right: 1px solid #ccc">
+                    <p class="lead text-uppercase">Customer</p>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                            </div>
+                            <div class="form-group">
+                                <label for="invoice">Invoice address</label>
+                                <textarea class="form-control" id="invoice" placeholder="Invoice address"></textarea>
+                            </div>
                         </div>
-                        <address class="block-icon-content">
-                            Coca-Cola Company<br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                    </div>
-                    <div class="block-icon">
-                        <div class="block-icon-ico">
-                            <span class="glyphicon glyphicon-phone-alt"></span>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="analyticaccount">Analytic Account</label>
+                                <select class="form-control" id="analyticaccount">
+                                    <option> </option>
+                                    <option> </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="shippingaddress">Shipping Address</label>
+                                <textarea class="form-control" id="shippingaddress" placeholder="Shipping Address"></textarea>
+                            </div>
                         </div>
-                        <address class="block-icon-content">
-                            +999-555-777-33
-                        </address>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="pricelist">Pricelist</label>
+                                <select class="form-control" id="pricelist">
+                                    <option>Public Pricelist</option>
+                                    <option> </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderingcontact">Ordering Contact</label>
+                                <textarea class="form-control" id="orderingcontact" placeholder="Invoice address">Promasidor Company 284, Derrty St. NY</textarea>
+                            </div>
+                        </div>
                     </div>
+                    <div class="clearfix"></div>
+
                 </div>
-                <div class="col-sm-6">
-                    <div class="col-sm-6">
-                        <p class="lead text-uppercase">Delivery</p>
-
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                I will pick it up
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Deliver to me
-                            </label>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="lead text-uppercase">Pickup Location</p>
-
-
+                <div class="col-sm-4">
+                    <div class="col-sm-12">
+                        <p class="lead text-uppercase">Vendor</p>
                         <div class="block-icon">
                             <div class="block-icon-ico">
                                 <span class="glyphicon glyphicon-map-marker"></span>
@@ -211,12 +222,14 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="clearfix"></div>
 
                 <div class="col-sm-12">
+                    <hr/>
+
                     <div class="module-block">
                         <table class="table table-hover">
-                            <thead>
+                            <thead style="color: #999999;">
                             <tr>
                                 <td>
                                     <div class="checkbox">
@@ -235,7 +248,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="background-color: #fff;">
                             <tr>
                                 <td>
                                     <div class="checkbox">
@@ -273,31 +286,37 @@
                                         </label>
                                     </div>
                                 </td>
-                                <td>DR4411</td>
-                                <td>Coca-Cola Beveragge Drink</td>
-                                <td>Sachet</td>
-                                <td>$ 500</td>
+                                <td><input type="text" class="input-transparent" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                            </tr>
+                            <tr>
                                 <td>
-                                    <div class="spinbox" data-initialize="spinbox" id="mySpinbox">
-                                        <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                        <div class="spinbox-buttons btn-group btn-group-vertical">
-                                            <button type="button" class="btn btn-default spinbox-up btn-xs">
-                                                <span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-                                            </button>
-                                            <button type="button" class="btn btn-default spinbox-down btn-xs">
-                                                <span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-                                            </button>
-                                        </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="option1">
+                                        </label>
                                     </div>
                                 </td>
-                                <td>10%</td>
-                                <td>$ 1,500</td>
+                                <td><input type="text" class="input-transparent" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                             </tr>
                             </tbody>
                         </table>
                         <div class="col-sm-4">
-                            <button class="btn btn-danger disabled">Delete checked</button>
+                            <button class="btn btn-info">Add new line <span class="fa fa-plus"></span></button>
+                            <button class="btn btn-default disabled">Delete checked <span class="fa fa-trash"></span></button>
                         </div>
                         <div class="col-sm-4 col-sm-offset-8">
                             <table class="table table-non-bordered pull-right text-right">
@@ -319,8 +338,11 @@
                     </div>
                 </div>
 
+                <div class="clearfix"></div>
+
 
                 <div class="col-sm-12">
+                    <hr/>
                     <div class="module-block">
                         <div class="row">
                             <div class="col-sm-6">
@@ -409,6 +431,7 @@
                     </div>
                 </div>
 
+            </div>
             </div>
         </section>
         <!-- /.content -->

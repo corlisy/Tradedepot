@@ -6,6 +6,7 @@
   .border-radius(@input-radius);
   box-shadow: none;
   border-color: @gray;
+  background-color: #fff;
   &:focus {
     border-color: @light-blue;
     box-shadow: none;
@@ -91,4 +92,84 @@
 .input-group-sm + .form-control-feedback.fa,
 .form-group-sm .form-control + .form-control-feedback.fa {
   line-height: @input-height-small;
+}
+
+//TODO: not good
+select, select.form-control {
+  border-radius: @border-radius-base;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid #ccc;
+  padding: 6px 16px;
+  box-shadow: none;
+}
+select:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+
+
+
+
+input[type="radio"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  &:before {
+    background-color: @brand-primary;
+  }
+
+  &:after {
+    border: 2px solid @gray;
+  }
+
+  &:checked:before {
+    .scale(0.5);
+  }
+
+  &:disabled:checked:before {
+    background-color: @gray-light;
+  }
+
+  &:checked:after {
+    content: "";
+    border-color: @brand-primary;
+  }
+
+  &:disabled:after,
+  &:disabled:checked:after {
+    border-color: @gray-light;
+  }
+}
+
+input[type="checkbox"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  &:focus:after {
+    border-color: @brand-primary;
+  }
+
+  &:after {
+    content: "";
+    border: 2px solid @gray;
+  }
+
+  &:checked:before {
+    content: "";
+  }
+
+  &:checked:after {
+    background-color: @brand-primary;
+    border-color: @brand-primary;
+  }
+
+  &:disabled:after {
+    border-color: @gray-light;
+  }
+
+  &:disabled:checked:after {
+    background-color: @gray-light;
+    border-color: transparent;
+  }
 }
