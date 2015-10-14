@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44fc5423-cef5-4e53-99ac-ddc88204facf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dist/css/AdminLTE.css" afterPath="$PROJECT_DIR$/admin/dist/css/AdminLTE.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dist/css/AdminLTE.min.css" afterPath="$PROJECT_DIR$/admin/dist/css/AdminLTE.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dist/css/skins/_all-skins.css" afterPath="$PROJECT_DIR$/admin/dist/css/skins/_all-skins.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/admin/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/client.css" afterPath="$PROJECT_DIR$/css/client.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/core.less" afterPath="$PROJECT_DIR$/admin/build/less/core.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/create-order.html" afterPath="$PROJECT_DIR$/admin/create-order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dist/custom.css" afterPath="$PROJECT_DIR$/admin/dist/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/forms.less" afterPath="$PROJECT_DIR$/admin/build/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/header.less" afterPath="$PROJECT_DIR$/admin/build/less/header.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/navs.less" afterPath="$PROJECT_DIR$/admin/build/less/navs.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/orders.html" afterPath="$PROJECT_DIR$/admin/orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/dist/css/skins/skin-black.css" afterPath="$PROJECT_DIR$/admin/dist/css/skins/skin-black.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/starter.html" afterPath="$PROJECT_DIR$/admin/starter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/table.less" afterPath="$PROJECT_DIR$/admin/build/less/table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tradepoint.lc.iml" afterPath="$PROJECT_DIR$/.idea/tradepoint.lc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/build/less/variables.less" afterPath="$PROJECT_DIR$/admin/build/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tradepoint.lc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +32,8 @@
       <file leaf-file-name="create-order.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/create-order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28317535" vertical-offset="441" max-vertical-offset="8075">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.104166664" vertical-offset="0" max-vertical-offset="8024">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -63,8 +47,8 @@
       <file leaf-file-name="starter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/starter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.351852" vertical-offset="731" max-vertical-offset="6001">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="62" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.037037" vertical-offset="136" max-vertical-offset="5882">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -75,8 +59,8 @@
       <file leaf-file-name="orders.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/orders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615" vertical-offset="2244" max-vertical-offset="5372">
-              <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
+            <state vertical-scroll-proportion="-5.037037" vertical-offset="136" max-vertical-offset="5270">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -216,10 +200,10 @@
         <option value="$PROJECT_DIR$/admin/dist/custom.css" />
         <option value="$PROJECT_DIR$/css/client.css" />
         <option value="$PROJECT_DIR$/admin/build/less/header.less" />
-        <option value="$PROJECT_DIR$/admin/orders.html" />
         <option value="$PROJECT_DIR$/admin/build/less/navs.less" />
-        <option value="$PROJECT_DIR$/admin/starter.html" />
         <option value="$PROJECT_DIR$/admin/create-order.html" />
+        <option value="$PROJECT_DIR$/admin/starter.html" />
+        <option value="$PROJECT_DIR$/admin/orders.html" />
       </list>
     </option>
   </component>
@@ -837,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615" vertical-offset="2244" max-vertical-offset="5372">
-          <caret line="154" column="22" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/less/bootstrap.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1538463" vertical-offset="7840" max-vertical-offset="11356">
@@ -897,8 +871,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/starter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.351852" vertical-offset="731" max-vertical-offset="6001">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="62" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.037037" vertical-offset="136" max-vertical-offset="5882">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.037037" vertical-offset="136" max-vertical-offset="5270">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -907,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/create-order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28317535" vertical-offset="441" max-vertical-offset="8075">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.104166664" vertical-offset="0" max-vertical-offset="8024">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
