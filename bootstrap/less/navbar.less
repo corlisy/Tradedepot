@@ -60,6 +60,10 @@
     overflow-y: auto;
   }
 
+  &.landing {
+    padding-right: 0;
+  }
+
   @media (min-width: @grid-float-breakpoint) {
     width: auto;
     border-top: 0;
@@ -180,6 +184,7 @@
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -@navbar-padding-horizontal;
+      margin-top: floor((@navbar-padding-horizontal/2));
     }
   }
 }
@@ -272,6 +277,21 @@
       > a {
         padding-top:    @navbar-padding-vertical;
         padding-bottom: @navbar-padding-vertical;
+      }
+    }
+  }
+
+  &.landing {
+    @media (min-width: @grid-float-breakpoint) {
+      float: left;
+      margin: 0;
+
+      > li {
+        float: left;
+        > a {
+          padding-top: (@navbar-padding-vertical - 4);
+          padding-bottom: @navbar-padding-vertical;
+        }
       }
     }
   }

@@ -2095,7 +2095,7 @@ pre code
 {
     .container
     {
-        width: 1170px;
+        width: 970px;
     }
 }
 .container-fluid
@@ -5556,6 +5556,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 {
     overflow-y: auto;
 }
+.navbar-collapse.landing
+{
+    padding-right: 0;
+}
 @media (min-width: 768px)
 {
     .navbar-collapse
@@ -5685,6 +5689,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar > .container .navbar-brand,
     .navbar > .container-fluid .navbar-brand
     {
+        margin-top: 7px;
         margin-left: -15px;
     }
 }
@@ -5785,6 +5790,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     .navbar-nav > li > a
     {
         padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}
+@media (min-width: 768px)
+{
+    .navbar-nav.landing
+    {
+        float: left;
+
+        margin: 0;
+    }
+    .navbar-nav.landing > li
+    {
+        float: left;
+    }
+    .navbar-nav.landing > li > a
+    {
+        padding-top: 18px;
         padding-bottom: 22px;
     }
 }

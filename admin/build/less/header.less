@@ -176,6 +176,7 @@
   > h1 {
     margin: 0;
     font-weight:100;
+    font-size: 28px;
     > small {
       font-size: 15px;
       display: inline-block;
@@ -196,15 +197,19 @@
     right: 10px;
     .border-radius(2px);
     > li > a {
-      color: #444;
+      color: #999;
       text-decoration: none;
       display: inline-block;
       > .fa, > .glyphicon, > .ion {
+        color: #444;
         margin-right: 5px;
       }
     }
     > li + li:before {
       content: '>\00a0';
+    }
+    > li.active {
+      color: #444;
     }
   }
 
