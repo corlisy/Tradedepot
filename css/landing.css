@@ -1,7 +1,7 @@
 .intro {
     width: 100%;
     height: 100%;
-    padding: 180px 0;
+    padding: 170px 0;
     text-align: center;
     color: #484848;
     background: url('/img/landing-bg.jpg') no-repeat bottom center scroll;
@@ -12,41 +12,72 @@
     -o-background-size: cover;
 }
 .brand-heading {
-    font-size: 46px;
+    font-size: 40px;
+    font-family: 'Helvetica Neue';
+    margin-top: 21px;
+    margin-bottom: 19px;
+    margin-left: -4px;
+}
+.brand-heading b {
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-left: -4px;
+    line-height: 1.3;
 }
 .intro-text {
-    font-size: 28px;
+    font-size: 29px;
+    margin-bottom: 2.3em;
+    padding-top: 6px;
+    padding-right: 9px;
 }
 
 .content-section .media-heading {
     color: #43656b;
+    font-size: 22px;
+    font-family: "Helvetica Neue";
+    margin-bottom: 18px;
     font-weight: bold;
 }
 .content-section .media-body {
     font-size: 18px;
     line-height:36px;
     color: #999999;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 .content-section .section-head {
-    padding: 60px 0;
+    padding: 49px 0px;
 
 }
 .content-section .section-header {
     color: #f07e2c;
-    font-weight: 100;
+    margin-bottom: 22px;
     background: url('/img/landing-head-ico.png') no-repeat center top;
-    padding-top: 50px;
+    padding-top: 44px;
 }
 .content-section .section-descr {
     color: #999999;
-    font-weight: 100;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.media.shop {
+    margin-bottom: 58px;
+}
+.media.comp {
+    margin-bottom: 90px;
+}
+
+.media.form {
+    margin-bottom: 60px;
+}
+
+.media.blank {
+    margin-bottom: 30px;
 }
 
 
 .btn-primary.btn-lg {
-    padding: 16px 40px;
+    padding: 18px 41px;
+    font-size: 16px;
 }
 
 
@@ -54,14 +85,55 @@
 
 }
 #request {
-    padding: 50px 0;
+    padding: 35px 0px 62px 0;
     background-color: #43656b;
 }
 #request h2 {
     color: #fff;
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    margin-bottom: 16px;
 }
 #request p {
     color: #c1c0c0;
+}
+
+#request .btn-primary.btn-lg {
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+#request .intro-text {
+    font-size: 28px;
+    margin-bottom: 37px;
+}
+
+footer {
+    padding: 35px 0px 62px 0;
+}
+
+footer .navbar {
+    margin-bottom: 45px;
+}
+
+footer .lang-block {
+    margin-bottom: 5px;
+}
+
+footer .copyrights {
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+    margin-top: 10px;
+}
+
+footer .hidden-xs {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+}
+
+footer .hidden-xs a {
+    color: #999;
 }
 
 .ldg-ico {
@@ -74,21 +146,30 @@
     height: 320px;
     position: relative;
 }
+
+.media:nth-child(odd) .ldg-ico {
+    margin-right: 45px;
+}
+
 .ldg-ico.shop {
-    background-position: 0 0;
+    background-position: 0px 55px;
 }
 .ldg-ico.comp {
-    background-position: -400px 0;
+    background-position: -400px 40px;
 }
 .ldg-ico.form {
-    background-position: -800px 0;
+    background-position: -800px 35px;
 }
 .ldg-ico.blank {
-    background-position: -1200px 0;
+    background-position: -1200px 45px;
+}
+
+#clients .section-head {
+    padding-bottom: 0px;
 }
 
 .clients-list {
-    margin-bottom: 40px;
+    margin-bottom: 62px;
 }
 
 .clients-list .clients-elem {
