@@ -1,0 +1,456 @@
+//Main Sidebar
+// ``` .left-side has been deprecated as of 2.0.0 in favor of .main-sidebar ```
+
+.main-sidebar,
+.left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: @navbar-height;
+  min-height: 100%;
+  width: @sidebar-width;
+  z-index: 810;
+  //Using disposable variable to join statements with a comma
+  @transition-rule: @transition-speed @transition-fn,
+  width @transition-speed @transition-fn;
+  .transition-transform(@transition-rule);
+  @media (max-width: @screen-header-collapse) {
+    padding-top: 100px;
+  }
+  @media (max-width: @screen-xs-max) {
+    .translate(-@sidebar-width, 0);
+  }
+  .sidebar-collapse & {
+    @media (min-width: @screen-sm) {
+      .translate(-@sidebar-width, 0);
+    }
+  }
+  .sidebar-open & {
+    @media (max-width: @screen-xs-max) {
+      .translate(0, 0);
+    }
+  }
+}
+
+.sidebar {
+  padding-bottom: 10px;
+}
+// remove border from form
+.sidebar-form {
+  input:focus {
+    border-color: transparent;
+  }
+}
+
+//Sidebar user panel
+.user-panel {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  .clearfix();
+  > .image > img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+  }
+  > .info {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+    > p {
+      font-weight: 600;
+      margin-bottom: 9px;
+    }
+    > a {
+      text-decoration: none;
+      padding-right: 5px;
+      margin-top: 3px;
+      font-size: 11px;
+      > .fa,
+      > .ion,
+      > .glyphicon {
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+// Sidebar menu
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  //First Level
+  > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    > a {
+      padding: 12px 5px 12px 15px;
+      display: block;
+      > .fa,
+      > .glyphicon,
+      > .ion {
+        width: 20px;
+      }
+    }
+    .label,
+    .badge {
+      margin-top: 3px;
+      margin-right: 5px;
+    }
+  }
+  li.header {
+    padding: 10px 25px 10px 15px;
+    font-size: 14px;
+  }
+  li > a > .fa-angle-left {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  li.active {
+    > .treeview-menu {
+      display: block;
+    }
+  }
+
+  // Tree view menu
+  .treeview-menu {
+    display: none;
+    list-style: none;
+    padding:0;
+    margin:0;
+    padding-left: 5px;
+    .treeview-menu {
+      padding-left: 20px;
+    }
+    > li {
+      margin: 0;
+      > a {
+        padding: 5px 5px 5px 15px;
+        display: block;
+        font-size: 14px;
+        > .fa,
+        > .glyphicon,
+        > .ion {
+          width: 20px;
+        }
+        > .fa-angle-left,
+        > .fa-angle-down {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+
+.logo {
+  .transition(width @transition-speed @transition-fn);
+  display: block;
+  float: left;
+  height: @navbar-height;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  width: @sidebar-width;
+  padding: 0 15px;
+  font-weight: 300;
+  overflow: hidden;
+  //Add support to sidebar mini by allowing the user to create
+  //2 logo designs. mini and lg
+  .logo-lg {
+    //should be visibile when sidebar isn't collapsed
+    display: block;
+  }
+  .logo-mini {
+    display: none;
+  }
+}
+
+.main-header {
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
+  //Navbar
+  > .navbar {
+    .transition(margin-left @transition-speed @transition-fn);
+    margin-bottom: 0;
+    margin-left: @sidebar-width;
+    border: none;
+    min-height: @navbar-height;
+    box-shadow: none;
+    border-radius: 0;
+    .layout-top-nav & {
+      margin-left: 0;
+    }
+  }
+  //Navbar search text input
+  #navbar-search-ico {
+    color: #bfc0c0;
+  }
+  #navbar-search-input.form-control {
+    background: rgba(255,255,255,.2);
+    border-color: transparent;
+    &:focus,
+    &:active {
+      border-color: rgba(0,0,0,.1);
+      background: rgba(255,255,255,.9);
+    }
+    &::-moz-placeholder {
+      color: #ccc;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #ccc;
+    }
+    &::-webkit-input-placeholder {
+      color: #ccc;
+    }
+  }
+  //Navbar Right Menu
+  .navbar-custom-menu,
+  .navbar-right {
+    float: right;
+    @media (max-width: @screen-sm-max) {
+      a {
+        color: inherit;
+        background: transparent;
+      }
+    }
+  }
+  .navbar-right {
+    @media (max-width: @screen-header-collapse) {
+      float: none;
+      .navbar-collapse & {
+        margin: 7.5px -15px;
+      }
+      > li {
+        color: inherit;
+        border: 0;
+      }
+    }
+  }
+  //link to site in sidebar
+  .sidebar-main-site {
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    //Add the fontawesome bars icon
+    &:hover {
+      color: #fff;
+    }
+    &:focus,
+    &:active {
+      background: transparent;
+    }
+    i {
+      padding-right: 10px;
+    }
+  }
+
+  //Navbar toggle button
+  .sidebar-toggle {
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    padding: @navbar-padding-vertical @navbar-padding-horizontal;
+    //Add the fontawesome bars icon
+    font-family: fontAwesome;
+    &:before {
+      content: "\f0c9";
+    }
+    &:hover {
+      color: #fff;
+    }
+    &:focus,
+    &:active {
+      background: transparent;
+    }
+  }
+  .sidebar-toggle .icon-bar {
+    display: none;
+  }
+  //Navbar User Menu
+  .navbar .nav > li.user > a {
+    > .fa,
+    > .glyphicon,
+    > .ion {
+      margin-right: 5px;
+    }
+  }
+
+  //Labels in navbar
+  .navbar .nav > li > a > .label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 3px 6px;
+    line-height: .9;
+  }
+
+  //Logo bar
+  .logo {
+    .transition(width @transition-speed @transition-fn);
+    display: block;
+    float: left;
+    height: @navbar-height;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: @sidebar-width;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow: hidden;
+    //Add support to sidebar mini by allowing the user to create
+    //2 logo designs. mini and lg
+    .logo-lg {
+      //should be visibile when sidebar isn't collapsed
+      display: block;
+    }
+    .logo-mini {
+      display: none;
+    }
+  }
+  //Navbar Brand. Alternative logo with layout-top-nav
+  .navbar-brand {
+    color: #fff;
+  }
+
+  .notifications-menu {
+    a {
+      padding-right: 19px;
+
+      .label {
+        right: 0px !important;
+      }
+    }
+  }
+}
+
+// Content Header
+.content-header {
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding: 15px 30px;
+  // Header Text
+  > h1 {
+    margin: 0;
+    font-weight:100;
+    font-size: 28px;
+    > small {
+      font-size: 15px;
+      display: inline-block;
+      padding-left: 4px;
+      font-weight: 300;
+    }
+  }
+
+  > .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    .border-radius(2px);
+    > li > a {
+      color: #999;
+      text-decoration: none;
+      display: inline-block;
+      > .fa, > .glyphicon, > .ion {
+        color: #444;
+        margin-right: 5px;
+      }
+    }
+    > li + li:before {
+      content: '>\00a0';
+    }
+    > li.active {
+      color: #444;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    > .breadcrumb {
+      position: relative;
+      margin-top: 5px;
+      top: 0;
+      right: 0;
+      float: none;
+      background: @gray;
+      padding-left: 10px;
+      li:before {
+        color: darken(@gray, 20%);
+      }
+    }
+  }
+}
+
+
+
+.navbar-toggle {
+  color: #fff;
+  border: 0;
+  margin: 0;
+  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+}
+//Control navbar scaffolding on x-small screens
+@media (max-width: @screen-sm-max) {
+  .navbar-custom-menu .navbar-nav > li {
+    float: left;
+  }
+  //Dont't let links get full width
+  .navbar-custom-menu .navbar-nav {
+    margin: 0;
+    float: left;
+  }
+
+  .navbar-custom-menu .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+}
+
+// Collapse header
+@media (max-width: @screen-header-collapse) {
+  .main-header {
+    position: relative;
+    .logo,
+    .navbar {
+      width: 100%;
+      float: none;
+    }
+    .navbar {
+      margin: 0;
+    }
+    .navbar-custom-menu {
+      float: right;
+    }
+  }
+}
+
+.navbar-collapse.pull-left {
+  @media(max-width: @screen-sm-max) {
+    float: none!important;
+    + .navbar-custom-menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 40px;
+    }
+  }
+}
