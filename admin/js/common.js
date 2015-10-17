@@ -15,5 +15,15 @@ requirejs.config({
 });
 
 require(['jquery', 'bootstrap'], function ($, bootstrap) {
-
+    $('#sidebar-toggle').on('click', function() {
+        if ($(this).data('toggle')) {
+            $('.menu-sidebar').show();
+            $('.main-right-col').css('paddingLeft', '230px');
+            $(this).data('toggle', false);
+        } else {
+            $('.menu-sidebar').hide();
+            $('.main-right-col').css('paddingLeft', 0);
+            $(this).data('toggle', true);
+        }
+    })
 });

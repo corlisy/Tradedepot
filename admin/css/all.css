@@ -11,11 +11,16 @@ select.form-control:focus {
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
 }
-.content input,
+.content input[type="text"],
 .content select,
 .content textarea {
     background-color: #fff!important;
 }
+
+.bg-info {
+    background-color: #005ba4 !important;
+}
+
 
 .inner-addon {
     position: relative;
@@ -272,6 +277,15 @@ hr {
     color: #797979;
     font-size:28px;
 }
+.content-header.inverse h1 {
+    color: #fff;
+}
+.content-header.inverse h1 small {
+    color: #8fd3f6;
+}
+.content-header.inverse select {
+    background-color: #fff;
+}
 .content-header .breadcrumb {
     background-color: transparent;
     margin: 0;
@@ -285,10 +299,20 @@ hr {
 .content-header .breadcrumb > li {
     color: #434343;
 }
+.content-header.inverse .breadcrumb > li .fa,
+.content-header.inverse .breadcrumb > li {
+    color: #fff;
+}
 .content-header a {
     color: #999999;
 }
-
+.content-header.inverse a {
+    color: #8fd3f6;
+}
+.content-header.inverse .btn,
+.content-header.inverse .dropdown-menu a {
+    color: inherit;
+}
 
 
 .main-footer {
