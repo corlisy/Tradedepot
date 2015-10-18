@@ -233,7 +233,7 @@ footer .lang-block button {
     margin-left: 15px;
 }
 .wizard .chevron:before {
-    content: '---------------------- >';
+    content: '---------- >';
 }
 .wizard .step-content {
     border-top: 1px solid #cccccc;

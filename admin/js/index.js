@@ -1,5 +1,5 @@
 requirejs(['./common'], function (common) {
-    require(['jquery', 'bootstrap', 'chartjs'], function ($) {
+    require(['jquery', 'bootstrap', 'chartjs', 'chartjshb'], function ($) {
 
         'use strict';
 
@@ -23,23 +23,13 @@ requirejs(['./common'], function (common) {
             datasets: [
                 {
                     label: "Electronics",
-                    fillColor: "rgb(210, 214, 222)",
-                    strokeColor: "rgb(210, 214, 222)",
-                    pointColor: "rgb(210, 214, 222)",
+                    fillColor: "rgb(224, 241, 247)",
+                    strokeColor: "rgb(25, 163, 209)",
+                    pointColor: "rgb(25, 163, 209)",
                     pointStrokeColor: "#c1c7d1",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgb(220,220,220)",
-                    data: [65, 59, 80, 81, 56, 55, 40]
-                },
-                {
-                    label: "Digital Goods",
-                    fillColor: "rgba(60,141,188,0.9)",
-                    strokeColor: "rgba(60,141,188,0.8)",
-                    pointColor: "#3b8bba",
-                    pointStrokeColor: "rgba(60,141,188,1)",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgba(60,141,188,1)",
-                    data: [28, 48, 40, 19, 86, 27, 90]
+                    data: [32, 50, 40, 41, 26, 31, 20]
                 }
             ]
         };
@@ -167,6 +157,43 @@ requirejs(['./common'], function (common) {
         //-----------------
         //- END PIE CHART -
         //-----------------
+
+
+
+
+
+
+
+        var randomScalingFactor = function(){
+            return Math.round(Math.random()*100);
+        };
+        var barChartData = {
+            labels : ["January","February","March","April","May","June","July"],
+            datasets : [
+                {
+                    fillColor : "rgba(48,145,213,1)",
+                    strokeColor : "rgba(151,187,205,0.8)",
+                    highlightFill : "rgba(48,145,213,0.5)",
+                    highlightStroke : "rgba(151,187,205,1)",
+                    data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                }
+            ]
+        };
+        window.onload = function(){
+            var ctx = document.getElementById("hbChart").getContext("2d");
+            var chart = new Chart(ctx).HorizontalBar(barChartData, {
+                responsive: true,
+                barShowStroke: false
+            });
+        };
+
+
+
+
+
+
+
+
 
     });
 });

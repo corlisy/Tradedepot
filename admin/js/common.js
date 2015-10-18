@@ -5,11 +5,15 @@ requirejs.config({
         'fuelux': '//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min',
         'jquery': '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery',
         'lodash': '/js/lib/lodash.min',
-        'chartjs': '/js/lib/chartjs/Chart.min'
+        'chartjs': '/js/lib/chartjs/Chart.min',
+        'chartjshb': '/js/lib/chartjs/Chart.HorizontalBar'
     },
     shim: {
         'bootstrap': {
             deps:['jquery']
+        },
+        'chartjshb': {
+            deps:['chartjs']
         }
     }
 });

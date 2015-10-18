@@ -21,6 +21,32 @@ select.form-control:focus {
     background-color: #005ba4 !important;
 }
 
+.text-default {
+    color: #4d5a64;
+}
+.text-red {
+    color: #f56954;
+}
+.text-blue {
+    color: #00c0ef;
+}
+.text-yellow {
+    color: #f39c12;
+}
+.text-green {
+    color: #00a65a;
+}
+
+.chart {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.chart svg,
+.chart canvas {
+    width: 100%!important;
+}
+
 
 .inner-addon {
     position: relative;
@@ -192,6 +218,13 @@ hr {
     padding-left:30px;
     padding-right:30px;
 }
+.top-menu li > a .label {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    text-align: center;
+    font-size: 9px;
+}
 
 .navbar-custom-menu {
     margin-right: 30px;
@@ -339,8 +372,15 @@ hr {
 }
 .box.panel .panel-heading {
     position:relative;
-    background-color: transparent;
     padding: 6px 15px;
+    color:#484848;
+}
+.box.panel .panel-footer {
+    border-top: 1px solid #e8ebed;
+}
+.box.panel .panel-heading,
+.box.panel .panel-footer {
+    background-color: transparent;
 }
 .box.panel .panel-heading a {
     color: #999999;
@@ -367,4 +407,25 @@ hr {
 }
 .box.panel .panel-body .nav-pills > li:last-child {
     border-bottom: none;
+}
+
+.box.panel .panel-body .nav-pills > li .elem {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+
+
+.top-menu .user-link {
+    color: #484848;
+}
+.user-link img {
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 10px;
+}
+.nav .user-link img {
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
