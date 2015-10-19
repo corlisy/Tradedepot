@@ -295,3 +295,74 @@ address .glyphicon {
     vertical-align: middle;
 }
 
+.modal#signin .modal-body {
+    padding: 40px 48px 23px 48px;
+}
+
+.modal#signin .input-group-addon.login {
+    border: 0px none;
+    font-size: 16px;
+    color: #43656B;
+    padding-left: 2px;
+}
+
+.modal#signin .input-group-addon.login .point{
+    color: #f07e2c;
+    font-size: 26px;
+}
+
+.modal#signin .signin_input input, .modal#signin .signin_input i{
+    margin-top: 5px;
+}
+
+.modal#signin .form-group {
+    margin-left: -11px;
+}
+
+.modal#signin .form-group input[text],
+.modal#signin .form-group input[email]
+.modal#signin .form-group input[password] {
+    padding-left: 38px;
+}
+
+.modal#signin .signin_email {
+    margin-top: -2px;
+}
+
+.modal#signin input[type=checkbox] {
+    width: 22px;
+    height: 22px;
+}
+
+.modal#signin .form-group input.signin_email{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.modal#signin .form-group i.signin_paswword {
+    bottom: 0px;
+    top: auto;
+}
+
+.modal#signin .form-group input.signin_paswword {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: -1px;
+}
+
+.modal#signin .footer_modal a,
+.modal#signin .footer_modal p{
+    font-size: 16px;
+    color: #484848;
+}
+
+.modal#signin .footer_modal a {
+    color: #0099cc;
+}
+
+.modal#signin #animation {
+    background: url("/img/sprite_signin.jpg?v=1") no-repeat;
+    width: 330px;
+    height: 337px;
+    z-index: 1000;
+}
