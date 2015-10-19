@@ -10,6 +10,7 @@ requirejs(['./main'], function (common) {
                     on_last_frame: function(obj) {
                         obj.spStop();
                         $(form).submit();
+                        //$('#signin').modal('hide');
                     },
                     on_frame: {
                         39: function(obj) {
@@ -21,6 +22,7 @@ requirejs(['./main'], function (common) {
         };
         var signInOk = function () {
             $('#animation').spStart();
+            $('#animation').fps(120);
         };
 
         $('#signin').on('show.bs.modal', function (e) {
