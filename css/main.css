@@ -149,7 +149,7 @@
     border-right: 0;
 }
 .modal-body {
-    padding: 50px;
+    padding: 40px 48px;
 }
 .modal-title {
     font-size: 30px;
@@ -188,7 +188,7 @@ footer .lang-block button {
     pointer-events: none;
     z-index: 10;
 }
-.left-addon .glyphicon  { left:  0px;}
+.left-addon .glyphicon  { left:  5px;}
 .right-addon .glyphicon { right: 0px;}
 
 .left-addon input  { padding-left:  30px; }

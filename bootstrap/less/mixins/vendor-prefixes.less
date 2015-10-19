@@ -98,14 +98,15 @@
 }
 
 // Placeholder text
-.placeholder(@color: @input-color-placeholder) {
+.placeholder(@color: @input-color-placeholder, @font: @input-font-placeholder) {
   // Firefox
   &::-moz-placeholder {
     color: @color;
+    font-family: @font;
     opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
   }
-  &:-ms-input-placeholder { color: @color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: @color; } // Safari and Chrome
+  &:-ms-input-placeholder { color: @color; font-family: @font;  } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: @color; font-family: @font;  } // Safari and Chrome
 }
 
 // Transformations
