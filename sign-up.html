@@ -228,7 +228,7 @@
         <div class="clearfix"></div><br/>
 
         <p class="pull-left copyrights">&copy; TradeDepot, Inc. All rights reserved.</p>
-        <div class="pull-right hidden-xs">
+        <div class="pull-right hidden-xs link">
             <ul class="list-inline">
                 <li>
                     <a href="#">Privacy Policy</a>
@@ -240,6 +240,70 @@
         </div>
     </div>
 </footer>
+
+
+<!-- Modal signin -->
+<div class="modal fade" id="signin" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title"><span class="big-ico auth"></span> Sign in</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <br/>
+                            <br/>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
+                                        <div class="input-group signin_input">
+                                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                                            <input type="text" class="form-control" placeholder="Your store">
+                                            <div class="input-group-addon login"><span class="point">.</span>tradedepot.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="form-group signin_email">
+                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                        <input type="email" class="form-control signin_email" placeholder="Email address">
+                                        <i class="glyphicon glyphicon glyphicon-lock signin_paswword"></i>
+                                        <input type="password" class="form-control signin_paswword" placeholder="Password">
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="form-group checkbox">
+                                    <label>
+                                        <input type="checkbox"> Remember me
+                                    </label>
+                                </div>
+                                <br/>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" style="padding: 5px 55px;text-transform: uppercase;">Log in</button>
+                                </div>
+                                <br/>
+                            </form>
+
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-0 hidden-xs" style="padding: 0;">
+                            <div id="animation"></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row footer_modal">
+                                <a href="#forgot" class="pull-left" data-dismiss="modal" data-toggle="modal">Forgot Your Password?</a>
+                                <p class="text-center pull-right">
+                                    Not a client? <a href="/sign-up.html">Sign up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

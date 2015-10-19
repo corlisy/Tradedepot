@@ -366,3 +366,17 @@ address .glyphicon {
     height: 337px;
     z-index: 1000;
 }
+
+footer .lang-block {
+    margin-bottom: 5px;
+}
+
+footer .link {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: "Helvetica Neue";
+}
+
+footer .link a {
+    color: #999;
+}

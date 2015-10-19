@@ -22,7 +22,7 @@ requirejs.config({
     }
 });
 
-require(['jquery', 'bootstrap'], function ($, bootstrap) {
+require(['jquery', 'bootstrap', 'jquery.spritely'], function ($, bootstrap) {
     $('.nav a').on('click', function(){
         var menu = $(this).parents('.navbar-collapse');
         if ($(menu).hasClass('collapsing') || $(menu).hasClass('in')) {
@@ -31,4 +31,45 @@ require(['jquery', 'bootstrap'], function ($, bootstrap) {
         }
     });
 
+    var startAnimation = function(form) {
+        try {
+            $('#animation').spStart();
+        } catch (e) {
+            $('#animation').sprite({
+                fps: 30,
+                no_of_frames: 191,
+                on_last_frame: function(obj) {
+                    obj.spStop();
+                    $(form).submit();
+                    //$('#signin').modal('hide');
+                },
+                on_frame: {
+                    39: function(obj) {
+                        obj.spStop();
+                    }
+                }
+            });
+        }
+    };
+    var signInOk = function () {
+        $('#animation').spStart();
+        $('#animation').fps(100);
+    };
+
+    $('#signin').on('show.bs.modal', function (e) {
+        startAnimation($('#signin form'));
+    });
+
+    $('#signin').on('hide.bs.modal', function (e) {
+        try {
+            $('#animation').destroy();
+        } catch (e) {
+            //
+        }
+    });
+
+    $('.modal#signin button[type=submit]').on('click', function() {
+        signInOk();
+        return false;
+    });
 });

@@ -116,24 +116,10 @@ footer .navbar {
     margin-bottom: 45px;
 }
 
-footer .lang-block {
-    margin-bottom: 5px;
-}
-
 footer .copyrights {
     font-size: 13px;
     font-family: "Helvetica Neue";
     margin-top: 10px;
-}
-
-footer .link {
-    margin-top: 10px;
-    font-size: 13px;
-    font-family: "Helvetica Neue";
-}
-
-footer .hidden-xs a {
-    color: #999;
 }
 
 .ldg-ico {
