@@ -30,7 +30,14 @@ module.exports = function(grunt) {
                 'dest': 'img/sprite_signin.jpg',
                 'algorithmOpts': {sort: false},
                 'destCss': 'img/sign_in/sign_in.css',
-                'algorithm': 'left-right'
+                'algorithm': 'left-right',
+                'imgOpts': {quality: 100},
+                'engine': 'gmsmith',
+                'engineOpts': {
+                    timeout: 20000,
+                    imagemagick: true
+                }
+
             }
         }
     });

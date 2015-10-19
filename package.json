@@ -4,10 +4,9 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "*",
+    "gmsmith": "^0.5.0",
     "grunt-contrib-copy": "*",
     "grunt-exec": "*",
     "grunt-spritesmith": "*",
-    "phantomjs": "^1.9.18",
-    "phantomjssmith": "^0.6.0"
   }
 }

@@ -244,7 +244,7 @@ footer .hidden-xs a {
 }
 
 .modal#signin #animation {
-    background: url("/img/sprite_signin.jpg") no-repeat;
+    background: url("/img/sprite_signin.jpg?v=1") no-repeat;
     width: 330px;
     height: 337px;
     z-index: 1000;
