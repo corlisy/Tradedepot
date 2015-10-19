@@ -6,13 +6,17 @@ requirejs.config({
         'googlejs': 'https://www.google.com/jsapi?callback=',
         'jquery': '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery',
         'lodash': '/js/lib/lodash.min',
-        'owl': '/js/lib/owl.carousel.min'
+        'owl': '/js/lib/owl.carousel.min',
+        'jquery.spritely': '/js/lib/jquery.spritely'
     },
     shim: {
         'bootstrap': {
             deps:['jquery']
         },
         'owl': {
+            deps:['jquery']
+        },
+        'jquery.spritely': {
             deps:['jquery']
         }
     }

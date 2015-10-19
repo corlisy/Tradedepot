@@ -202,7 +202,9 @@ footer .hidden-xs a {
     margin-left: -11px;
 }
 
-.modal#signin .form-group input {
+.modal#signin .form-group input[text],
+.modal#signin .form-group input[email]
+.modal#signin .form-group input[password] {
     padding-left: 38px;
 }
 
@@ -239,4 +241,11 @@ footer .hidden-xs a {
 
 .modal#signin .footer_modal a {
     color: #0099cc;
+}
+
+.modal#signin #animation {
+    background: url("/img/sprite_signin.jpg") no-repeat;
+    width: 330px;
+    height: 337px;
+    z-index: 1000;
 }

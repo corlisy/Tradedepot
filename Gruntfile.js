@@ -23,12 +23,22 @@ module.exports = function(grunt) {
                 cmd: 'grunt',
                 cwd: 'admin/'
             }
+        },
+        sprite: {
+            'buttons': {
+                'src': ['img/sign_in/*.jpg'],
+                'dest': 'img/sprite_signin.jpg',
+                'algorithmOpts': {sort: false},
+                'destCss': 'img/sign_in/sign_in.css',
+                'algorithm': 'left-right'
+            }
         }
     });
 
 
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-spritesmith');
 
     grunt.registerTask('build-bootstrap', [
         'copy:bootstrap_custom-to-bootstrap_clear',
@@ -41,5 +51,8 @@ module.exports = function(grunt) {
     ]);
     grunt.registerTask('admin', [
         'exec:admin-build'
+    ]);
+    grunt.registerTask('build-sprite', [
+        'sprite:*'
     ]);
 };

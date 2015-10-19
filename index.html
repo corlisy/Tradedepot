@@ -19,7 +19,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script data-main="/js/app/index" src="/js/require.js" async></script>
+    <script data-main="/js/app/index" src="/js/require.js?v.1" async></script>
 </head>
 <body>
 <nav class="navbar navbar-custom navbar-top" role="navigation">
@@ -226,11 +226,11 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 class="modal-title"><span class="big-ico auth"></span> Sign in</h2>
-                <br/>
-                <br/>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
+                            <br/>
+                            <br/>
                             <form class="form-horizontal">
                                 <div class="form-group">
                                     <div class="inner-addon left-addon" style="color: #b1b1b1">
@@ -264,8 +264,8 @@
                             </form>
 
                         </div>
-                        <div class="col-sm-4 col-sm-offset-0 hidden-xs">
-                            <img src="/img/sign-in.jpg" />
+                        <div class="col-sm-6 col-sm-offset-0 hidden-xs" style="padding: 0;">
+                            <div id="animation"></div>
                         </div>
                         <div class="col-sm-12">
                             <div class="row footer_modal">
