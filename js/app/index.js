@@ -22,7 +22,7 @@ requirejs(['./main'], function (common) {
         };
         var signInOk = function () {
             $('#animation').spStart();
-            $('#animation').fps(120);
+            $('#animation').fps(100);
         };
 
         $('#signin').on('show.bs.modal', function (e) {
