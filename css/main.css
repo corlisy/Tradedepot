@@ -399,14 +399,30 @@ footer .link a {
     padding-right: 25px;
 }
 
+.tooltip .tooltip-arrow {
+    border-width: 5px 5px 5px 0;
+}
 .tooltip.error .tooltip-arrow {
-
-
+    border-right-color: #FF0000;
+}
+.tooltip .tooltip-arrow:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    width: 0;
+    height: 0;
+    border-width: 5px 5px 5px 0;
+    border-style: solid;
+    border-color: transparent;
+}
+.tooltip.error .tooltip-arrow:before {
+    border-right-color: #fff;
 }
 
 .tooltip.error .tooltip-inner {
     background: #fff;
-    border: 1px solid red;
+    border: 1px solid #FF0000;
     border-radius: 0;
-    color: red;
+    color: #FF0000;
 }
