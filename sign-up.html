@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/sign_up.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +21,7 @@
 
     <script data-main="/js/app/signup" src="/js/require.js" async></script>
 </head>
-<body>
+<body id="page_signup">
 <nav class="navbar navbar-custom" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -32,7 +33,7 @@
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse text-uppercase">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav landing">
                 <li>
                     <a href="#features">Features</a>
                 </li>
@@ -53,20 +54,21 @@
 
 <section class="container-fluid" style="border-top: 2px solid #ec6906">
     <div class="container">
-        <h1 class="page-header">Create an Account <br/><small>Tale tincondunt sa asv ee aa</small></h1>
-
+        <h1 class="page-header">Create an Account <br/><small>Tale tincidunt at vis, usu ei amet veniam. Sea nihil scribentur at</small></h1>
 
         <div class="wizard" data-initialize="wizard" id="myWizard">
             <div class="steps-container">
-                <ul class="steps">
-                    <li data-step="1" data-name="campaign" class="active"><span class="badge">1</span>Login Information<span class="chevron"></span></li>
-                    <li data-step="2"><span class="badge">2</span>Personal Information<span class="chevron"></span></li>
-                    <li data-step="3" data-name="template"><span class="badge">3</span>Confirmation<span class="chevron"></span></li>
+                <ul class="steps col-md-12">
+                    <div class="col-md-11 col-sm-offset-1">
+                        <li data-step="1" data-name="campaign" class="active col-md-4"><span class="badge">1</span>Login Information</li>
+                        <li data-step="2" class="col-md-4"><span class="badge">2</span>Personal Information</li>
+                        <li data-step="3" data-name="template" class="col-md-3"><span class="badge">3</span>Confirmation</li>
+                    </div>
                 </ul>
             </div>
             <div class="step-content">
                 <div class="step-pane active sample-pane" data-step="1">
-                    <div class="col-sm-6 col-sm-offset-2">
+                    <div class="col-sm-8 col-sm-offset-2">
                         <form class="form-horizontal">
                             <div class="form-group has-success has-feedback">
                                 <label for="inputEmail3" class="col-sm-5 control-label">Email<span class="req"></span></label>
@@ -74,6 +76,7 @@
                                     <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -81,8 +84,9 @@
                                 <div class="col-sm-7">
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="storeaddress"/>
-                                        <div class="input-group-addon">.tradedepot.co</div>
+                                        <div class="input-group-addon login"><span class="point">.</span>tradedepot.co</div>
                                     </div>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
                             <div class="form-group has-error has-feedback">
@@ -90,13 +94,7 @@
                                 <div class="col-sm-7">
                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                                     <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-                                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-                                    <div class="tooltip right" role="tooltip">
-                                        <div class="tooltip-arrow"></div>
-                                        <div class="tooltip-inner">
-                                            Tooltip on the right
-                                        </div>
-                                    </div>
+                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-toggle="tooltip_error" aria-hidden="true" data-container="body" data-placement="right" title="Please, enter password"></span>
                                 </div>
                             </div>
                         </form>
@@ -159,11 +157,11 @@
             </div>
             <div class="clearfix"></div>
             <div class="actions">
-                <div class="col-sm-5 col-sm-offset-3">
+                <div class="col-md-4 col-md-offset-5">
                     <div style="color: red;margin-bottom: 15px;" class="pull-right">* Required Fields</div>
                     <div class="clearfix"></div>
                     <button type="button" class="btn btn-link btn-prev btn-lg"><span class="glyphicon glyphicon-chevron-left"></span>Back</button>
-                    <button type="button" class="btn btn-primary btn-next btn-lg pull-right" data-last="Complete">Submit<span class="glyphicon glyphicon-chevron-right"></span></button>
+                    <button type="button" class="btn btn-primary btn-next btn-lg pull-right text-uppercase" data-last="Complete">Next</button>
                 </div>
             </div>
         </div>
@@ -260,7 +258,7 @@
                                         <div class="input-group signin_input">
                                             <i class="glyphicon glyphicon-shopping-cart"></i>
                                             <input type="text" class="form-control" placeholder="Your store">
-                                            <div class="input-group-addon login"><span class="point">.</span>tradedepot.com</div>
+                                            <div class="input-group-addon login"><span class="point">.</span>tradedepot.co</div>
                                         </div>
                                     </div>
                                 </div>

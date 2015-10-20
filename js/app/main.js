@@ -7,7 +7,8 @@ requirejs.config({
         'jquery': '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery',
         'lodash': '/js/lib/lodash.min',
         'owl': '/js/lib/owl.carousel.min',
-        'jquery.spritely': '/js/lib/jquery.spritely'
+        'jquery.spritely': '/js/lib/jquery.spritely',
+        'jQuery.tipsy': '/js/lib/jquery.tipsy'
     },
     shim: {
         'bootstrap': {
@@ -18,11 +19,14 @@ requirejs.config({
         },
         'jquery.spritely': {
             deps:['jquery']
+        },
+        'jquery.tipsy': {
+            deps:['jquery']
         }
     }
 });
 
-require(['jquery', 'bootstrap', 'jquery.spritely'], function ($, bootstrap) {
+require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy'], function ($, bootstrap) {
     $('.nav a').on('click', function(){
         var menu = $(this).parents('.navbar-collapse');
         if ($(menu).hasClass('collapsing') || $(menu).hasClass('in')) {
@@ -72,4 +76,26 @@ require(['jquery', 'bootstrap', 'jquery.spritely'], function ($, bootstrap) {
         signInOk();
         return false;
     });
+
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    $(function () {
+        var template = '<div class="tooltip error right" role="tooltip">'+
+            '<div class="tooltip-arrow"></div>'+
+            '<div class="tooltip-inner">'+
+            '</div>'+
+            '</div>';
+        var options = {
+            'template': template
+        };
+        $('[data-toggle="tooltip_error"]').tooltip(options);
+        $('[data-toggle="tooltip_error"]').tooltip('show');
+    })
+
+
 });

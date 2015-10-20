@@ -207,17 +207,12 @@ footer .lang-block button {
     font-size: 18px;
     color: #ec6906;
     padding: 0;
+    padding-bottom: 15px;
     margin: 0!important;
-    width: 999999px;
+    width: 100%;
 }
 .wizard .steps li {
     opacity: 0.3;
-    float: left;
-    margin-left: 0;
-    padding: 0 20px;
-}
-.wizard .steps li:first-child {
-    padding: 0 20px 0 0;
 }
 .wizard .steps li.active,
 .wizard .steps li.complete {
@@ -232,14 +227,12 @@ footer .lang-block button {
 .wizard .chevron {
     margin-left: 15px;
 }
-.wizard .chevron:before {
-    content: '---------- >';
-}
 .wizard .step-content {
     border-top: 1px solid #cccccc;
     padding: 45px;
     float: left;
     width: 100%;
+    padding: 40px 45px 45px 45px;
 }
 .wizard .step-content .step-pane {
     display: none;
@@ -299,14 +292,14 @@ address .glyphicon {
     padding: 40px 48px 23px 48px;
 }
 
-.modal#signin .input-group-addon.login {
+.input-group-addon.login {
     border: 0px none;
     font-size: 16px;
     color: #43656B;
     padding-left: 2px;
 }
 
-.modal#signin .input-group-addon.login .point{
+.input-group-addon.login .point{
     color: #f07e2c;
     font-size: 26px;
 }
@@ -404,4 +397,16 @@ footer .link a {
 
 .modal#forgot .forgot_email {
     padding-right: 25px;
+}
+
+.tooltip.error .tooltip-arrow {
+
+
+}
+
+.tooltip.error .tooltip-inner {
+    background: #fff;
+    border: 1px solid red;
+    border-radius: 0;
+    color: red;
 }
