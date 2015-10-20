@@ -48,9 +48,9 @@
                             <li><a href="/admin/"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
                             <li><a href="/admin/invoices.html"><i class="fa fa-list"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
-                            <li class="active"><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
-                            <li><a href="/admin/distributors.html"><i class="fa fa-users"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li class="active"><a href="/admin/distributors.html"><i class="fa fa-users"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -147,23 +147,13 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Orders
+                                    Distributors
                                 </h1>
-                                <form role="search" style="display: inline-block;padding-top: 20px;max-width:300px;">
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <div class="inner-addon right-addon">
-                                                <i class="glyphicon glyphicon-search"></i>
-                                                <input type="text" class="form-control" placeholder="Search Orders">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="fa fa-list-alt"></i>Home</a></li>
-                                    <li class="active">Orders</li>
+                                    <li><a href="/admin/"><i class="fa fa-users"></i>Home</a></li>
+                                    <li class="active">Distributors</li>
                                 </ol>
                             </div>
                         </div>
@@ -177,10 +167,14 @@
 
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#inprocess" aria-controls="home" role="tab" data-toggle="tab">In Process <span class="label label-info">4</span></a></li>
-                                    <li role="presentation"><a href="#shipped" aria-controls="profile" role="tab" data-toggle="tab">Shipped</a></li>
-                                    <li role="presentation"><a href="#cancelled" aria-controls="messages" role="tab" data-toggle="tab">Cancelled</a></li>
-                                    <li role="presentation"><a href="#all" aria-controls="settings" role="tab" data-toggle="tab">All</a></li>
+                                    <li role="presentation">
+                                        <a href="#invoices" aria-controls="home" role="tab" data-toggle="tab">
+                                            Distributors
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="active">
+                                        <a href="#all" aria-controls="settings" role="tab" data-toggle="tab">Sign Up Requests <span class="label label-info">4</span></a>
+                                    </li>
                                     <li class="navbar-right">
                                         <form class="form-inline">
                                             <div class="form-group">
@@ -197,86 +191,74 @@
 
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="inprocess">
+                                    <div role="tabpanel" class="tab-pane active" id="invoices">
                                         <br/>
                                         <table class="table table-hover">
                                             <thead>
                                             <tr>
-                                                <td>Order ID</td>
+                                                <td>Name</td>
+                                                <td>Company</td>
                                                 <td>Status</td>
-                                                <td>Shipped State</td>
                                                 <td>Date Added</td>
-                                                <td>Total</td>
                                                 <td>&nbsp;</td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>DR4411</td>
-                                                <td><span class="text-success">&bull; Open</span></td>
-                                                <td><span class="text-warning">Pending</span></td>
+                                                <td>Bessie Ray</td>
+                                                <td>1202 n jefferson st</td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td>22/03/2015</td>
-                                                <td>$ 6,000</td>
                                                 <td>
-                                                    <a href="#" class="btbn btn-link">Edit</a>
-                                                    <a href="#" class="btbn btn-link">View</a>
+                                                    <a href="#">View</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>DR4411</td>
-                                                <td><span class="text-warning">&bull; Pending</span></td>
-                                                <td><span class="text-warning">Pending</span></td>
+                                                <td>Bessie Ray</td>
+                                                <td>1202 n jefferson st</td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td>22/03/2015</td>
-                                                <td>$ 1,500</td>
                                                 <td>
-                                                    <a href="#" class="btbn btn-link">Edit</a>
-                                                    <a href="#" class="btbn btn-link">View</a>
+                                                    <a href="#">View</a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="shipped">
+                                    <div role="tabpanel" class="tab-pane" id="all">
                                         <br/>
                                         <table class="table table-hover">
                                             <thead>
                                             <tr>
-                                                <td>Order ID</td>
+                                                <td>Name</td>
+                                                <td>Company</td>
                                                 <td>Status</td>
-                                                <td>Shipped State</td>
                                                 <td>Date Added</td>
-                                                <td>Total</td>
                                                 <td>&nbsp;</td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>DR4411</td>
-                                                <td><span class="text-info">&bull; Shipped</span></td>
-                                                <td><span class="text-info">Shipped</span></td>
+                                                <td>Bessie Ray</td>
+                                                <td>1202 n jefferson st</td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td>22/03/2015</td>
-                                                <td>$ 6,000</td>
                                                 <td>
-                                                    <a href="#" class="btbn btn-link">Edit</a>
-                                                    <a href="#" class="btbn btn-link">View</a>
+                                                    <a href="#">View</a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>DR4411</td>
-                                                <td><span class="text-success">&bull; Delivered</span></td>
-                                                <td><span class="text-info">Shipped</span></td>
+                                                <td>Bessie Ray</td>
+                                                <td>1202 n jefferson st</td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td>22/03/2015</td>
-                                                <td>$ 1,500</td>
                                                 <td>
-                                                    <a href="#" class="btbn btn-link">Edit</a>
-                                                    <a href="#" class="btbn btn-link">View</a>
+                                                    <a href="#">View</a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="cancelled">...</div>
-                                    <div role="tabpanel" class="tab-pane" id="all">...</div>
                                 </div>
 
                             </div>
