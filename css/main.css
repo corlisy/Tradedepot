@@ -380,3 +380,24 @@ footer .link {
 footer .link a {
     color: #999;
 }
+
+.modal#forgot .h3 {
+    color: #43656b;
+    font-size: 16px;
+    margin-top: 9px;
+    margin-bottom: 31px;
+}
+
+.modal#forgot input[type=email] {
+    margin-bottom: 32px;
+}
+
+.modal#forgot button[type=submit] {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+
+.modal#forgot .forgot_email {
+    padding-right: 25px;
+}
