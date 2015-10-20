@@ -1,0 +1,37 @@
+body#page_signup .navbar {
+  margin-bottom: 7px;
+}
+body#page_signup h1.page-header {
+  font-size: 30px;
+  line-height: 38px;
+}
+body#page_signup h1.page-header small {
+  font-size: 16px;
+}
+body#page_signup .wizard .step-content label {
+  font-size: 16px;
+  color: #43656b;
+}
+body#page_signup .wizard .form-control:focus {
+  box-shadow: 0 0 7px rgba(236, 105, 6, 0.6) !important;
+  border: 1px solid #f6a062;
+}
+body#page_signup .wizard .form-horizontal .has-feedback .form-control-feedback {
+  right: -20px;
+}
+body#page_signup .wizard .form-horizontal .form-control-help {
+  color: #c1c0c0;
+  line-height: 34px;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  right: -31px;
+}
+body#page_signup .wizard .has-success input {
+  border: 1px solid #d2d2d2;
+  box-shadow: none;
+}
+body#page_signup .wizard .has-error input {
+  border: 1px solid #ea5b5b;
+  box-shadow: none;
+}
