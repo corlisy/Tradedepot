@@ -388,6 +388,10 @@ footer .link a {
     margin-bottom: 31px;
 }
 
+.modal#forgot .container-fluid {
+    padding-left: 50px;
+}
+
 .modal#forgot input[type=email] {
     margin-bottom: 32px;
 }
