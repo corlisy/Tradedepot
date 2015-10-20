@@ -35,3 +35,12 @@ body#page_signup .wizard .has-error input {
   border: 1px solid #ea5b5b;
   box-shadow: none;
 }
+body#page_signup .wizard .actions {
+  padding-bottom: 150px;
+}
+body#page_signup .wizard .actions .btn-link {
+  color: #0099cc;
+}
+body#page_signup .wizard .actions .btn-next {
+  padding: 5px 32px;
+}

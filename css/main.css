@@ -425,4 +425,6 @@ footer .link a {
     border: 1px solid #FF0000;
     border-radius: 0;
     color: #FF0000;
+    padding: 13px 18px;
+    font-size: 14px;
 }
