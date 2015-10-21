@@ -109,7 +109,6 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
             buttonClass: 'form-control btn',
             templates: {
                 filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search"type="text"></div></li>',
-                filterClearBtn: '<button class="btn btn-link multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button>'
             },
             filterPlaceholder: 'Search...'
 
