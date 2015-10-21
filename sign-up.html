@@ -94,7 +94,7 @@
                                 <div class="col-sm-7">
                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                                     <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-toggle="tooltip_error" aria-hidden="true" data-container="body" data-placement="right" title="Please, enter password"></span>
+                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-toggle="tooltip_error" aria-hidden="true" data-container="div[data-step=1]" data-placement="right" title="Please, enter password"></span>
                                 </div>
                             </div>
                             <br/>
@@ -103,7 +103,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="step-pane sample-pane bg-info" data-step="2">
+                <div class="step-pane sample-pane" data-step="2">
                     <div class="col-sm-6 col-sm-offset-2">
                         <form class="form-horizontal">
                             <div class="form-group has-success has-feedback">
@@ -112,42 +112,57 @@
                                     <input type="text" class="form-control" id="firstname" />
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group has-success has-feedback">
                                 <label for="lastname" class="col-sm-5 control-label">Last Name<span class="req"></span></label>
                                 <div class="col-sm-7">
                                     <input type="text" class="form-control" id="lastname" />
-                                    <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group has-success has-feedback">
                                 <label for="company" class="col-sm-5 control-label">Company<span class="req"></span></label>
                                 <div class="col-sm-7">
                                     <input type="text" class="form-control" id="company" />
-                                    <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="products" class="col-sm-5 control-label">Product (s) Interested<span class="req"></span></label>
                                 <div class="col-sm-7">
-                                    <select class="form-control" id="products">
-                                        <option disabled>Select Option</option>
+                                    <select class="form-control" id="products" multiple="multiple">
+                                        <optgroup label="Non Diary Products">
+                                            <option value="tomatoes">Product number 1</option>
+                                            <option value="mozarella">Product number 2</option>
+                                            <option value="mozarella1">Long Product number 3</option>
+                                            <option value="mozarella2">Very, very, very Long Producu...</option>
+                                        </optgroup>
+                                        <optgroup label="Diary Products">
+                                            <option value="tomatoes345">Product number 1</option>
+                                            <option value="mozarella3">Product number 2</option>
+                                            <option value="mozarella4">Product number 3</option>
+                                            <option value="mozarella6">Product number 4</option>
+                                        </optgroup>
                                     </select>
                                     <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="prodvolume" class="col-sm-5 control-label">Sales Volume of Product<span class="req"></span></label>
                                 <div class="col-sm-7">
-                                    <select class="form-control" id="prodvolume">
+                                    <select class="form-control" id="prodvolume" multiple="multiple">
                                         <option disabled>Select Option</option>
                                     </select>
                                     <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
                                 </div>
                             </div>
                         </form>

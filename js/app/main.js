@@ -8,11 +8,15 @@ requirejs.config({
         'lodash': '/js/lib/lodash.min',
         'owl': '/js/lib/owl.carousel.min',
         'jquery.spritely': '/js/lib/jquery.spritely',
-        'jQuery.tipsy': '/js/lib/jquery.tipsy'
+        'jQuery.tipsy': '/js/lib/jquery.tipsy',
+        'bootstrap-multiselect': '/js/lib/bootstrap-multiselect'
     },
     shim: {
         'bootstrap': {
             deps:['jquery']
+        },
+        'bootstrap-multiselect' : {
+            deps:['bootstrap']
         },
         'owl': {
             deps:['jquery']
@@ -26,7 +30,7 @@ requirejs.config({
     }
 });
 
-require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy'], function ($, bootstrap) {
+require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-multiselect'], function ($, bootstrap) {
     $('.nav a').on('click', function(){
         var menu = $(this).parents('.navbar-collapse');
         if ($(menu).hasClass('collapsing') || $(menu).hasClass('in')) {
@@ -83,7 +87,6 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy'], function ($,
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
-
     $(function () {
         var template = '<div class="tooltip error right" role="tooltip">'+
             '<div class="tooltip-arrow"></div>'+
@@ -95,7 +98,22 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy'], function ($,
         };
         $('[data-toggle="tooltip_error"]').tooltip(options);
         $('[data-toggle="tooltip_error"]').tooltip('show');
-    })
+    });
+    $(function () {
+        $('select[multiple="multiple"]').multiselect({
+            numberDisplayed: 90,
+            maxHeight: 254,
+            enableFiltering: true,
+            enableCaseInsensitiveFiltering: true,
+            buttonWidth: '100%',
+            buttonClass: 'form-control btn',
+            templates: {
+                filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search"type="text"></div></li>',
+                filterClearBtn: '<button class="btn btn-link multiselect-clear-filter" type="button"><i class="glyphicon glyphicon-remove-circle"></i></button>'
+            },
+            filterPlaceholder: 'Search...'
 
+        })
+    });
 
 });

@@ -280,9 +280,14 @@ footer .lang-block button {
 }
 
 .wizard .badge {
-    font-size: 20px;
-    background-color: #ec6906;
+    background: url('/img/el_hexagon.png') center no-repeat;
     margin: 15px;
+    width: 27px;
+    height: 29px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 18px;
+    color:#ec6906;
 }
 .wizard .chevron {
     margin-left: 15px;
@@ -487,4 +492,5 @@ footer .link a {
     color: #FF0000;
     padding: 13px 18px;
     font-size: 14px;
+    width: 200px;
 }
