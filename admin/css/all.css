@@ -190,12 +190,12 @@ input[type=checkbox]:after {
 .table td.td-gray {
     background-color: #f0f1f2;
 }
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
+.table.table-create>tbody>tr>td,
+.table.table-create>tbody>tr>th,
+.table.table-create>tfoot>tr>td,
+.table.table-create>tfoot>tr>th,
+.table.table-create>thead>tr>td,
+.table.table-create>thead>tr>th {
     padding: 3px 13px;
     vertical-align: middle;
 }
@@ -508,7 +508,7 @@ hr {
 .box.panel {
     border: none;
     border-radius:0;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 .box.panel.panel-default {
     border-top: 2px solid #b8c2cb;
@@ -558,9 +558,11 @@ hr {
 }
 .box.panel .panel-body .nav-pills > li > a {
     color: #999999;
+    padding: 14px 15px;
 }
 .box.panel .panel-body .nav-pills > li {
     border-bottom: 1px solid #e8ebed;
+    margin: 0;
 }
 .box.panel .panel-body .nav-pills > li:last-child {
     border-bottom: none;
@@ -572,6 +574,14 @@ hr {
 }
 .box.panel .panel-body .nav-pills > li .text-filed {
     font-size: 12px;
+}
+
+.box.panel .panel-body .nav-pills.pie-list li > a {
+    padding: 8px 15px;
+    font-size: 13px;
+}
+.pie-block {
+    margin: 35px 0;
 }
 
 

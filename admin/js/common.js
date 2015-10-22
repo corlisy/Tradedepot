@@ -1,12 +1,12 @@
 requirejs.config({
     baseUrl: '/js/lib',
     paths: {
-        'bootstrap': '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min',
-        'fuelux': '//www.fuelcdn.com/fuelux/3.11.0/js/fuelux.min',
-        'jquery': '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery',
-        'lodash': '/js/lib/lodash.min',
-        'chartjs': '/js/lib/chartjs/Chart.min',
-        'chartjshb': '/js/lib/chartjs/Chart.HorizontalBar'
+        'bootstrap': 'bootstrap.min',
+        'fuelux': 'fuelux.min',
+        'jquery': 'jQuery-2.1.4.min',
+        'lodash': 'lodash.min',
+        'chartjs': 'chartjs/Chart.min',
+        'chartjshb': 'chartjs/Chart.HorizontalBar'
     },
     shim: {
         'bootstrap': {
