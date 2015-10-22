@@ -3,6 +3,11 @@ requirejs(['./common'], function (common) {
 
         'use strict';
 
+
+        var rndSF = function() {
+            return Math.round(Math.random()*100);
+        };
+
         /* ChartJS
          * -------
          * Here we will create a few charts using ChartJS
@@ -29,7 +34,7 @@ requirejs(['./common'], function (common) {
                     pointStrokeColor: "#c1c7d1",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgb(220,220,220)",
-                    data: [32, 50, 40, 41, 26, 31, 20]
+                    data: [rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF()]
                 }
             ]
         };
@@ -159,40 +164,28 @@ requirejs(['./common'], function (common) {
         //-----------------
 
 
-
-
-
-
-
-        var randomScalingFactor = function(){
+        var rndSF = function() {
             return Math.round(Math.random()*100);
         };
+
         var barChartData = {
-            labels : ["January","February","March","April","May","June","July"],
+            labels : ["Excepteur sint occaecat","Duis aute irure dolo","Lorem ipsum dolor sit amet","Sed ut perspiciatis","Dolor in reprehenderit"],
             datasets : [
                 {
                     fillColor : "rgba(48,145,213,1)",
                     strokeColor : "rgba(151,187,205,0.8)",
                     highlightFill : "rgba(48,145,213,0.5)",
                     highlightStroke : "rgba(151,187,205,1)",
-                    data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+                    data : [rndSF(),rndSF(),rndSF(),rndSF(),rndSF()]
                 }
             ]
         };
-        window.onload = function(){
-            var ctx = document.getElementById("hbChart").getContext("2d");
-            var chart = new Chart(ctx).HorizontalBar(barChartData, {
-                responsive: true,
-                barShowStroke: false
-            });
-        };
 
-
-
-
-
-
-
+        var ctx = document.getElementById("hbChart").getContext("2d");
+        var chart = new Chart(ctx).HorizontalBar(barChartData, {
+            responsive: true,
+            barShowStroke: false
+        });
 
 
     });
