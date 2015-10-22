@@ -18,7 +18,43 @@ requirejs.config({
     }
 });
 
-require(['jquery', 'bootstrap'], function ($, bootstrap) {
+require(['jquery', 'bootstrap', 'lodash'], function ($, bootstrap, _) {
+    $('.spinbox').each(function() {
+        $(this).find('.spinbox-down').on('click', function() {
+            var v = $(this).parent().find('input.spinbox-input').val();
+            if (v > 0) $(this).parent().find('input.spinbox-input').val(--v);
+        });
+        $(this).find('.spinbox-up').on('click', function() {
+            var v = $(this).parent().find('input.spinbox-input').val();
+            $(this).parent().find('input.spinbox-input').val(++v);
+        });
+    });
+
+    $('.fast-search input').on('input', function() {
+        var obj = ['Code, Product name, Unit','Product number 2','Long Product number 3','Very, very, very Long Producu...'];
+        var res = $(this).parent().find('.fast-search-result');
+        $(res).html('');
+        _.forEach(obj, function(el) {
+            $(res).append('<a href="#" class="fast-search-elem" onclick="return false">'+el+'</a>');
+        });
+        $(res).show();
+    });
+
+    $('.fast-search input').on('blur', function() {
+        setTimeout(function() {
+            $('.fast-search-result').hide();
+        }, 100);
+
+    });
+
+
+    $('.fast-search').on('click', 'a.fast-search-elem', function() {
+        $(this).parent().parent().find('input').val($(this).text());
+        $(this).parent().hide();
+    });
+
+
+
     $('#sidebar-toggle').on('click', function() {
         if ($(this).data('toggle')) {
             $('.menu-sidebar').show();
