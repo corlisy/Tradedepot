@@ -23,6 +23,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pass:before {
+    content: "\e918";
+}
+.icon-store:before {
+    content: "\e919";
+}
 .icon-globe:before {
     content: "\e900";
 }
