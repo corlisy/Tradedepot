@@ -24,17 +24,17 @@ requirejs(['./common'], function (common) {
         var salesChart = new Chart(salesChartCanvas);
 
         var salesChartData = {
-            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
             datasets: [
                 {
                     label: "Electronics",
                     fillColor: "rgb(224, 241, 247)",
                     strokeColor: "rgb(25, 163, 209)",
                     pointColor: "rgb(25, 163, 209)",
-                    pointStrokeColor: "#c1c7d1",
-                    pointHighlightFill: "#fff",
-                    pointHighlightStroke: "rgb(220,220,220)",
-                    data: [rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF()]
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "rgb(224, 241, 247)",
+                    pointHighlightStroke: "#fff",
+                    data: [rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF()]
                 }
             ]
         };
