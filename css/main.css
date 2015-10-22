@@ -452,7 +452,7 @@ footer .lang-block {
 footer .link {
     margin-top: 10px;
     font-size: 13px;
-    font-family: "Helvetica Neue";
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
 }
 
 footer .link a {
