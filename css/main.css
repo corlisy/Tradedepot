@@ -392,6 +392,26 @@ address .glyphicon {
     height: 22px;
 }
 
+.modal#signin .checkbox label {
+    height: 24px;
+    line-height: 1.8;
+}
+
+.form-group .help-block.hidden-nerr {
+    display: none;
+}
+
+.has-error.form-group .help-block.hidden-nerr {
+    font-size: 13px;
+    display: block;
+}
+
+input[type="text"].icon,
+input[type="email"].icon,
+input[type="password"].icon {
+    padding-left: 38px;
+}
+
 .modal#signin .form-group input.signin_email{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;

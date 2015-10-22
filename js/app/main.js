@@ -83,6 +83,8 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
                 $('#myWizard').on('stepclicked.fu.wizard', function (evt, data) {
                     evt.preventDefault();
                 });
+            } else if (data['step'] != 1) {
+                $('#myWizard .actions .btn-prev').show();
             }
         } catch (e) {
             //
@@ -101,18 +103,6 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
     });
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    });
-    $(function () {
-        var template = '<div class="tooltip error right" role="tooltip">'+
-            '<div class="tooltip-arrow"></div>'+
-            '<div class="tooltip-inner">'+
-            '</div>'+
-            '</div>';
-        var options = {
-            'template': template
-        };
-        $('[data-toggle="tooltip_error"]').tooltip(options);
-        $('[data-toggle="tooltip_error"]').tooltip('show');
     });
     $(function () {
         $('select[multiple="multiple"]').multiselect({

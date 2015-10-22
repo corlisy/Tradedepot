@@ -13,7 +13,7 @@
 }
 .brand-heading {
     font-size: 40px;
-    font-family: 'Helvetica Neue';
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
     margin-top: 21px;
     margin-bottom: 19px;
     margin-left: -4px;
@@ -34,10 +34,12 @@
 .content-section .media-heading {
     color: #43656b;
     font-size: 22px;
-    font-family: "Helvetica Neue";
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
     margin-bottom: 18px;
     font-weight: bold;
+    line-height: 1.4;
 }
+
 .content-section .media-body {
     font-size: 18px;
     line-height:36px;
@@ -90,7 +92,7 @@
 }
 #request h2 {
     color: #fff;
-    font-family: "Helvetica Neue";
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
     font-size: 32px;
     margin-bottom: 16px;
 }

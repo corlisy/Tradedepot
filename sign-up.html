@@ -71,30 +71,33 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <form class="form-horizontal">
                             <div class="form-group has-success has-feedback">
-                                <label for="inputEmail3" class="col-sm-5 control-label">Email<span class="req"></span></label>
+                                <label for="inputEmail3" class="col-sm-5 control-label">Email</label>
                                 <div class="col-sm-7">
                                     <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                                     <span class="hidden glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
                                     <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
+                                    <span class="help-block hidden-nerr">A block of help text that breaks onto a new line and may extend beyond one line.</span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="storeaddress" class="col-sm-5 control-label">Store Address<span class="req"></span></label>
+                                <label for="storeaddress" class="col-sm-5 control-label">Store Address</label>
                                 <div class="col-sm-7">
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="storeaddress"/>
                                         <div class="input-group-addon login"><span class="point">.</span>tradedepot.co</div>
                                     </div>
                                     <span class="glyphicon glyphicon-question-sign form-control-help" aria-hidden="true" data-toggle="tooltip" data-container="body" data-placement="right" title="Tooltip on right"></span>
+                                    <span class="help-block hidden-nerr">A block of help text that breaks onto a new line and may extend beyond one line.</span>
                                 </div>
                             </div>
                             <div class="form-group has-error has-feedback">
-                                <label for="inputPassword3" class="col-sm-5 control-label">Password<span class="req"></span></label>
+                                <label for="inputPassword3" class="col-sm-5 control-label">Password</label>
                                 <div class="col-sm-7">
                                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                                     <span class="hidden glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-                                    <span class="glyphicon glyphicon-remove form-control-feedback" data-toggle="tooltip_error" aria-hidden="true" data-container="div[data-step=1]" data-placement="right" title="Please, enter password"></span>
+                                    <span class="glyphicon glyphicon-remove form-control-feedback" title="Please, enter password"></span>
+                                    <span class="help-block hidden-nerr">Please, enter password</span>
                                 </div>
                             </div>
                             <br/>
@@ -107,7 +110,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <form class="form-horizontal">
                             <div class="form-group has-success has-feedback">
-                                <label for="firstname" class="col-sm-5 control-label">First Name<span class="req"></span></label>
+                                <label for="firstname" class="col-sm-5 control-label">First Name</label>
                                 <div class="col-sm-7">
                                     <input type="text" class="form-control" id="firstname" />
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
@@ -116,7 +119,7 @@
                                 </div>
                             </div>
                             <div class="form-group has-success has-feedback">
-                                <label for="lastname" class="col-sm-5 control-label">Last Name<span class="req"></span></label>
+                                <label for="lastname" class="col-sm-5 control-label">Last Name</label>
                                 <div class="col-sm-7">
                                     <input type="text" class="form-control" id="lastname" />
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
@@ -124,7 +127,7 @@
                                 </div>
                             </div>
                             <div class="form-group has-success has-feedback">
-                                <label for="company" class="col-sm-5 control-label">Company<span class="req"></span></label>
+                                <label for="company" class="col-sm-5 control-label">Company</label>
                                 <div class="col-sm-7">
                                     <input type="text" class="form-control" id="company" />
                                     <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
@@ -133,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="products" class="col-sm-5 control-label">Product (s) Interested<span class="req"></span></label>
+                                <label for="products" class="col-sm-5 control-label">Product (s) Interested</label>
                                 <div class="col-sm-7">
                                     <select class="form-control" id="products" multiple="multiple">
                                         <optgroup label="Non Diary Products">
@@ -155,7 +158,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="prodvolume" class="col-sm-5 control-label">Sales Volume of Product<span class="req"></span></label>
+                                <label for="prodvolume" class="col-sm-5 control-label">Sales Volume of Product</label>
                                 <div class="col-sm-7">
                                     <select class="form-control" id="prodvolume" multiple="multiple">
                                         <option disabled>Select Option</option>
@@ -181,8 +184,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="actions">
-                <div class="col-md-4 col-md-offset-5">
-                    <div style="color: red;margin-bottom: 15px;" class="pull-right">* Required Fields</div>
+                <div class="col-md-4 col-md-offset-6">
                     <div class="clearfix"></div>
                     <button type="button" class="btn btn-link btn-prev btn-lg"><span class="glyphicon glyphicon-chevron-left"></span>Back</button>
                     <button type="button" class="btn btn-primary btn-next btn-lg pull-right text-uppercase" data-last="Complete">Next</button>
