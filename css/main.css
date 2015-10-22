@@ -460,13 +460,20 @@ address .glyphicon {
 }
 
 .modal#signin input[type=checkbox] {
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
+    margin-left: -30px;
+}
+
+.modal#signin input[type=checkbox]:after {
+    width: 16px;
+    height: 16px;
 }
 
 .modal#signin .checkbox label {
     height: 24px;
-    line-height: 1.8;
+    line-height: 1.5;
+    padding-left: 30px;
 }
 
 .form-group .help-block.hidden-nerr {
