@@ -9,55 +9,6 @@
     font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-cart:before {
-    content: "\e800";
-}
-.icon-bell:before {
-    content: "\e801";
-}
-.icon-search:before {
-    content: "\e802";
-}
-.icon-list:before {
-    content: "\e803";
-}
-.icon-lilist:before {
-    content: "\e804";
-}
-.icon-iconlist:before {
-    content: "\e805";
-}
-.icon-bigleft:before {
-    content: "\e806";
-}
-.icon-bigright:before {
-    content: "\e807";
-}
-.icon-smallleft:before {
-    content: "\e808";
-}
-.icon-smallright:before {
-    content: "\e809";
-}
-.icon-close:before {
-    content: "\e80a";
-}
-
-
 
 select, select.form-control {
     border-radius: 3px;
