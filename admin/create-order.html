@@ -46,12 +46,11 @@
                         </div>
                         <ul class="nav sidebar-menu">
                             <li class="active"><a href="/admin/"><i class="fa fa-tachometer"></i> <span>Dashboard</span></a></li>
-                            <li><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span></a></li>
+                            <li><a href="/admin/invoices.html"><i class="fa fa-list"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
                             <li><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
-                            <li class="header text-uppercase">Orders management</li>
-                            <li><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
-                            <li><a href="/admin/orders.html"><i class="fa fa-list-alt"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li class="header text-uppercase">Distributor management</li>
+                            <li><a href="/admin/distributors.html"><i class="fa fa-users"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -181,7 +180,7 @@
 
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-8" style="border-right: 1px solid #ccc">
+                                    <div class="col-sm-8 col-xs-12" style="border-right: 1px solid #ccc">
                                         <p class="lead text-uppercase">Customer</p>
 
                                         <div class="row">
@@ -225,7 +224,7 @@
                                         <div class="clearfix"></div>
 
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-4 col-xs-12">
                                         <div class="col-sm-12">
                                             <p class="lead text-uppercase">Vendor</p>
                                             <div class="block-icon">
@@ -250,11 +249,9 @@
                                     </div>
                                     <div class="clearfix"></div>
 
-                                    <div class="col-sm-12">
-                                        <hr/>
-
+                                    <div class="col-sm-12 col-xs-12">
                                         <div class="module-block">
-                                            <table class="table table-hover">
+                                            <table class="table">
                                                 <thead style="color: #999999;">
                                                 <tr>
                                                     <td>
@@ -288,21 +285,15 @@
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
                                                     <td>
-                                                        <div class="spinbox" data-initialize="spinbox" id="mySpinbox">
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
                                                             <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                                            <div class="spinbox-buttons btn-group btn-group-vertical">
-                                                                <button type="button" class="btn btn-default spinbox-up btn-xs">
-                                                                    <span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-                                                                </button>
-                                                                <button type="button" class="btn btn-default spinbox-down btn-xs">
-                                                                    <span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-                                                                </button>
-                                                            </div>
+                                                            <button type="button" class="spinbox-up"></button>
                                                         </div>
                                                     </td>
                                                     <td></td>
-                                                    <td>$ 6,000</td>
-                                                    <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                    <td class="td-gray">$ 6,000</td>
+                                                    <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -312,14 +303,20 @@
                                                             </label>
                                                         </div>
                                                     </td>
-                                                    <td><input type="text" class="input-transparent" /></td>
+                                                    <td>DR4411</td>
+                                                    <td>Coca-Cola Beveragge Drink</td>
+                                                    <td>Sachet</td>
+                                                    <td>$ 500</td>
+                                                    <td>
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
+                                                            <input type="text" class="form-control input-mini spinbox-input" value="5">
+                                                            <button type="button" class="spinbox-up"></button>
+                                                        </div>
+                                                    </td>
                                                     <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                    <td class="td-gray">$ 6,000</td>
+                                                    <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -329,14 +326,41 @@
                                                             </label>
                                                         </div>
                                                     </td>
-                                                    <td><input type="text" class="input-transparent" /></td>
+                                                    <td>
+                                                        <div class="fast-search">
+                                                            <input type="text" class="input-transparent" />
+                                                            <div class="fast-search-result"></div>
+                                                        </div>
+                                                    </td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
+                                                    <td class="td-gray"></td>
+                                                    <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="fast-search">
+                                                            <input type="text" class="input-transparent" />
+                                                            <div class="fast-search-result"></div>
+                                                        </div>
+                                                    </td>
                                                     <td></td>
-                                                    <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="td-gray"></td>
+                                                    <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -367,16 +391,13 @@
                                     <div class="clearfix"></div>
 
 
-                                    <div class="col-sm-12">
-                                        <hr/>
+                                    <div class="col-sm-12 col-xs-12">
                                         <div class="module-block">
                                             <div class="row">
-                                                <div class="col-sm-6">
-                                                    <br/>
-                                                    <textarea class="form-control" rows="10" placeholder="Additional comments"></textarea>
+                                                <div class="col-sm-5 col-xs-12">
+                                                    <textarea class="form-control" rows="9" placeholder="Additional comments"></textarea>
                                                 </div>
-                                                <div class="col-sm-2">
-                                                    <br/>
+                                                <div class="col-sm-2 col-sm-offset-1 col-xs-4 col-xs-offset-0">
                                                     <div class="panel-cart panel panel-default">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
@@ -395,8 +416,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-2">
-                                                    <br/>
+                                                <div class="col-sm-2 col-xs-4">
                                                     <div class="panel-cart panel panel-success">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
@@ -415,8 +435,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-2">
-                                                    <br/>
+                                                <div class="col-sm-2 col-xs-4">
                                                     <div class="panel-cart panel panel-success">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
@@ -439,20 +458,11 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-sm-6 col-sm-offset-6">
+                                    <div class="col-sm-6 col-sm-offset-6 col-xs-offset-0 col-xs-6">
                                         <div class="module-block">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <br/>
-                                                    <div class="pull-right">
-                                                        TOTAL: <strong>$7,387</strong>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <br/>
-                                                    <a class="btn btn-primary pull-right">Create An Order <span class="glyphicon glyphicon-list"></span></a>
-
-                                                </div>
-
+                                            <div class="pull-right">
+                                                <button class="btn btn-danger">Cancel order</button>
+                                                <button class="btn btn-info">Create An Order <span class="glyphicon glyphicon-list"></span></button>
                                             </div>
                                         </div>
                                     </div>
