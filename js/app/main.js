@@ -76,6 +76,21 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
         }
     });
 
+    $('#myWizard').on('changed.fu.wizard', function (e, data) {
+        try {
+            if (data['step'] == 3) {
+                $('#myWizard .actions div').hide();
+                $('#myWizard').on('stepclicked.fu.wizard', function (evt, data) {
+                    evt.preventDefault();
+                });
+            }
+        } catch (e) {
+            //
+        }
+
+        console.log(data);
+    });
+
     $('.modal#signin button[type=submit]').on('click', function() {
         signInOk();
         return false;
@@ -109,6 +124,7 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
             buttonClass: 'form-control btn',
             templates: {
                 filter: '<li class="multiselect-item filter"><div class="input-group"><input class="form-control multiselect-search"type="text"></div></li>',
+                li: '<li><a href="javascript:void(0);" class="li_multiselect-item"><label></label></a></li>',
             },
             filterPlaceholder: 'Search...'
 

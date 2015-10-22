@@ -14,7 +14,7 @@
 }
 @font-face
 {
-    font-family: 'Helvetica Neue';
+    font-family: 'HelveticaNeue';
     font-weight: normal;
     font-style: normal;
 
@@ -1441,7 +1441,7 @@ html
 }
 body
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 
@@ -3459,20 +3459,20 @@ output
 }
 .form-control::-moz-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     opacity: 1;
     color: #999;
 }
 .form-control:-ms-input-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     color: #999;
 }
 .form-control::-webkit-input-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     color: #999;
 }
@@ -7893,7 +7893,7 @@ button.close
 }
 .tooltip
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -8049,7 +8049,7 @@ button.close
 }
 .popover
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -9036,7 +9036,7 @@ button.close
 .navbar-inverse .navbar-form input[type=text]::-moz-placeholder,
 .navbar-inverse .navbar-form input[type=password]::-moz-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     opacity: 1;
     color: #fad5bb;
@@ -9044,14 +9044,14 @@ button.close
 .navbar-inverse .navbar-form input[type=text]:-ms-input-placeholder,
 .navbar-inverse .navbar-form input[type=password]:-ms-input-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     color: #fad5bb;
 }
 .navbar-inverse .navbar-form input[type=text]::-webkit-input-placeholder,
 .navbar-inverse .navbar-form input[type=password]::-webkit-input-placeholder
 {
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 
     color: #fad5bb;
 }

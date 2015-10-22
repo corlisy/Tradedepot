@@ -65,7 +65,9 @@ body {
                     padding: 5px 32px;
                 }
 
-                padding-bottom: 150px;
+                &>div {
+                    padding-bottom: 150px;
+                }
             }
 
             button.multiselect {
@@ -107,19 +109,77 @@ body {
                 }
             }
 
-            .multiselect-item {
-                label.checkbox {
-                    padding: 0 0 0 28px;
+            li {
+                a.li_multiselect-item {
+                    padding: 2px 0 4px 45px;
                     height: 24px;
-                    min-height: 24px;
+                    margin-bottom: 1px;
+                }
 
-                    input {
-                        margin-bottom: 0px;
-                        margin-left: 0px;
-                        border: 1px solid #999999;
+                &.active {
+                    a.li_multiselect-item {
+                        background-color: #e0e0e0;
+
+                        label.checkbox {
+                            color: #484848;
+                        }
                     }
                 }
             }
+
+            label.checkbox {
+                min-height: auto;
+                color: #999999;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 0;
+
+                input[type=checkbox] {
+                    &:checked {
+                        &:before {
+                            border-color: #669933;
+                        }
+                        &:after {
+                            background-color: #fff;
+                        }
+                    }
+                    &:after {
+                        margin-bottom: 0px;
+                        margin-left: 0px;
+                        border: 1px solid #999999;
+                        height: 16px;
+                        width: 16px;
+                    }
+
+                    float: left;
+                    margin-right: 15px;
+                    height: auto;
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+
+        .step-pane[data-step="3"] {
+            .photo {
+                width: 365px;
+
+                .photo_wrap {
+                    margin-bottom: 70px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    color: #43656b;
+                    font-family: 'Helvetica Neue';
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #999;
+                }
+            }
+
 
         }
 
