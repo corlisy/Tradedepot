@@ -23,6 +23,78 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-globe:before {
+    content: "\e900";
+}
+.icon-google:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-linkedin:before {
+    content: "\e903";
+}
+.icon-facebook:before {
+    content: "\e904";
+}
+.icon-downarrow:before {
+    content: "\e905";
+}
+.icon-orderslist:before {
+    content: "\e906";
+}
+.icon-help:before {
+    content: "\e907";
+}
+.icon-user:before {
+    content: "\e908";
+}
+.icon-order:before {
+    content: "\e909";
+}
+.icon-dots:before {
+    content: "\e90a";
+}
+.icon-phone:before {
+    content: "\e90b";
+}
+.icon-map:before {
+    content: "\e90c";
+}
+.icon-logout:before {
+    content: "\e90d";
+}
+.icon-graph:before {
+    content: "\e90e";
+}
+.icon-gift:before {
+    content: "\e90f";
+}
+.icon-mail:before {
+    content: "\e910";
+}
+.icon-edit:before {
+    content: "\e911";
+}
+.icon-reverse:before {
+    content: "\e912";
+}
+.icon-return:before {
+    content: "\e913";
+}
+.icon-print:before {
+    content: "\e914";
+}
+.icon-calendar:before {
+    content: "\e915";
+}
+.icon-settings:before {
+    content: "\e916";
+}
+.icon-settings2:before {
+    content: "\e917";
+}
 .icon-cart:before {
     content: "\e800";
 }
