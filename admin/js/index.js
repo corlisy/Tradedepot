@@ -34,7 +34,7 @@ requirejs(['./common'], function (common) {
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "rgb(224, 241, 247)",
                     pointHighlightStroke: "#fff",
-                    data: [rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF()]
+                    data: [rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF(), rndSF()]
                 }
             ]
         };

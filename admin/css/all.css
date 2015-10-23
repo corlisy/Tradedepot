@@ -183,6 +183,13 @@ input[type=checkbox]:after {
     margin-bottom: 0;
 }
 
+.module-block .form-group {
+    margin-bottom: 0px;
+}
+
+.module-block .form-group input {
+    background-color: #fff;
+}
 
 .table td > .checkbox,
 .table td > .radio {
@@ -638,4 +645,14 @@ hr {
 .nav .user-link img {
     margin-top: -15px;
     margin-bottom: -15px;
+}
+
+.dropdown-toggle .icon-downarrow {
+    margin-left: 4px;
+    vertical-align: middle;
+    font-size: 9px;
+    color: #c1c0c0;
+}
+.main-menu .icon-order {
+    margin-left: 8px;
 }
