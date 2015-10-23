@@ -209,6 +209,10 @@ input[type=checkbox]:after {
     vertical-align: middle;
 }
 
+#navbar-search-ico {
+    color: #9c9c9c;
+}
+
 .fast-search {
     position:relative;
 }
@@ -352,6 +356,14 @@ hr {
     margin: 0;
     box-shadow: none;
     border: none;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0;
+}
+
+.breadcrumb .glyphicon {
+    margin-right: 10px;
 }
 
 .top-menu {
@@ -562,7 +574,7 @@ hr {
     border-top: 2px solid #b8c2cb;
 }
 .box.panel.panel-default .panel-heading {
-    border-bottom: 1px solid #e8ebed;
+    border-bottom: 2px solid #e8ebed;
 }
 .box.panel .panel-heading {
     position:relative;
@@ -581,7 +593,7 @@ hr {
     font-size: 16px;
 }
 .box.panel .panel-footer {
-    border-top: 1px solid #e8ebed;
+    border-top: 2px solid #b8c2cb;
 }
 .box.panel .panel-heading,
 .box.panel .panel-footer {
@@ -637,6 +649,11 @@ hr {
 .top-menu .user-link {
     color: #484848;
 }
+
+.top-menu .user-link .glyphicon {
+    color: #484848;
+}
+
 .user-link img {
     max-width: 32px;
     max-height: 32px;
