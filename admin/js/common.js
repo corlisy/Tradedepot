@@ -59,10 +59,12 @@ require(['jquery', 'bootstrap', 'lodash'], function ($, bootstrap, _) {
         if ($(this).data('toggle')) {
             $('.menu-sidebar').show();
             $('.main-right-col').css('paddingLeft', '230px');
+            $('.top-menu').css('marginLeft', '230px');
             $(this).data('toggle', false);
         } else {
             $('.menu-sidebar').hide();
             $('.main-right-col').css('paddingLeft', 0);
+            $('.top-menu').css('marginLeft', 0);
             $(this).data('toggle', true);
         }
     })

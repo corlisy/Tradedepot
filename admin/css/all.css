@@ -34,6 +34,8 @@ body > .container-fluid > .row .main-right-col {
     position:relative;
     height: auto;
     min-height: 100%;
+    margin-top: 60px;
+    padding-bottom: 60px;
 }
 .main-right-col > .main > .container-fluid {
     padding-bottom: 30px;
@@ -345,6 +347,10 @@ hr {
     border: none;
 }
 
+.top-menu {
+    background-color: #f0f1f2;
+    margin-left: 230px;
+}
 .top-menu li > a {
     color: #999999;
 }
@@ -362,6 +368,32 @@ hr {
     right: 0;
     text-align: center;
     font-size: 9px;
+}
+
+@media (min-width: 768px) {
+    .navbar-left {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+    .navbar-right ~ .navbar-right {
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .navbar-custom-menu {
