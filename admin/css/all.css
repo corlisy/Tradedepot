@@ -484,14 +484,45 @@ hr {
     .top-menu li {
         padding-left: 15px;
     }
+    .top-menu li a {
+
+    }
+    .top-menu li > a .label {
+        position:relative!important;
+        top: 0;
+    }
+    .navbar-form .form-group {
+
+    }
+    .navbar-form .input-group {
+        display: inline-block;
+    }
     .main-right-col {
-        margin-left: 0;
-        padding-left: 0;
+        margin-left: 0!important;
+        padding-left: 0!important;
     }
     .menu-sidebar {
         width: 100%;
         position: relative;
     }
+
+    .main-right-col .top-menu {
+        position: relative!important;
+        margin-left: 0!important;
+    }
+    .main-right-col > .main {
+        margin-top: 0!important;
+    }
+    .content {
+        margin: 30px 0!important;
+    }
+
+    .content-header {
+        position: relative!important;
+        top: 0!important;
+        margin-left: -15px!important;
+    }
+
 }
 
 .content {
