@@ -432,6 +432,44 @@ footer .link a {
     padding-right: 25px;
 }
 
+
+.modal .list-auth-methods {
+    border-bottom: 1px solid #e0e0e0;
+}
+.modal .list-auth-methods .list-group-item {
+    padding: 10px 0;
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    color: #ec6906;
+    border-color: #e0e0e0;
+    font-size: 16px;
+}
+
+.modal .list-auth-methods .list-group-item .item-cirle {
+    margin-right: 10px;
+}
+.modal .list-auth-methods .list-group-item small {
+    color: #999999;
+}
+
+
+.item-cirle {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50%;
+    border: 1px solid #c1c0c0;
+    display: inline-block;
+    vertical-align: top;
+}
+.item-cirle.text-danger {
+    border: 3px solid #fad5ba;
+}
+
 .tooltip .tooltip-arrow {
     border-width: 5px 5px 5px 0;
 }
@@ -461,4 +499,8 @@ footer .link a {
     padding: 13px 18px;
     font-size: 14px;
     width: 200px;
+}
+
+.inline-block {
+    display: inline-block;
 }
