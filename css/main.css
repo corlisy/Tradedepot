@@ -386,7 +386,7 @@ input[type="password"].icon {
     color: #0099cc;
 }
 
-.modal#signin #animation {
+.modal_car .animation {
     background: url("/img/sprite_signin.jpg?v=1") no-repeat;
     width: 330px;
     height: 337px;

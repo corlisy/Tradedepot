@@ -40,10 +40,11 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
     });
 
     var startAnimation = function(form) {
+        console.log($(form).parent('.modal').filter('.animation'));
         try {
-            $('#animation').spStart();
+            $($(form).parents('.modal').find('.animation')).spStart();
         } catch (e) {
-            $('#animation').sprite({
+            $($(form).parents('.modal').find('.animation')).sprite({
                 fps: 30,
                 no_of_frames: 191,
                 on_last_frame: function(obj) {
@@ -60,17 +61,17 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
         }
     };
     var signInOk = function () {
-        $('#animation').spStart();
-        $('#animation').fps(100);
+        $('.animation:visible').spStart();
+        $('.animation:visible').fps(100);
     };
 
-    $('#signin').on('show.bs.modal', function (e) {
-        startAnimation($('#signin form'));
+    $('.modal_car').on('show.bs.modal', function (e) {
+        startAnimation($(this).find('form'));
     });
 
-    $('#signin').on('hide.bs.modal', function (e) {
+    $('.modal_car').on('hide.bs.modal', function (e) {
         try {
-            $('#animation').destroy();
+            $('.animation:visible').destroy();
         } catch (e) {
             //
         }
@@ -93,7 +94,7 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
         console.log(data);
     });
 
-    $('.modal#signin button[type=submit]').on('click', function() {
+    $('.modal_car button[type=submit]').on('click', function() {
         signInOk();
         return false;
     });
