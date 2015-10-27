@@ -267,7 +267,7 @@
 </footer>
 
 <!-- Modal signin -->
-<div class="modal fade" id="signin" tabindex="-1" role="dialog">
+<div class="modal fade modal_car" id="signin" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -312,7 +312,7 @@
 
                         </div>
                         <div class="col-sm-6 col-sm-offset-0 hidden-xs" style="padding: 0;">
-                            <div id="animation" class="hidden-xs"></div>
+                            <div id="animation" class="hidden-xs animation"></div>
                         </div>
                         <div class="col-sm-12">
                             <div class="row footer_modal">
@@ -321,6 +321,116 @@
                                     Not a client? <a href="/sign-up.html">Sign up</a>
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal signin one store -->
+<div class="modal fade modal_car" id="signinOneStore" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title"><span class="big-ico auth"></span> Sign in</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <br/>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="list-group list-auth-methods">
+                                        <a href="#" class="list-group-item active">
+                                            <span class="item-cirle-container text-danger">
+                                                <span class="item-cirle text-white" style="background-image: url('/img/example/cocacola_logo.png')"></span>
+                                            </span>
+                                            <span class="inline-block">
+                                                Alberto Folini<br>
+                                                <small>cocacola.tradedepot.co</small>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <a href="#">Sign in with a different account</a>
+                                </div>
+                                <br/>
+                                <div class="form-group signin_email">
+                                    <div class="inner-addon left-addon" style="color: #b1b1b1">
+                                        <i class="glyphicon icon-pass signin_paswword"></i>
+                                        <input type="password" class="form-control signin_paswword icon" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" style="padding: 5px 55px;text-transform: uppercase;">Log in</button>
+                                </div>
+                            </form>
+                            <br/>
+                            <div class="row footer_modal">
+                                <a href="#forgot" class="pull-left" data-dismiss="modal" data-toggle="modal">Forgot Your</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-0 hidden-xs" style="padding: 0;">
+                            <div id="animationTwo" class="hidden-xs animation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal signin cookie store -->
+<div class="modal fade modal_car" id="signinCookieStore" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title"><span class="big-ico auth"></span> Sign in</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <br/>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <p class="title">Select your store</p>
+                                    <div class="list-group list-auth-methods">
+                                        <a href="#" class="list-group-item active">
+                                            <span class="item-cirle-container">
+                                                <span class="item-cirle" style="background-image: url('/img/example/cocacola_logo.png')"></span>
+                                            </span>
+                                            <span class="inline-block">
+                                                Alberto Folini<br>
+                                                <small>cocacola.tradedepot.co</small>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item active">
+                                            <span class="item-cirle-container">
+                                                <span class="item-cirle" style="background-image: url('/img/example/pepsi_logo.png')"></span>
+                                            </span>
+                                            <span class="inline-block">
+                                                Alberto Folini<br>
+                                                <small>pepsi.tradedepot.co</small>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item active">
+                                            <span class="item-cirle-container">
+                                                <span class="item-cirle no-logo" style="background-image: url('/img/example/no-logo.png')"></span>
+                                            </span>
+                                            <span class="inline-block">
+                                                Onyekachi Izukanne<br>
+                                                <small>nologoyet.tradedepot.co</small>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <br/>
+                                    <a class="footer_modal" href="#">Add new</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-0 hidden-xs" style="padding: 0;">
+                            <div id="animationThree" class="hidden-xs animation"></div>
                         </div>
                     </div>
                 </div>
