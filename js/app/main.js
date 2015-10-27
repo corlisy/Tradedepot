@@ -39,8 +39,8 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
         }
     });
 
+
     var startAnimation = function(form) {
-        console.log($(form).parent('.modal').filter('.animation'));
         try {
             $($(form).parents('.modal').find('.animation')).spStart();
         } catch (e) {
@@ -49,7 +49,15 @@ require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-mu
                 no_of_frames: 191,
                 on_last_frame: function(obj) {
                     obj.spStop();
-                    $(form).submit();
+                    if ($(form).parents('.modal').attr('id') == 'signin') {
+                        $('#signin').modal('hide');
+                        $('#signinOneStore').modal();
+                    } else if ($(form).parents('.modal').attr('id') == 'signinOneStore') {
+                        $('#signinOneStore').modal('hide');
+                        $('#signinCookieStore').modal();
+                    } else {
+                        $(form).submit();
+                    }
                     //$('#signin').modal('hide');
                 },
                 on_frame: {
