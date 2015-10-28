@@ -57,14 +57,20 @@ require(['jquery', 'bootstrap', 'lodash'], function ($, bootstrap, _) {
 
     $('#sidebar-toggle').on('click', function() {
         if ($(this).data('toggle')) {
+            $('body').removeClass('sidebar-mini');
+            /*
             $('.menu-sidebar').show();
             $('.main-right-col').css('paddingLeft', '230px').removeClass('sidebar-hidden');
             $('.top-menu').css('marginLeft', '230px');
+            */
             $(this).data('toggle', false);
         } else {
+            $('body').addClass('sidebar-mini');
+            /*
             $('.menu-sidebar').hide();
             $('.main-right-col').css('paddingLeft', 0).addClass('sidebar-hidden');
             $('.top-menu').css('marginLeft', 0);
+            */
             $(this).data('toggle', true);
         }
     })

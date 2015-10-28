@@ -22,6 +22,7 @@ select.form-control:focus {
 
 
 /* Footer to bottom */
+
 html,
 body,
 body > .container-fluid,
@@ -31,11 +32,10 @@ body > .container-fluid > .row .main-right-col {
 }
 
 .main-right-col > .main {
+    background-color: #f0f1f2;
     position:relative;
     height: auto;
     min-height: 100%;
-    margin-top: 60px;
-    padding-bottom: 60px;
 }
 .main-right-col > .main > .container-fluid {
     padding-bottom: 30px;
@@ -46,6 +46,7 @@ body > .container-fluid > .row .main-right-col {
     bottom:0;
     width:100%;
 }
+
 /* //Footer to bottom */
 
 
@@ -326,13 +327,14 @@ hr {
 
 
 .menu-sidebar {
-    z-index: 50;
+    z-index: 1150;
     width: 230px;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     background-color: #242f38;
+    overflow: hidden;
 }
 .menu-sidebar:after {
     content: '';
@@ -344,12 +346,12 @@ hr {
     width:100%;
 }
 .main-right-col {
-    background-color: #f0f1f2;
-    padding-left: 230px;
-    overflow: hidden;
-    display: table;
-    width: 100%;
+    width: auto;
     z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 230px;
 }
 .navbar-sidebar,
 .top-menu {
@@ -368,7 +370,12 @@ hr {
 
 .top-menu {
     background-color: #f0f1f2;
-    margin-left: 230px;
+    width: auto;
+    top: 0;
+    left: 230px;
+    position: fixed;
+    height: 61px;
+    min-width: 350px; /* hack* for floating */
 }
 .top-menu li > a {
     color: #999999;
@@ -388,6 +395,47 @@ hr {
     text-align: center;
     font-size: 9px;
 }
+
+.sidebar-mini .main-right-col {
+    left: 60px;
+}
+.sidebar-mini .menu-sidebar {
+    width: 60px;
+}
+.sidebar-mini .content-header,
+.sidebar-mini .top-menu {
+    left: 60px;
+}
+
+.sidebar-mini .sidebar-menu>li>a {
+    padding: 4px 10px 4px 20px;
+}
+.sidebar-mini .sidebar-menu>li>a>i {
+    font-size: 20px;
+}
+.sidebar-mini .sidebar-btn {
+    padding:0;
+}
+.sidebar-mini .sidebar-btn a {
+    border-radius: 0;
+}
+.sidebar-mini .main-menu .icon-order {
+    margin:0;
+    font-size: 20px;
+}
+.sidebar-mini .sidebar-menu .header,
+.sidebar-mini .sidebar-btn span,
+.sidebar-mini .nav-header-logo,
+.sidebar-mini .sidebar-menu>li>a>span {
+    display: none;
+}
+.sidebar-mini .nav-header-logo-mini {
+    display: block;
+}
+.sidebar-mini .main-menu {
+    margin-top:0;
+}
+
 
 @media (min-width: 768px) {
     .navbar-left {
@@ -414,11 +462,11 @@ hr {
         padding-bottom: 20px;
     }
 }
-
+/*
 .navbar-custom-menu {
     margin-right: 30px;
 }
-
+*/
 .sidebar-menu {
     margin: 25px 0 0 0;
 }
@@ -448,13 +496,17 @@ hr {
 .navbar-toggle .icon-bar {
     background-color: #484848;
 }
-.nav-header-logo {
+.nav-header-logo,
+.nav-header-logo-mini {
     height: 61px;
     display: block;
     background-color: #fff;
     width: 100%;
     line-height:60px;
     text-align:center;
+}
+.nav-header-logo-mini {
+    display: none;
 }
 
 .main-menu {
@@ -474,59 +526,9 @@ hr {
 }
 
 
-@media (max-width: 767px) {
-    .menu-sidebar {
-        height: auto;
-    }
-    .menu-sidebar:after {
-        display:none;
-    }
-    .top-menu li {
-        padding-left: 15px;
-    }
-    .top-menu li a {
-
-    }
-    .top-menu li > a .label {
-        position:relative!important;
-        top: 0;
-    }
-    .navbar-form .form-group {
-
-    }
-    .navbar-form .input-group {
-        display: inline-block;
-    }
-    .main-right-col {
-        margin-left: 0!important;
-        padding-left: 0!important;
-    }
-    .menu-sidebar {
-        width: 100%;
-        position: relative;
-    }
-
-    .main-right-col .top-menu {
-        position: relative!important;
-        margin-left: 0!important;
-    }
-    .main-right-col > .main {
-        margin-top: 0!important;
-    }
-    .content {
-        margin: 30px 0!important;
-    }
-
-    .content-header {
-        position: relative!important;
-        top: 0!important;
-        margin-left: -15px!important;
-    }
-
-}
 
 .content {
-    margin: 100px 0;
+    margin: 162px 0 30px 0;
 }
 
 .content-header {
@@ -535,10 +537,10 @@ hr {
     border-bottom: 1px solid #e0e0e0;
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 230px;
     right: 0;
     z-index: 5;
-    margin-left: 230px;
+    margin: 0;
 }
 .sidebar-hidden .content-header {
     margin-left: 0;
@@ -561,6 +563,8 @@ hr {
     margin: 0;
     padding: 25px 0;
     float: right;
+    text-align: right;
+    white-space: nowrap;
 }
 .content-header .breadcrumb > li .fa {
     padding-right: 10px;
@@ -584,6 +588,86 @@ hr {
     color: inherit;
 }
 
+
+
+
+
+
+/* Always apply the floated nav */
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+.navbar-nav > li {
+    float: left;
+}
+.navbar-nav > li > a {
+    padding: 20px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+    float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-width: 0 1px 1px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+}
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff !important;
+    background-color: #428bca !important;
+}
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #999 !important;
+    background-color: transparent !important;
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-nav .open .dropdown-menu {
+        left: 0;
+        right: 0;
+        position: fixed!important;
+        width: 100%;
+        top: 61px;
+    }
+    .sidebar-mini .navbar-nav .open .dropdown-menu {
+        left: 60px;
+    }
+
+
+    .menu-sidebar {
+        width:0;
+    }
+    .content-header,
+    .main-right-col,
+    .top-menu {
+        left: 0;
+    }
+    .content-header,
+    .top-menu {
+        width: 100%;
+    }
+}
 
 .main-footer {
     padding: 0 30px;
