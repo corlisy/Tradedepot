@@ -796,6 +796,22 @@ hr {
     margin-bottom: -15px;
 }
 
+.block_link {
+    display: block;
+    text-transform: none;
+    cursor: pointer;
+    color: #484848;
+}
+
+.block_link:hover {
+    color: #484848;
+}
+
+.block_link:hover .link {
+    text-decoration: underline;
+    color: #22527b;
+}
+
 .dropdown-toggle .icon-downarrow {
     margin-left: 4px;
     vertical-align: middle;
