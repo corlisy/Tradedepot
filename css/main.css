@@ -479,6 +479,11 @@ footer .link a {
     background: transparent url("/img/rm_ico.png") no-repeat right center;
 }
 
+.hidden-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 .item-cirle {
     background-position: center center;

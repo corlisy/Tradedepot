@@ -135,6 +135,7 @@ requirejs(['./common'], function (common) {
             segmentShowStroke: true,
             //String - The colour of each segment stroke
             segmentStrokeColor: "#fff",
+            scaleStepWidth: 500,
             //Number - The width of each segment stroke
             segmentStrokeWidth: 1,
             //Number - The percentage of the chart that we cut out of the middle
