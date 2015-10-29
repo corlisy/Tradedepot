@@ -126,7 +126,11 @@ body {
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
 
-
+.hidden-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 
 .panel-cart .panel-heading {
@@ -760,6 +764,14 @@ hr {
 }
 
 
+.list_with_ico .nav .user-link img {
+    min-height: 32px;
+}
+
+.list_with_ico .nav .user-link img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .top-menu .user-link {
     color: #484848;

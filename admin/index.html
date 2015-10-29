@@ -98,11 +98,13 @@
                                     <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                                    <li role="separator" class="divider hidden-lg hidden-md hidden-sm"></li>
+                                    <li class="hidden-lg hidden-md hidden-sm"><a href="#"><span class="glyphicon icon-logout"></span> Logout</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" data-toggle="control-sidebar">
-                                    <i class="glyphicon icon-logout"></i> <span class="hidden-sm hidden-xs">Logout</span>
+                                <a href="#" class="hidden-sm hidden-xs" data-toggle="control-sidebar">
+                                    <i class="glyphicon icon-logout"></i><span>Logout</span>
                                 </a>
                             </li>
                         </ul>
@@ -237,7 +239,7 @@
                                             <div class="row pie-block">
                                                 <div class="col-md-6">
                                                     <div class="chart-responsive">
-                                                        <canvas id="pieChart" height="150"></canvas>
+                                                        <canvas id="pieChart" height="150" style="width: 100%"></canvas>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -245,45 +247,45 @@
                                                         <li>
                                                             <a href="#" class="clearfix">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><i class="glyphicon icon-circle text-red"></i> Product name 1 </div>
-                                                                    <div class="col-sm-3 text-center text-default"><b>35%</b></div>
-                                                                    <div class="col-sm-3 text-right"><span class="text-default">134</span>/220</div>
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-red"></i> Product name 1 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
                                                                 </div>
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#" class="clearfix">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><i class="glyphicon icon-circle text-green"></i> Product name 2 </div>
-                                                                    <div class="col-sm-3 text-center text-default"><b>18%</b></div>
-                                                                    <div class="col-sm-3 text-right"><span class="text-default">134</span>/220</div>
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-green"></i> Product name 2 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>18%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
                                                                 </div>
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#" class="clearfix">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><i class="glyphicon icon-circle text-yellow"></i> Product name 3 </div>
-                                                                    <div class="col-sm-3 text-center text-default"><b>35%</b></div>
-                                                                    <div class="col-sm-3 text-right"><span class="text-default">134</span>/220</div>
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-yellow"></i> Product name 3 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
                                                                 </div>
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#" class="clearfix">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><i class="glyphicon icon-circle text-red"></i> Product name 4 </div>
-                                                                    <div class="col-sm-3 text-center text-default"><b>28%</b></div>
-                                                                    <div class="col-sm-3 text-right"><span class="text-default">134</span>/220</div>
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-red"></i> Product name 4 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>28%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
                                                                 </div>
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="#" class="clearfix">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><i class="glyphicon icon-circle text-green"></i> Product name 5 </div>
-                                                                    <div class="col-sm-3 text-center text-default"><b>35%</b></div>
-                                                                    <div class="col-sm-3 text-right"><span class="text-default">134</span>/220</div>
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-green"></i> Product name 5 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
                                                                 </div>
                                                             </a>
                                                         </li>
@@ -305,7 +307,7 @@
                                                     <a href="#" class="clearfix">
                                                         <div class="row">
                                                             <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
-                                                            <div class="col-xs-3 text-center text-default"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
                                                             <div class="col-xs-3 text-right text-success">13% <i class="glyphicon glyphicon-arrow-up"></i></div>
                                                         </div>
                                                     </a>
@@ -314,7 +316,7 @@
                                                     <a href="#" class="clearfix">
                                                         <div class="row">
                                                             <div class="col-xs-6 text-filed">Duis aute irure dolo</div>
-                                                            <div class="col-xs-3 text-center text-default"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
                                                             <div class="col-xs-3 text-right text-success">3% <i class="glyphicon glyphicon-arrow-up"></i></div>
                                                         </div>
                                                     </a>
@@ -323,7 +325,7 @@
                                                     <a href="#" class="clearfix">
                                                         <div class="row">
                                                             <div class="col-xs-6 text-filed">Lorem ipsum dolor sit amet</div>
-                                                            <div class="col-xs-3 text-center text-default"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
                                                             <div class="col-xs-3 text-right text-success">12% <i class="glyphicon glyphicon-arrow-up"></i></div>
                                                         </div>
                                                     </a>
@@ -332,7 +334,7 @@
                                                     <a href="#" class="clearfix">
                                                         <div class="row">
                                                             <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
-                                                            <div class="col-xs-3 text-center text-default"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
                                                             <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
                                                         </div>
                                                     </a>
@@ -341,7 +343,7 @@
                                                     <a href="#" class="clearfix">
                                                         <div class="row">
                                                             <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
-                                                            <div class="col-xs-3 text-center text-default"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
                                                             <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
                                                         </div>
                                                     </a>
@@ -430,7 +432,7 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-3 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
@@ -439,7 +441,7 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-3 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-6 text-filed">Duis aute irure dolo</div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
@@ -448,7 +450,7 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-3 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
@@ -457,7 +459,7 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-3 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-6 text-filed">Lorem ipsum dolor sit amet</div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
@@ -470,7 +472,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 list_with_ico">
                                     <div class="box panel panel-default">
                                         <div class="panel-heading clearfix text-center">
                                             <span class="panel-title pull-left">Recently Added Distributors</span>
@@ -480,8 +482,8 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-7 user-link text-filed"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
-                                                            <div class="col-xs-2 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
                                                     </div>
@@ -489,8 +491,8 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-7 user-link text-filed"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
-                                                            <div class="col-xs-2 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
                                                     </div>
@@ -498,8 +500,8 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-7 user-link text-filed"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
-                                                            <div class="col-xs-2 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
                                                     </div>
@@ -507,8 +509,8 @@
                                                 <li>
                                                     <div class="elem clearfix">
                                                         <div class="row">
-                                                            <div class="col-xs-7 user-link text-filed"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
-                                                            <div class="col-xs-2 text-default"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-default hidden-text"><b>22/03/2015</b></div>
                                                             <div class="col-xs-3 text-right text-info"><a href="#">View</a></div>
                                                         </div>
                                                     </div>
