@@ -221,6 +221,11 @@ input[type=checkbox]:after {
 .fast-search {
     position:relative;
 }
+
+.fast-search input {
+    width: 100%;
+}
+
 .fast-search .fast-search-result {
     display:none;
     position: absolute;
@@ -799,4 +804,31 @@ hr {
 }
 .main-menu .icon-order {
     margin-left: 8px;
+}
+
+.no_mobile {
+    overflow: auto;
+    width: 100%;
+}
+
+.no_mobile table,
+.no_mobile .fix_width {
+    min-width: 480px;
+}
+
+.no_mobile.width_700 table,
+.no_mobile.width_700 .fix_width {
+    min-width: 710px;
+}
+
+.form-inline.no_wrap .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-inline.no_wrap .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
 }
