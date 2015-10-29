@@ -800,3 +800,13 @@ hr {
 .main-menu .icon-order {
     margin-left: 8px;
 }
+
+.no_mobile {
+    overflow: scroll;
+    width: 100%;
+}
+
+.no_mobile table,
+.no_mobile .fix_width {
+    min-width: 480px;
+}
