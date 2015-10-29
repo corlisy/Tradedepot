@@ -796,6 +796,13 @@ hr {
     margin-bottom: -15px;
 }
 
+.tr_pointer tr {
+    cursor: pointer;
+}
+.tr_pointer thead tr {
+    cursor: default;
+}
+
 .block_link {
     display: block;
     text-transform: none;
