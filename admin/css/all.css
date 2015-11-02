@@ -866,3 +866,16 @@ hr {
     width: auto;
     vertical-align: middle;
 }
+
+table.table-tr-bottom-border tr * {
+    border-top: 0 !important;
+}
+
+table.table-tr-bottom-border tr th {
+    border-top: 0;
+    border-bottom: 1px solid #ddd;;
+}
+
+.btn-default {
+    border-color: #ccc;
+}
