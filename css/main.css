@@ -360,19 +360,19 @@ input[type="password"].icon {
     padding-left: 38px;
 }
 
-.modal#signin .form-group input.signin_email{
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+.modal .form-group input.signin_email{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
-.modal#signin .form-group i.signin_paswword {
-    bottom: 0px;
+.modal .form-group i.signin_paswword {
+    bottom: 0;
     top: auto;
 }
 
-.modal#signin .form-group input.signin_paswword {
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+.modal .form-group input.signin_paswword {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     margin-top: -1px;
 }
 
@@ -554,4 +554,24 @@ footer .link a {
 
 .inline-block {
     display: inline-block;
+}
+
+.modal-emulator {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+}
+.modal-emulator .modal-body {
+    padding: 60px 30px 30px 30px;
+}
+.modal-emulator .modal-dialog {
+    max-width: 453px;
+}
+
+.modal-info .modal-content {
+    border-top-color: #005ba4;
 }
