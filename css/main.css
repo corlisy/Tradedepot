@@ -586,3 +586,21 @@ footer .link a {
 .navbar-custom-2 .navbar-nav {
     margin-top: 12px    ;
 }
+
+.navbar-custom-3 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 24px;
+    margin-bottom: 0px;
+}
+
+.navbar-custom-3 .navbar-right a.btn-link {
+    text-transform: uppercase;
+    color: #005ba4;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.navbar-custom-3 .navbar-right a.btn-info {
+    padding: 8px 24px;
+    font-size: 16px;
+}
