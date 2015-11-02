@@ -539,6 +539,10 @@ hr {
 .content {
     margin: 162px 0 30px 0;
 }
+.content.sub-content {
+    padding-top: 60px;
+}
+
 
 .content-header {
     background-color: #fff;
@@ -586,7 +590,7 @@ hr {
 .content-header.inverse .breadcrumb > li {
     color: #fff;
 }
-.content-header a {
+.content-header .breadcrumb a {
     color: #999999;
 }
 .content-header.inverse a {
@@ -597,7 +601,14 @@ hr {
     color: inherit;
 }
 
-
+.sub-content-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 71px;
+    background: #fff;
+    padding: 12px 0;
+}
 
 
 
