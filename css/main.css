@@ -575,3 +575,14 @@ footer .link a {
 .modal-info .modal-content {
     border-top-color: #005ba4;
 }
+.navbar-custom-2 {
+    margin-top: 13px;
+}
+
+.navbar-custom-2 .navbar-brand img {
+    padding-right: 15px;
+}
+
+.navbar-custom-2 .navbar-nav {
+    margin-top: 12px    ;
+}
