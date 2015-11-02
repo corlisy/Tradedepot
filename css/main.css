@@ -584,13 +584,18 @@ footer .link a {
 }
 
 .navbar-custom-2 .navbar-nav {
-    margin-top: 12px    ;
+    margin-top: 12px;
 }
 
 .navbar-custom-3 {
     border-bottom: 1px solid #999;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.navbar-custom-3  .container {
+    padding-top: 13px;
     padding-bottom: 24px;
-    margin-bottom: 0px;
 }
 
 .navbar-custom-3 .navbar-right a.btn-link {
@@ -602,5 +607,15 @@ footer .link a {
 
 .navbar-custom-3 .navbar-right a.btn-info {
     padding: 8px 24px;
+    font-size: 16px;
+}
+
+form.signin_client button[type=submit]{
+    margin-top: 10px;
+    padding: 5px 55px;
+    text-transform: uppercase;
+}
+
+a.big_link {
     font-size: 16px;
 }
