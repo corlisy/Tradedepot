@@ -44,8 +44,8 @@
                         <ul class="nav sidebar-menu">
                             <li><a href="/admin/"><i class="glyphicon icon-graph"></i> <span>Dashboard</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
-                            <li class="active"><a href="/admin/orders.html"><i class="glyphicon icon-orderslist"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
-                            <li><a href="/admin/returns.html"><i class="glyphicon icon-return"></i> <span>Returns</span> </a></li>
+                            <li><a href="/admin/orders.html"><i class="glyphicon icon-orderslist"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li class="active"><a href="/admin/returns.html"><i class="glyphicon icon-return"></i> <span>Returns</span> </a></li>
                             <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
                             <li><a href="/admin/distributors.html"><i class="glyphicon icon-user"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
@@ -126,23 +126,13 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Orders
+                                    Returns
                                 </h1>
-                                <form role="search" class="hidden-sm hidden-md hidden-xs" style="display: inline-block;padding-top: 20px;max-width:300px;">
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <div class="inner-addon right-addon">
-                                                <i class="glyphicon icon-search"></i>
-                                                <input type="text" class="form-control" placeholder="Search Orders">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="glyphicon icon-orderslist"></i>Home</a></li>
-                                    <li class="active">Orders</li>
+                                    <li><a href="/admin/"><i class="glyphicon icon-return"></i>Home</a></li>
+                                    <li class="active">Returns</li>
                                 </ol>
                             </div>
                         </div>
@@ -156,10 +146,8 @@
 
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#inprocess" aria-controls="home" role="tab" data-toggle="tab">In Process <span class="label label-info">4</span></a></li>
-                                    <li role="presentation"><a href="#shipped" aria-controls="profile" role="tab" data-toggle="tab">Shipped</a></li>
-                                    <li role="presentation"><a href="#cancelled" aria-controls="messages" role="tab" data-toggle="tab">Cancelled</a></li>
-                                    <li role="presentation"><a href="#all" aria-controls="settings" role="tab" data-toggle="tab">All</a></li>
+                                    <li role="presentation" class="active"><a href="#inprocess" aria-controls="home" role="tab" data-toggle="tab">Pending <span class="label label-info">4</span></a></li>
+                                    <li role="presentation"><a href="#approved" aria-controls="settings" role="tab" data-toggle="tab">Approved</a></li>
                                     <div class="clearfix hidden-md hidden-lg"></div>
                                     <li class="navbar-right">
                                         <br class="hidden-md hidden-lg hidden-sm" />
@@ -194,7 +182,7 @@
                                             <tbody>
                                             <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
-                                                <td><span class="text-success">&bull; Open</span></td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 6,000</td>
@@ -204,7 +192,7 @@
                                             </tr>
                                             <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
-                                                <td><span class="text-warning">&bull; Pending</span></td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
                                                 <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 1,500</td>
@@ -215,7 +203,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="shipped">
+                                    <div role="tabpanel" class="tab-pane" id="approved">
                                         <br/>
                                         <table class="table table-hover tr_pointer">
                                             <thead>
@@ -252,8 +240,6 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="cancelled">...</div>
-                                    <div role="tabpanel" class="tab-pane" id="all">...</div>
                                 </div>
 
                             </div>
