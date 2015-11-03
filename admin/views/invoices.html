@@ -181,16 +181,24 @@
 
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" disabled value="option1" checked>
                                                 I will pick it up
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" disabled value="option2">
                                                 Deliver to me
                                             </label>
                                         </div>
+
+                                        <br/>
+
+                                        <select class="form-control" id="" style="max-width:210px;">
+                                            <option>Distributors Depot, NY, Der...</option>
+                                            <option>Distributors Depot, NY, Der...</option>
+                                            <option>Distributors Depot, NY, Der...</option>
+                                        </select>
 
                                     </div>
                                     <div class="col-sm-6">
@@ -219,7 +227,7 @@
 
                                 <div class="col-sm-12">
                                     <div class="module-block no_mobile width_700">
-                                        <div class="fix_width ">
+                                        <div class="fix_width">
                                             <table class="table table-create">
                                                 <thead style="color: #999999;">
                                                 <tr>
@@ -255,46 +263,79 @@
                                                     <td>10%</td>
                                                     <td class="td-gray">$ 6,000</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>PR001</td>
+                                                    <td>Top Tea</td>
+                                                    <td>Pack</td>
+                                                    <td>$ 0</td>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td></td>
+                                                    <td class="td-gray text-success"><span class="icon-gift"></span> Gift</td>
+                                                </tr>
                                                 </tbody>
                                             </table>
-                                            <div class="col-sm-4 col-sm-offset-8">
+                                            <div class="pull-right container-fluid total-block-wrapper">
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg">
-                                                <table class="table table-non-bordered pull-right text-right">
-                                                    <tr>
-                                                        <td>Sub Total (include discount of $ 160):</td>
-                                                        <th>$ 8,940</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tax (VAT 5%):</td>
-                                                        <th>$ 540</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>TOTAL:</td>
-                                                        <th>$ 9,640</th>
-                                                    </tr>
-                                                </table>
+
+                                                <div class="clearfix">
+                                                    <dl class="dl-horizontal total-table">
+                                                        <dt>Gross Discounts:</dt>
+                                                        <dd>$ 940</dd>
+                                                        <dt>Sub Total (include discount of $ 160):</dt>
+                                                        <dd>$ 8,940</dd>
+                                                        <dt>Tax (VAT 5%):</dt>
+                                                        <dd>$ 447</dd>
+                                                        <dt><b>TOTAL:</b></dt>
+                                                        <dd>$ 9,387</dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="well clearfix pull-right">
+                                                        <dl class="dl-horizontal total-table total-table-xs">
+                                                            <dt>Deposite:</dt>
+                                                            <dd>-$ 8,940</dd>
+                                                            <dt>Rebate:</dt>
+                                                            <dd>-$ 8,940</dd>
+                                                            <dt><b>TOTAL:</b></dt>
+                                                            <dd>$ 9,387</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 col-sm-offset-8">
-                                        <div class="well well-sm">
-                                            <table class="table table-non-bordered text-right clearfix">
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="module-block">
+                                        <p class="lead text-uppercase">RECENT ACTIVITIES</p>
+
+                                        <table class="row table table-create">
+                                            <thead style="color: #999999;">
+                                            <tr>
+                                                <td>Date</td>
+                                                <td>Details</td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
                                                 <tr>
-                                                    <td>Deposite:</td>
-                                                    <th>-$ 8,940</th>
+                                                    <td class="td-gray">22/03/2015</td>
+                                                    <td class="td-gray">Order has been created</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Rebate:</td>
-                                                    <th>-$ 540</th>
+                                                    <td class="td-gray">22/03/2015</td>
+                                                    <td class="td-gray">Change status to Approved</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>TOTAL:</td>
-                                                    <th>$ 9,640</th>
+                                                    <td class="td-gray">22/03/2015</td>
+                                                    <td class="td-gray">Order has been created</td>
                                                 </tr>
-                                            </table>
-                                        </div>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
 
