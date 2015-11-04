@@ -45,10 +45,10 @@
                             <li><a href="/admin/"><i class="glyphicon icon-graph"></i> <span>Dashboard</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
                             <li><a href="/admin/orders.html"><i class="glyphicon icon-orderslist"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
-                            <li><a href="/admin/returns.html"><i class="glyphicon icon-return"></i> <span>Returns</span> </a></li>
+                            <li class="active"><a href="/admin/returns.html"><i class="glyphicon icon-return"></i> <span>Returns</span> </a></li>
                             <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
-                            <li class="active"><a href="/admin/distributors.html"><i class="glyphicon icon-user"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/distributors.html"><i class="glyphicon icon-user"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,13 +126,13 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Distributors
+                                    Returns
                                 </h1>
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="glyphicon icon-user"></i>Home</a></li>
-                                    <li class="active">Distributors</li>
+                                    <li><a href="/admin/"><i class="glyphicon icon-return"></i>Home</a></li>
+                                    <li class="active">Returns</li>
                                 </ol>
                             </div>
                         </div>
@@ -146,14 +146,8 @@
 
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation">
-                                        <a href="#invoices" aria-controls="home" role="tab" data-toggle="tab">
-                                            Distributors
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="active">
-                                        <a href="#all" aria-controls="settings" role="tab" data-toggle="tab">Sign Up Requests <span class="label label-info">4</span></a>
-                                    </li>
+                                    <li role="presentation" class="active"><a href="#inprocess" aria-controls="home" role="tab" data-toggle="tab">Pending <span class="label label-info">4</span></a></li>
+                                    <li role="presentation"><a href="#approved" aria-controls="settings" role="tab" data-toggle="tab">Approved</a></li>
                                     <div class="clearfix hidden-md hidden-lg"></div>
                                     <li class="navbar-right">
                                         <br class="hidden-md hidden-lg hidden-sm" />
@@ -172,33 +166,46 @@
 
                                 <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active no_mobile" id="invoices">
+                                    <div role="tabpanel" class="tab-pane active no_mobile" id="inprocess">
                                         <br/>
                                         <table class="table table-hover tr_pointer">
                                             <thead>
                                             <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
+                                                <td>Order ID</td>
                                                 <td>Status</td>
+                                                <td>Shipped State</td>
                                                 <td>Date Added</td>
+                                                <td>Total</td>
                                                 <td>&nbsp;</td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr onclick="document.location.href='.'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
+                                                <td>ERD1</td>
                                                 <td><span class="text-warning">&bull; Waiting to approve</span></td>
+                                                <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
+                                                <td>$ 6,000</td>
                                                 <td>
                                                     <a href=".">View</a>
                                                 </td>
                                             </tr>
                                             <tr onclick="document.location.href='.'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
+                                                <td>ERD2</td>
                                                 <td><span class="text-warning">&bull; Waiting to approve</span></td>
+                                                <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
+                                                <td>$ 1,500</td>
+                                                <td>
+                                                    <a href=".">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr onclick="document.location.href='.'">
+                                                <td>ERD3</td>
+                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
+                                                <td><span class="text-warning">Pending</span></td>
+                                                <td>22/03/2015</td>
+                                                <td>$ 1,500</td>
                                                 <td>
                                                     <a href=".">View</a>
                                                 </td>
@@ -206,33 +213,36 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="all">
+                                    <div role="tabpanel" class="tab-pane" id="approved">
                                         <br/>
                                         <table class="table table-hover tr_pointer">
                                             <thead>
                                             <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
+                                                <td>Order ID</td>
                                                 <td>Status</td>
+                                                <td>Shipped State</td>
                                                 <td>Date Added</td>
+                                                <td>Total</td>
                                                 <td>&nbsp;</td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr onclick="document.location.href='.'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
+                                                <td>DR4411</td>
+                                                <td><span class="text-info">&bull; Shipped</span></td>
+                                                <td><span class="text-info">Shipped</span></td>
                                                 <td>22/03/2015</td>
+                                                <td>$ 6,000</td>
                                                 <td>
                                                     <a href=".">View</a>
                                                 </td>
                                             </tr>
                                             <tr onclick="document.location.href='.'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
+                                                <td>DR4411</td>
+                                                <td><span class="text-success">&bull; Delivered</span></td>
+                                                <td><span class="text-info">Shipped</span></td>
                                                 <td>22/03/2015</td>
+                                                <td>$ 1,500</td>
                                                 <td>
                                                     <a href=".">View</a>
                                                 </td>

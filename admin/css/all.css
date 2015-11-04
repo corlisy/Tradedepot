@@ -100,6 +100,30 @@ body {
     box-shadow: none;
 }
 
+.well {
+    border-color:#d2d2d2;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+/*
+.radio input[type=radio]:checked:after,
+.radio-inline input[type=radio]:checked:after,
+input[type=radio]:checked:after {
+    border-color: #9d9d9d;
+}
+.radio input[type=radio]:after,
+.radio-inline input[type=radio]:after,
+input[type=radio]:after {
+    border: 2px solid #9d9d9d;
+}
+.radio input[type=radio]:before,
+.radio-inline input[type=radio]:before,
+input[type=radio]:before {
+    background-color: #b1b1b1;
+}
+*/
+
 .chart {
     position: relative;
     overflow: hidden;
@@ -539,6 +563,10 @@ hr {
 .content {
     margin: 162px 0 30px 0;
 }
+.content.sub-content {
+    padding-top: 60px;
+}
+
 
 .content-header {
     background-color: #fff;
@@ -586,7 +614,7 @@ hr {
 .content-header.inverse .breadcrumb > li {
     color: #fff;
 }
-.content-header a {
+.content-header .breadcrumb a {
     color: #999999;
 }
 .content-header.inverse a {
@@ -597,7 +625,14 @@ hr {
     color: inherit;
 }
 
-
+.sub-content-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 71px;
+    background: #fff;
+    padding: 12px 0;
+}
 
 
 
@@ -796,6 +831,29 @@ hr {
     margin-bottom: -15px;
 }
 
+.tr_pointer tr {
+    cursor: pointer;
+}
+.tr_pointer thead tr {
+    cursor: default;
+}
+
+.block_link {
+    display: block;
+    text-transform: none;
+    cursor: pointer;
+    color: #484848;
+}
+
+.block_link:hover {
+    color: #484848;
+}
+
+.block_link:hover .link {
+    text-decoration: underline;
+    color: #22527b;
+}
+
 .dropdown-toggle .icon-downarrow {
     margin-left: 4px;
     vertical-align: middle;
@@ -831,4 +889,54 @@ hr {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+}
+
+table.table-tr-bottom-border tr * {
+    border-top: 0 !important;
+}
+
+table.table-tr-bottom-border tr th {
+    border-top: 0;
+    border-bottom: 1px solid #ddd;;
+}
+
+.btn-default {
+    border-color: #ccc;
+}
+
+.total-table {
+    width: 450px;
+    float: right;
+}
+.total-table.total-table-xs {
+    width: 230px;
+}
+
+@media (min-width: 768px) {
+    .total-table.dl-horizontal dt {
+        width: 64%;
+        line-height: 35px;
+    }
+    .total-table.total-table-xs.dl-horizontal dt {
+        width: 33%;
+    }
+    .total-table.dl-horizontal dd {
+        margin-left: 65%;
+        border-bottom: 1px solid #ccc;
+        line-height: 35px;
+        text-align: right;
+        padding-right: 8%;
+        min-width: 150px;
+    }
+    .total-table.total-table-xs.dl-horizontal dd {
+        margin-left: 35%;
+        padding-right: 8%;
+    }
+}
+@media (max-width: 768px) {
+    .total-table,
+    .total-block-wrapper,
+    .total-block-wrapper .well {
+        float: left!important;
+    }
 }

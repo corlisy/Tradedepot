@@ -43,9 +43,10 @@
                         </div>
                         <ul class="nav sidebar-menu">
                             <li><a href="/admin/"><i class="glyphicon icon-graph"></i> <span>Dashboard</span></a></li>
-                            <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
                             <li class="active"><a href="/admin/orders.html"><i class="glyphicon icon-orderslist"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/returns.html"><i class="glyphicon icon-return"></i> <span>Returns</span> </a></li>
+                            <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
                             <li><a href="/admin/distributors.html"><i class="glyphicon icon-user"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
@@ -104,7 +105,7 @@
                             </li>
                             <li>
                                 <a href="#" class="hidden-sm hidden-xs" data-toggle="control-sidebar">
-                                    <i class="glyphicon icon-logout"></i><span>Logout</span>
+                                    <i class="glyphicon icon-logout"></i><span style="padding-left: 8px;">Logout</span>
                                 </a>
                             </li>
                         </ul>
@@ -179,7 +180,7 @@
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active no_mobile" id="inprocess">
                                         <br/>
-                                        <table class="table table-hover">
+                                        <table class="table table-hover tr_pointer">
                                             <thead>
                                             <tr>
                                                 <td>Order ID</td>
@@ -191,26 +192,24 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
+                                            <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
                                                 <td><span class="text-success">&bull; Open</span></td>
                                                 <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 6,000</td>
                                                 <td>
-                                                    <a href="#">Edit</a>
-                                                    <a href="#">View</a>
+                                                    <a href=".">View</a>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
                                                 <td><span class="text-warning">&bull; Pending</span></td>
                                                 <td><span class="text-warning">Pending</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 1,500</td>
                                                 <td>
-                                                    <a href="#">Edit</a>
-                                                    <a href="#">View</a>
+                                                    <a href=".">View</a>
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -218,7 +217,7 @@
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="shipped">
                                         <br/>
-                                        <table class="table table-hover">
+                                        <table class="table table-hover tr_pointer">
                                             <thead>
                                             <tr>
                                                 <td>Order ID</td>
@@ -230,26 +229,24 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
+                                            <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
                                                 <td><span class="text-info">&bull; Shipped</span></td>
                                                 <td><span class="text-info">Shipped</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 6,000</td>
                                                 <td>
-                                                    <a href="#">Edit</a>
-                                                    <a href="#">View</a>
+                                                    <a href=".">View</a>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr onclick="document.location.href='.'">
                                                 <td>DR4411</td>
                                                 <td><span class="text-success">&bull; Delivered</span></td>
                                                 <td><span class="text-info">Shipped</span></td>
                                                 <td>22/03/2015</td>
                                                 <td>$ 1,500</td>
                                                 <td>
-                                                    <a href="#">Edit</a>
-                                                    <a href="#">View</a>
+                                                    <a href=".">View</a>
                                                 </td>
                                             </tr>
                                             </tbody>
