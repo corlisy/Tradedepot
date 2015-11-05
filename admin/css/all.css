@@ -204,9 +204,9 @@ input[type=checkbox]:after {
 }
 
 .module-block {
-    margin-top: 25px;
+    margin-top: 10px;
     border-top: 1px solid #d2d2d2;
-    padding-top: 27px;
+    padding-top: 21px;
 }
 .module-block .panel {
     margin-bottom: 0;
@@ -944,14 +944,19 @@ table.table-tr-bottom-border tr th {
     width: 100%
 }
 
+.module-block .lead {
+    font-size: 18px;
+}
+
 .messages-block .el {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .messages-block .el .message_ico {
     padding-right: 18px;
     height: 100%;
     min-width: 32px;
+    font-size: 17px;
 }
 
 .messages-block .el .message {
@@ -964,15 +969,23 @@ table.table-tr-bottom-border tr th {
 }
 
 .messages-block .el .text_block {
-    margin-right: 32px;
+    padding-left: 32px;
 }
 
 .messages-block .el form {
-    padding-left: 32px;
     width: 100%;
 }
 
 .messages-block .el .user-link span {
     color: #484848;
     padding-right: 38px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.btn.padd25 {
+    padding-left: 25px;
+    padding-right: 25px;
 }
