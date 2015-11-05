@@ -963,6 +963,10 @@ table.table-tr-bottom-border tr th {
     color: #999999;
 }
 
+.messages-block .el .text_block {
+    margin-right: 32px;
+}
+
 .messages-block .el form {
     padding-left: 32px;
     width: 100%;
