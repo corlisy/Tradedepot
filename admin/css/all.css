@@ -785,6 +785,9 @@ hr {
 .box.panel .panel-body {
     padding: 5px 15px;
 }
+.box.box-lg.panel .panel-body {
+    padding: 20px 15px;
+}
 .box.panel .panel-body.no-padding {
     padding: 5px 0;
 }
@@ -996,4 +999,35 @@ table.table-tr-bottom-border tr th {
 .messages-block .el .user-link span {
     color: #484848;
     padding-right: 38px;
+}
+
+
+.table.table-non-bordered>tbody>tr>td,
+.table.table-non-bordered>tbody>tr>th,
+.table.table-non-bordered>tfoot>tr>td,
+.table.table-non-bordered>tfoot>tr>th,
+.table.table-non-bordered>thead>tr>td,
+.table.table-non-bordered>thead>tr>th {
+    border-top: 0 solid transparent;
+}
+
+.mt0 {
+    margin-top:0;
+}
+.avatar {
+    line-height: 1;
+}
+.avatar .name {
+    display: inline-block;
+    margin: 0;
+}
+.avatar img {
+    vertical-align: top;
+    margin: 0 15px;
+}
+address .glyphicon {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    line-height: 28px;
+    vertical-align: middle;
 }
