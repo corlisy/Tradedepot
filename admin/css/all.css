@@ -937,6 +937,38 @@ table.table-tr-bottom-border tr th {
     .total-table,
     .total-block-wrapper,
     .total-block-wrapper .well {
-        float: left!important;
+        float: left !important;
     }
+}
+.select-custom1 {
+    width: 100%
+}
+
+.messages-block .el {
+    margin-bottom: 25px;
+}
+
+.messages-block .el .message_ico {
+    padding-right: 18px;
+    height: 100%;
+    min-width: 32px;
+}
+
+.messages-block .el .message {
+    padding-top: 25px;
+    color: #999999;
+}
+
+.messages-block .el .date {
+    color: #999999;
+}
+
+.messages-block .el form {
+    padding-left: 32px;
+    width: 100%;
+}
+
+.messages-block .el .user-link span {
+    color: #484848;
+    padding-right: 38px;
 }
