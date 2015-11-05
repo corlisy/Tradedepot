@@ -106,6 +106,27 @@ body {
     padding: 15px;
 }
 
+.alert-default {
+    line-height: 33px;
+    margin-bottom:0;
+    color: inherit;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.btn.btn-danger {
+    color: #ea5b5b;
+    border-color:#ea5b5b;
+    background-color:#fff;
+}
+.btn-danger:active:hover,
+.btn-danger:hover {
+    color: #fff;
+    border-color:#ea5b5b;
+    background-color:#ea5b5b;
+}
+
+
 /*
 .radio input[type=radio]:checked:after,
 .radio-inline input[type=radio]:checked:after,
