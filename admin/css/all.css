@@ -984,8 +984,11 @@ table.table-tr-bottom-border tr th {
 }
 
 .messages-block .el .message {
-    padding-top: 25px;
-    color: #999999;
+    padding-top: 15px;
+    color: #999;
+    margin-top: 10px;
+    background: #FFF none repeat scroll 0% 0%;
+    padding-bottom: 15px;
 }
 
 .messages-block .el .date {
