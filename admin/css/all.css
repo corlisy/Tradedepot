@@ -968,12 +968,15 @@ table.table-tr-bottom-border tr th {
     width: 100%
 }
 
+.messages-block {
+    overflow: hidden;
+}
 .module-block .lead {
     font-size: 18px;
 }
 
 .messages-block .el {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
 }
 
 .messages-block .el .message_ico {
