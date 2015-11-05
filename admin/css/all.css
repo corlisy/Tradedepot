@@ -1045,3 +1045,7 @@ address .glyphicon {
     line-height: 28px;
     vertical-align: middle;
 }
+
+table tbody.bg_white {
+    background: #fff;
+}
