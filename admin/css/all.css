@@ -963,6 +963,13 @@ table.table-tr-bottom-border tr th {
     .total-block-wrapper .well {
         float: left !important;
     }
+    .border_left {
+        border-bottom: 1px solid #ccc;
+        border-right: none !important;
+    }
+    .container-fluid h1 {
+        font-size: 25px;
+    }
 }
 .select-custom1 {
     width: 100%
@@ -978,6 +985,11 @@ table.table-tr-bottom-border tr th {
 .messages-block .el {
     margin-bottom: 23px;
 }
+
+.messages-block .el:last-child {
+    margin-bottom: 14px;
+}
+
 
 .messages-block .el .message_ico {
     padding-right: 18px;
@@ -1055,3 +1067,8 @@ address .glyphicon {
 table tbody.bg_white {
     background: #fff;
 }
+
+.border_left {
+    border-right: 1px solid #ccc
+}
+
