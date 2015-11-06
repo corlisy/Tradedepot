@@ -79,11 +79,11 @@
                                     <span class="label label-info">34</span>
                                 </a>
                                 <ul class="dropdown-menu menu-notifications">
-                                    <li><a href="#"><span class="glyphicon glyphicon-list"></span> Order status changed</a></li>
+                                    <li><a href="#"><span class="glyphicon icon-lilist"></span> Order status changed</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-list text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
+                                    <li><a href="#"><span class="glyphicon icon-lilist text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
                                     <li role="separator" class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-list text-success"></span> Created new Order</a></li>
+                                    <li><a href="#"><span class="glyphicon icon-lilist text-success"></span> Created new Order</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="#" class="btn btn-link text-uppercase" style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
@@ -126,7 +126,7 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Delivery Invoice &nbsp;<small><a href="#">ERD1</a></small>
+                                    Delivery Invoice &nbsp;<small><a href="/admin/views/order.html">ERD1</a></small>
                                 </h1>
                             </div>
                             <div class="col-sm-6 hidden-xs">
@@ -154,7 +154,7 @@
                         <section class="content sub-content">
 
                             <div class="">
-                                <div class="col-sm-6" style="border-right: 1px solid #ccc">
+                                <div class="col-sm-6 border_left">
                                     <p class="lead text-uppercase">Vendor</p>
                                     <div class="block-icon">
                                         <div class="block-icon-ico">
@@ -175,6 +175,7 @@
                                         </address>
                                     </div>
                                 </div>
+                                <br class="hidden-sm hidden-md hidden-lg"/>
                                 <div class="col-sm-6">
                                     <div class="col-sm-6">
                                         <p class="lead text-uppercase">Delivery</p>
@@ -200,6 +201,7 @@
                                             <option>Distributors Depot, NY, Der...</option>
                                         </select>
                                     </div>
+                                    <br class="hidden-sm hidden-md hidden-lg"/>
                                     <div class="col-sm-6">
                                         <p class="lead text-uppercase">Pickup Location</p>
                                         <div class="block-icon">
@@ -235,7 +237,7 @@
                                                     <td>Unit Price</td>
                                                     <td>Quantity</td>
                                                     <td>Discount</td>
-                                                    <td>Total</td>
+                                                    <td class="text-right">Total</td>
                                                 </tr>
                                                 </thead>
                                                 <tbody style="background-color: #fff;">
@@ -248,7 +250,7 @@
                                                         12
                                                     </td>
                                                     <td></td>
-                                                    <td class="td-gray">$ 6,000</td>
+                                                    <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
                                                 </tr>
                                                 <tr>
                                                     <td>DR4411</td>
@@ -259,46 +261,46 @@
                                                         3
                                                     </td>
                                                     <td>10%</td>
-                                                    <td class="td-gray">$ 6,000</td>
+                                                    <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
                                                 </tr>
                                                 <tr>
                                                     <td>PR001</td>
                                                     <td>Top Tea</td>
                                                     <td>Pack</td>
-                                                    <td>$ 0</td>
+                                                    <td class="f_helvetcia">$ 0</td>
                                                     <td>
                                                         1
                                                     </td>
                                                     <td></td>
-                                                    <td class="td-gray text-success"><span class="icon-gift"></span> Gift</td>
+                                                    <td class="td-gray text-success text-right" style="color: #949e00;"><span class="icon-gift"></span> Gift</td>
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <div class="pull-right container-fluid total-block-wrapper">
+                                            <div class="pull-right container-fluid total-block-wrapper fix_width">
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg">
 
                                                 <div class="clearfix">
-                                                    <dl class="dl-horizontal total-table">
+                                                    <dl class="dl-horizontal total-table padd_l">
                                                         <dt>Gross Discounts:</dt>
-                                                        <dd>$ 940</dd>
+                                                        <dd class="f_helvetcia"><b>$ 940</b></dd>
                                                         <dt>Sub Total (include discount of $ 160):</dt>
-                                                        <dd>$ 8,940</dd>
+                                                        <dd class="f_helvetcia"><b>$ 8,940</b></dd>
                                                         <dt>Tax (VAT 5%):</dt>
-                                                        <dd>$ 447</dd>
+                                                        <dd class="f_helvetcia"><b>$ 447</b></dd>
                                                         <dt><b>TOTAL:</b></dt>
-                                                        <dd>$ 9,387</dd>
+                                                        <dd class="f_helvetcia"><b>$ 9,387</b></dd>
                                                     </dl>
                                                 </div>
                                                 <div class="row">
                                                     <div class="well clearfix pull-right">
-                                                        <dl class="dl-horizontal total-table total-table-xs">
+                                                        <dl class="dl-horizontal total-table padd_l total-table-xs">
                                                             <dt>Deposite:</dt>
-                                                            <dd>-$ 8,940</dd>
+                                                            <dd class="f_helvetcia"><b>-$ 8,940</b></dd>
                                                             <dt>Rebate:</dt>
-                                                            <dd>-$ 8,940</dd>
+                                                            <dd class="f_helvetcia"><b>-$ 8,940</b></dd>
                                                             <dt><b>TOTAL:</b></dt>
-                                                            <dd>$ 9,387</dd>
+                                                            <dd class="f_helvetcia"><b>$ 9,387</b></dd>
                                                         </dl>
                                                     </div>
                                                 </div>
@@ -312,7 +314,7 @@
                                     <div class="module-block">
                                         <p class="lead text-uppercase">RECENT ACTIVITIES</p>
 
-                                        <table class="row table">
+                                        <table class="table">
                                             <thead style="color: #999999;">
                                             <tr>
                                                 <td>Date</td>
@@ -326,7 +328,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td>22/03/2015</td>
-                                                    <td>Change status to <span class="text-success">Approved</span></td>git
+                                                    <td>Change status to <span class="text-success">Approved</span></td>
                                                 </tr>
                                                 <tr>
                                                     <td>22/03/2015</td>

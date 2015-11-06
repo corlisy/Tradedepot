@@ -936,40 +936,73 @@ table.table-tr-bottom-border tr th {
     width: 230px;
 }
 
+.total-table.dl-horizontal dt {
+    width: 64%;
+    line-height: 35px;
+    float: left;
+}
+.total-table.total-table-xs.dl-horizontal dt {
+    width: 33%;
+}
+.total-table.dl-horizontal dd {
+    margin-left: 65%;
+    border-bottom: 1px solid #ccc;
+    line-height: 35px;
+    text-align: right;
+    padding-right: 16%;
+    min-width: 150px;
+}
+.total-table.total-table-xs.dl-horizontal dd {
+    margin-left: 35%;
+    padding-right: 8%;
+}
+
+.total-table.dl-horizontal.padd_l dd {
+    padding-right: 0;
+}
+
+.total-table.dl-horizontal.padd_l13 dd {
+    padding-right: 13%;
+}
+
 @media (min-width: 768px) {
-    .total-table.dl-horizontal dt {
-        width: 64%;
-        line-height: 35px;
-    }
-    .total-table.total-table-xs.dl-horizontal dt {
-        width: 33%;
-    }
-    .total-table.dl-horizontal dd {
-        margin-left: 65%;
-        border-bottom: 1px solid #ccc;
-        line-height: 35px;
-        text-align: right;
-        padding-right: 8%;
-        min-width: 150px;
-    }
-    .total-table.total-table-xs.dl-horizontal dd {
-        margin-left: 35%;
-        padding-right: 8%;
+    .lead {
+        font-size: 18px;
+        font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
     }
 }
+
+.f_helvetcia {
+    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
+}
+
 @media (max-width: 768px) {
-    .total-table,
-    .total-block-wrapper,
-    .total-block-wrapper .well {
-        float: left !important;
+    .total-table {
+        width: 100%;
+    }
+
+    .total-table.dl-horizontal dd {
+        min-width: unset;
+        padding-right: 6%;
+    }
+
+    .border_left {
+        border-bottom: 1px solid #ccc;
+        border-right: none !important;
+    }
+    .container-fluid h1 {
+        font-size: 25px;
     }
 }
 .select-custom1 {
     width: 100%
 }
 
+
+
 .messages-block {
     overflow: hidden;
+    margin-bottom: 23px;
 }
 .module-block .lead {
     font-size: 18px;
@@ -978,6 +1011,11 @@ table.table-tr-bottom-border tr th {
 .messages-block .el {
     margin-bottom: 23px;
 }
+
+.messages-block .el:last-child {
+    margin-bottom: 14px;
+}
+
 
 .messages-block .el .message_ico {
     padding-right: 18px;
@@ -1021,6 +1059,9 @@ table.table-tr-bottom-border tr th {
     padding-right: 25px;
 }
 
+.btn {
+    margin-right: 15px;
+}
 
 .table.table-non-bordered>tbody>tr>td,
 .table.table-non-bordered>tbody>tr>th,
@@ -1054,4 +1095,23 @@ address .glyphicon {
 
 table tbody.bg_white {
     background: #fff;
+}
+
+.border_left {
+    border-right: 1px solid #ccc
+}
+
+.select_type a.dropdown-toggle {
+    padding-left: 8px;
+}
+
+.select_type a.dropdown-toggle .caret {
+   margin-left: 15px;
+}
+
+.select_type a.dropdown-toggle i {
+    font-size: 6px;
+    vertical-align: middle;
+    height: 10px;
+    margin-right: 5px;
 }
