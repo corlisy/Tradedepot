@@ -130,7 +130,7 @@
                                     <small>SO008</small>
                                 </h1>
                                 <form role="search" class="hidden-xs hidden-sm" style="display: inline-block;padding-top: 20px;max-width:300px;">
-                                    <div class="form-group">
+                                    <div class="form-group select_type">
                                         <div class="col-sm-12">
                                             <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="">
                                                 <i class="glyphicon icon-circle text-info" style="font-size: 6px; vertical-align: middle"></i> In Process
@@ -245,7 +245,7 @@
                                                         <td>Unit Price</td>
                                                         <td>Quantity</td>
                                                         <td>Discount</td>
-                                                        <td>Total</td>
+                                                        <td class="text-right">Total</td>
                                                         <td>&nbsp;</td>
                                                     </tr>
                                                     </thead>
@@ -270,7 +270,7 @@
                                                             </div>
                                                         </td>
                                                         <td></td>
-                                                        <td class="td-gray">$ 6,000</td>
+                                                        <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
                                                         <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                     </tr>
                                                     <tr>
@@ -293,7 +293,7 @@
                                                             </div>
                                                         </td>
                                                         <td></td>
-                                                        <td class="td-gray">$ 6,000</td>
+                                                        <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
                                                         <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                     </tr>
                                                     <tr>
@@ -346,23 +346,20 @@
                                                     <button class="btn btn-info">Add new line <span class="glyphicon icon-add"></span></button>
                                                     <button class="btn btn-default disabled">Delete checked <span class="glyphicon icon-trash"></span></button>
                                                 </div>
-                                                <div class="col-sm-4 col-sm-offset-8">
+                                                <div class="pull-right container-fluid total-block-wrapper">
                                                     <div class="clearfix hidden-lg"></div>
                                                     <br class="hidden-lg">
-                                                    <table class="table table-non-bordered pull-right text-right">
-                                                        <tr>
-                                                            <td>Sub Total (include discount of $ 160):</td>
-                                                            <th>$ 8,940</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Tax (VAT 5%):</td>
-                                                            <th>$ 540</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>TOTAL:</td>
-                                                            <th>$ 9,640</th>
-                                                        </tr>
-                                                    </table>
+
+                                                    <div class="clearfix">
+                                                        <dl class="dl-horizontal padd_l13 total-table">
+                                                            <dt>Sub Total (include discount of $ 160):</dt>
+                                                            <dd class="f_helvetcia"><b>$ 8,940</b></dd>
+                                                            <dt>Tax (VAT 5%):</dt>
+                                                            <dd class="f_helvetcia"><b>$ 540</b></dd>
+                                                            <dt><b>TOTAL:</b></dt>
+                                                            <dd class="f_helvetcia"><b>$ 9,640</b></dd>
+                                                        </dl>
+                                                    </div>
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>
