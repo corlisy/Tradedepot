@@ -1083,6 +1083,11 @@ table.table-tr-bottom-border tr th {
     background-color: #3FAF6C;
 }
 
+.btn.btn-success:hover {
+    background-color: #3aa163;
+}
+
+
 .table.table-non-bordered>tbody>tr>td,
 .table.table-non-bordered>tbody>tr>th,
 .table.table-non-bordered>tfoot>tr>td,
