@@ -1079,6 +1079,10 @@ table.table-tr-bottom-border tr th {
     margin-right: 0;
 }
 
+.btn.btn-success {
+    background-color: #3FAF6C;
+}
+
 .table.table-non-bordered>tbody>tr>td,
 .table.table-non-bordered>tbody>tr>th,
 .table.table-non-bordered>tfoot>tr>td,
