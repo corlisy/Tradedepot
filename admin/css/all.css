@@ -840,6 +840,11 @@ hr {
     margin: 35px 0;
 }
 
+.height_fix {
+    height: 32px;
+    width: 1px;
+}
+
 
 .list_with_ico .nav .user-link img {
     min-height: 32px;
