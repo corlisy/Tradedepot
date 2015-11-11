@@ -62,11 +62,11 @@
     position: absolute;
 }
 .divider-vertical {
+    background: #ec6906;
+    border-radius: 5px;
     height: 5px;
     width: 5px;
     margin: 0 9px;
-    background: #ec6906;
-    border-radius: 5px;
     margin-top: 26px;
 }
 
@@ -85,13 +85,17 @@
 }
 
 .navbar-custom .navbar-nav li>a {
+    color: #fff;
+}
+
+footer .navbar-custom .navbar-nav li > a{
     color: #43656b;
 }
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;;
 }
 
 .navbar-custom .nav li > a:hover {
