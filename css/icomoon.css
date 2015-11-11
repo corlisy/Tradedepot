@@ -23,6 +23,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.sidebar-menu-icons {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
 .icon-mailarrow:before {
     content: "\e91d";
 }
