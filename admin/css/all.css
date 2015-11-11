@@ -112,7 +112,10 @@ body {
     border-radius: 3px;
     padding: 15px;
 }
-
+.well-transparent {
+    border-color:transparent;
+    background-color:transparent;
+}
 .alert-default {
     line-height: 33px;
     margin-bottom:0;
@@ -1102,8 +1105,17 @@ table.table-tr-bottom-border tr th {
     border-top: 0 solid transparent;
 }
 
+.mt15 {
+    margin-top:15px;
+}
+.mt20 {
+    margin-top:20px;
+}
 .mt0 {
     margin-top:0;
+}
+.mr0 {
+    margin-right:0;
 }
 .avatar {
     line-height: 1;

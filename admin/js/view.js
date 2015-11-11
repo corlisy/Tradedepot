@@ -283,6 +283,46 @@ requirejs(['./common'], function (common) {
 
 
 
+        var ordersChartData = {
+            labels : ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            datasets : [
+                {
+                    fillColor : "rgba(48,145,213,1)",
+                    strokeColor : "rgba(151,187,205,0.8)",
+                    highlightFill : "rgba(48,145,213,0.5)",
+                    highlightStroke : "rgba(151,187,205,1)",
+                    data : [rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF(),rndSF()]
+                }
+            ]
+        };
+
+        var chart = new Chart(document.getElementById("ordersBar").getContext("2d")).Bar(ordersChartData, {
+            responsive: true,
+            barShowStroke: false,
+            showTooltips: true,
+            scaleShowHorizontalLines: false,
+            scaleShowVerticalLines: false,
+            scaleGridLineWidth: 1,
+            barStrokeWidth : 2,
+            barValueSpacing : 1,
+            barDatasetSpacing : 1,
+
+            showScale: false,
+            scaleShowGridLines: true,
+            scaleGridLineColor: "rgba(0,0,0,.05)",
+
+            bezierCurve: false,
+            bezierCurveTension: 0,
+            pointDot: true,
+            pointDotRadius: 4,
+            pointDotStrokeWidth: 1,
+            pointHitDetectionRadius: 5,
+            datasetStroke: true,
+            datasetStrokeWidth: 2,
+            datasetFill: true,
+            maintainAspectRatio: true
+        });
+
 
 
     });
