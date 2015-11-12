@@ -89,7 +89,10 @@
     margin-top: 20px;
     box-shadow: none;
 }
-
+.navbar-custom-landing .navbar-brand  {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 .navbar-custom-landing .navbar-nav li>a {
     color: #fff;
 }
