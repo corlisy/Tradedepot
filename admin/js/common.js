@@ -6,6 +6,7 @@ requirejs.config({
         'jquery': 'jQuery-2.1.4.min',
         'lodash': 'lodash.min',
         'chartjs': 'chartjs/Chart.min',
+        'sweetalert': '/js/lib/sweetalert.min',
         'chartjshb': 'chartjs/Chart.HorizontalBar'
     },
     shim: {

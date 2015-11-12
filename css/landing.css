@@ -1,15 +1,15 @@
 .intro {
     width: 100%;
-    height: 100%;
     padding: 170px 0;
     text-align: center;
     color: #484848;
-    background: url('/img/landing-bg.jpg') no-repeat bottom center scroll;
+    background: url('/img/landing-bg-dark.jpg') no-repeat top center;
     background-color: #d4c9b6;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: cover;  
     -o-background-size: cover;
+    height: 100%;
 }
 .brand-heading {
     font-size: 40px;
@@ -17,7 +17,10 @@
     margin-top: 21px;
     margin-bottom: 19px;
     margin-left: -4px;
+    color:#fff;
+    color: #ebebeb;
 }
+
 .brand-heading b {
     margin-top: 17px;
     margin-bottom: 10px;
@@ -26,9 +29,11 @@
 }
 .intro-text {
     font-size: 29px;
+    font-family: 'HelveticaNeue-Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica ;
     margin-bottom: 2.3em;
     padding-top: 6px;
     padding-right: 9px;
+    color: #fff;
 }
 
 .content-section .media-heading {
@@ -47,8 +52,7 @@
     padding-top: 70px;
 }
 .content-section .section-head {
-    padding: 49px 0px;
-
+    padding: 49px 0;
 }
 .content-section .section-header {
     color: #f07e2c;
@@ -86,6 +90,7 @@
 .content-section {
 
 }
+
 #request {
     padding: 35px 0px 62px 0;
     background-color: #43656b;
@@ -111,7 +116,7 @@
 }
 
 footer {
-    padding: 35px 0px 62px 0;
+    padding: 35px 0 62px 0;
 }
 
 footer .navbar {
@@ -140,7 +145,7 @@ footer .copyrights {
 }
 
 .ldg-ico.shop {
-    background-position: 0px 55px;
+    background-position: 0 55px;
 }
 .ldg-ico.comp {
     background-position: -400px 40px;
@@ -153,7 +158,7 @@ footer .copyrights {
 }
 
 #clients .section-head {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .clients-list {
