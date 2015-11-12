@@ -67,7 +67,7 @@
     height: 5px;
     width: 5px;
     margin: 0 9px;
-    margin-top: 26px;
+    margin-top: 24px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -84,8 +84,18 @@
     outline: 0;
 }
 
-.navbar-custom .navbar-nav li>a {
+.navbar-custom-landing {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+.navbar-custom-landing .navbar-nav li>a {
     color: #fff;
+}
+
+.navbar-custom .navbar-nav li>a {
+    color: #43656b;
 }
 
 footer .navbar-custom .navbar-nav li > a{
@@ -98,12 +108,23 @@ footer .navbar-custom .navbar-nav li > a{
     transition: background .3s ease-in-out;;
 }
 
+.navbar-custom-landing .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;;
+}
+
 .navbar-custom .nav li > a:hover {
     outline: 0;
     color: #ec6906;
     background-color: transparent;
 }
 
+.navbar-custom-landing .nav li > a:hover {
+    outline: 0;
+    color: #ec6906;
+    background-color: transparent;
+}
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
