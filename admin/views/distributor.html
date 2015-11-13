@@ -153,41 +153,49 @@
 
                             <div class="box box-lg panel panel-default">
                                 <div class="panel-body">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-1 pl0 ml0">
                                         <div class="avatar">
                                             <img src="/img/test-client/avatar.jpg" class="img-circle" />
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
-                                        <h2 class="name mt0">Mai Gulera<br/><small>Product manager</small></h2>
+                                        <h2 class="name mt0 fs28">Mai Gulera<br/><small>Product manager</small></h2>
                                         <br/>
                                         <address>
                                             <span class="glyphicon icon-phone"></span> +999-555-777-33<br/>
                                             <span class="glyphicon icon-mail"></span> <a href="mailto:mail.gui87@example.com">mail.gui87@example.com</a>
                                         </address>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <p class="lead text-uppercase">RECENT ORDERS</p>
-                                        <table class="table table-non-bordered">
+                                    <div class="col-sm-3">
+                                        <p class="lead text-uppercase mb7">RECENT ORDERS</p>
+                                        <table class="table table-non-bordered table-td-padd-custom1 table-td-no-pl">
                                             <tr>
-                                                <td><span class="text-success">&bull;</span> ERD2</td>
-                                                <td><span class="text-success">Open</span></td>
+                                                <td class="bull-text"><span class="text-success">&bull;</span> ERD2</td>
+                                                <td><span class="text-success"><small>Open</small></span></td>
                                             </tr>
                                             <tr>
-                                                <td><span class="text-info">&bull;</span> ERD2</td>
-                                                <td><span class="text-info">Closed</span></td>
+                                                <td class="bull-text"><span class="text-approve">&bull;</span> ERD2</td>
+                                                <td><span class="text-approve"><small>Approved</small></span></td>
                                             </tr>
                                             <tr>
-                                                <td><span class="text-warning">&bull;</span> ERD2</td>
-                                                <td><span class="text-warning">Open</span></td>
+                                                <td class="bull-text"><span class="text-info">&bull;</span> ERD2</td>
+                                                <td><span class="text-info"><small>Closed</small></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bull-text"><span class="text-warning">&bull;</span> ERD2</td>
+                                                <td><span class="text-warning"><small>Pending</small></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bull-text"><span class="text-danger">&bull;</span> ERD2</td>
+                                                <td><span class="text-danger"><small>Returned</small></span></td>
                                             </tr>
                                         </table>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-5">
                                         <p class="pull-left lead text-uppercase">Orders</p>
                                         <div class="pull-right">
-                                            <span class="h2">340<br/><small>last month</small></span>
-
+                                            <span class="h0 text-muted f_helvetcia_ul">340</span>
+                                            <div class="text-muted">last month</div>
                                         </div>
                                         <div class="chart">
                                             <canvas id="hbChart" style="height: 90px;width:100%"></canvas>
@@ -223,16 +231,15 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="module-block">
-                                            <p class="lead text-uppercase">Delivery</p>
+                                            <p class="lead text-uppercase">SHIPPING</p>
 
-                                            <small>Select shipping address by default</small>
-
+                                            <small class="text-muted">Select shipping address by default</small>
                                             <br/>
-
-                                            <select class="form-control" id="" style="max-width:210px;">
-                                                <option>Distributors Depot, NY, Der...</option>
-                                                <option>Distributors Depot, NY, Der...</option>
-                                                <option>Distributors Depot, NY, Der...</option>
+                                            <br/>
+                                            <select class="form-control" id="">
+                                                <option>Distributors Depot, NY, Derrty St. 284</option>
+                                                <option>Distributors Depot, NY, Derrty St. 284</option>
+                                                <option>Distributors Depot, NY, Derrty St. 284</option>
                                             </select>
 
                                             <div class="block-icon">
@@ -333,16 +340,14 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-3">
-                                            <div class="well well-transparent">
-                                                <div class="pull-left">
-                                                    <h4 class="mt0">ORDERS BY MONTHS</h4>
-                                                    <div class="chart-responsive">
-                                                        <canvas id="ordersBar" style="height: 70px;width: 200px"></canvas>
+                                            <div class="well" id="ordersBarWell">
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <h4 class="mt0">ORDERS BY MONTHS<br/><small>Total in year 3.340 </small><div class="pull-right text-success h6">13% <i class="glyphicon glyphicon-arrow-up"></i></div></h4>
                                                     </div>
                                                 </div>
-                                                <div class="pull-right">
-                                                    <h3 class="mt0"><small>total orders in year</small><br/>3,340<br/></h3>
-                                                    <div class="pull-right text-success h4">13% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                <div class="chart-responsive">
+                                                    <canvas id="ordersBar" style="height: 35px;width: 100%"></canvas>
                                                 </div>
                                             </div>
                                         </div>
@@ -361,13 +366,13 @@
                                             </div>
                                             <div class="form-group">
                                                 <div class="btn-group" data-toggle="buttons">
-                                                    <label class="btn btn-default active">
+                                                    <label class="btn btn-default btn-sm active">
                                                         <input type="radio" name="options" id="option1" autocomplete="off" checked> Today
                                                     </label>
-                                                    <label class="btn btn-default">
+                                                    <label class="btn btn-default btn-sm">
                                                         <input type="radio" name="options" id="option2" autocomplete="off"> Monthly
                                                     </label>
-                                                    <label class="btn btn-default">
+                                                    <label class="btn btn-default btn-sm">
                                                         <input type="radio" name="options" id="option3" autocomplete="off"> Annual
                                                     </label>
                                                 </div>
@@ -414,7 +419,7 @@
                                     </div>
 
                                     <div class="clearfix"></div>
-                                    <table class="table">
+                                    <table class="table trans_history">
                                         <thead>
                                         <tr>
                                             <td>No.</td>

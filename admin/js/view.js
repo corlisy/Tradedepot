@@ -14,8 +14,8 @@ requirejs(['./common'], function (common) {
                 {
                     label: "Deposits",
                     fillColor: "transparent",
-                    strokeColor: "rgb(25, 163, 209)",
-                    pointColor: "rgb(25, 163, 209)",
+                    strokeColor: "#669933",
+                    pointColor: "#669933",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "rgb(224, 241, 247)",
                     pointHighlightStroke: "#fff",
@@ -24,8 +24,8 @@ requirejs(['./common'], function (common) {
                 {
                     label: "Rebates",
                     fillColor: "transparent",
-                    strokeColor: "#669933",
-                    pointColor: "#669933",
+                    strokeColor: "rgb(25, 163, 209)",
+                    pointColor: "rgb(25, 163, 209)",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "rgb(224, 241, 247)",
                     pointHighlightStroke: "#fff",
