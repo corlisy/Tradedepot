@@ -1261,14 +1261,5 @@ table tbody.bg_white {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 999;
-    min-width:100px;
-}
-.chartjs-tooltip-key{
-    display:inline-block;
-    width:10px;
-    height:10px;
-}
-
-.chartjs-tooltip-value{
-    text-align: center;
+    white-space: nowrap;
 }

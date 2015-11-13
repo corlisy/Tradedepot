@@ -143,7 +143,6 @@ requirejs(['./common'], function (common) {
             var innerHtml = '';
             innerHtml += [
                 '<div class="chartjs-tooltip-section">',
-                '	<span class="chartjs-tooltip-key" style=""></span>',
                 '	<span class="chartjs-tooltip-value">' + tooltip.text + '</span>',
                 '</div>'
             ].join('');
