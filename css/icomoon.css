@@ -23,18 +23,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.sidebar-menu-icons {
-    margin-right: 5px;
-    font-size: 12px;
-}
-.navbar-custom-landing .landing-collapse-ico {
-    font-size: 25px;
-    color: #e87919;
-}
-.navbar-custom-landing .landing-collapse-ico:hover {
-    color: #fff;
-}
-
 .icon-mailarrow:before {
     content: "\e91d";
 }

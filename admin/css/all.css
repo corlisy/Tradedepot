@@ -1158,3 +1158,8 @@ table tbody.bg_white {
     height: 10px;
     margin-right: 5px;
 }
+
+.sidebar-menu-icons {
+    margin-right: 5px;
+    font-size: 12px;
+}
