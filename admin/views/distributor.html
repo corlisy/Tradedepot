@@ -153,12 +153,12 @@
 
                             <div class="box box-lg panel panel-default">
                                 <div class="panel-body">
-                                    <div class="col-sm-1 pl0 ml0">
+                                    <div class="col-sm-1 pl0 ml0 hidden-md hidden-xs hidden-sm">
                                         <div class="avatar">
                                             <img src="/img/test-client/avatar.jpg" class="img-circle" />
                                         </div>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
                                         <h2 class="name mt0 fs28">Mai Gulera<br/><small>Product manager</small></h2>
                                         <br/>
                                         <address>
@@ -166,7 +166,7 @@
                                             <span class="glyphicon icon-mail"></span> <a href="mailto:mail.gui87@example.com">mail.gui87@example.com</a>
                                         </address>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-xs-12 col-md-4 col-lg-3 col-sm-6">
                                         <p class="lead text-uppercase mb7">RECENT ORDERS</p>
                                         <table class="table table-non-bordered table-td-padd-custom1 table-td-no-pl">
                                             <tr>
@@ -191,7 +191,7 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-12 col-md-5">
                                         <p class="pull-left lead text-uppercase">Orders</p>
                                         <div class="pull-right">
                                             <span class="h0 text-muted f_helvetcia_ul">340</span>
@@ -394,8 +394,9 @@
                             <div class="col-sm-12">
                                 <div class="module-block">
                                     <p class="pull-left lead text-uppercase">Transactions HISTORY</p>
-                                    <div class="pull-right">
-                                        <form class="form-inline">
+                                    <div class="clearfix hidden-lg hidden-md"></div>
+                                    <div class="pull-right no_fl_in_mobile">
+                                        <form class="form-inline only_mobile_adapt">
                                             <div class="form-group">
                                                 <label for="exampleInputName2">Filter:</label>
                                                 <select type="text" class="form-control" id="exampleInputName2">
@@ -403,14 +404,18 @@
                                                     <option>Not All</option>
                                                 </select>
                                             </div>&nbsp;&nbsp;&nbsp;
+                                            <br class="hidden-lg hidden-md"/>
+                                            <br class="hidden-lg hidden-md"/>
                                             <div class="form-group">
                                                 <label>Date range:</label>
+                                                <br class="hidden-lg hidden-md hidden-sm"/>
                                                 <div class="input-group date">
                                                     <div class="inner-addon left-addon">
                                                         <i class="glyphicon icon-calendar"></i>
                                                         <input type="text" class="form-control datepicker" size="8" />
                                                     </div>
                                                 </div>&nbsp;-&nbsp;
+                                                <br class="hidden-lg hidden-md hidden-sm"/>
                                                 <div class="input-group date">
                                                     <div class="inner-addon left-addon">
                                                         <i class="glyphicon icon-calendar"></i>
