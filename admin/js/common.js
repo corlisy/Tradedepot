@@ -31,6 +31,22 @@ require(['jquery', 'bootstrap', 'lodash'], function ($, bootstrap, _) {
         });
     });
 
+    $('.panel-checkbox-color input[type=checkbox]').each(function() {
+        if (this.checked) {
+            $(this).parents('.panel-checkbox-color ').addClass('panel-success');
+        } else {
+            $(this).parents('.panel-checkbox-color ').removeClass('panel-success');
+        }
+    });
+
+    $('.panel-checkbox-color input[type=checkbox]').on('change', function() {
+        if (this.checked) {
+            $(this).parents('.panel-checkbox-color ').addClass('panel-success');
+        } else {
+            $(this).parents('.panel-checkbox-color ').removeClass('panel-success');
+        }
+    });
+
     $('.fast-search input').on('input', function() {
         var obj = ['Code, Product name, Unit','Product number 2','Long Product number 3','Very, very, very Long Producu...'];
         var res = $(this).parent().find('.fast-search-result');

@@ -166,7 +166,7 @@
                                     <div class="pull-right">
                                         <a href="#" class="btn btn-default">Print <i class="glyphicon icon-print"></i></a>
                                         <a href="#" class="btn btn-danger">Cancel order</a>
-                                        <a href="/admin/views/distributor_new.html" class="btn btn-info">Edit <i class="icon-edit"></i></a>
+                                        <a href="/admin/views/order-edit.html" class="btn btn-info">Edit <i class="icon-edit"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -266,8 +266,10 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="clearfix"></div>
                                         </form>
                                     </div>
+                                    <div class="clearfix"></div>
                                 </div>
 
 
@@ -340,13 +342,13 @@
                                                 <br class="hidden-lg">
 
                                                 <div class="clearfix fix_width">
-                                                    <dl class="dl-horizontal total-table">
-                                                        <dt>Gross Discounts:</dt>
-                                                        <dd class="f_helvetcia"><b>$ 940</b></dd>
-                                                        <dt>Sub Total (include discount of $ 160):</dt>
-                                                        <dd class="f_helvetcia"><b>$ 8,940</b></dd>
-                                                        <dt>Tax (VAT 5%):</dt>
-                                                        <dd class="f_helvetcia"><b>$ 447</b></dd>
+                                                    <dl class="dl-horizontal padd_l40px total-table">
+                                                        <dt class="text-muted">Gross Discounts:</dt>
+                                                        <dd class="f_helvetcia text-right"><b>$ 940</b></dd>
+                                                        <dt class="text-muted">Sub Total (include discount of $ 160):</dt>
+                                                        <dd class="f_helvetcia text-right"><b>$ 8,940</b></dd>
+                                                        <dt class="text-muted">Tax (VAT 5%):</dt>
+                                                        <dd class="f_helvetcia text-right"><b>$ 447</b></dd>
                                                         <dt><b>TOTAL:</b></dt>
                                                         <dd class="f_helvetcia"><b>$ 9,387</b></dd>
                                                     </dl>
@@ -360,6 +362,29 @@
 
                                 <div class="clearfix"></div>
 
+                                <div class="clearfix"></div>
+
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="alert alert-default alert-dismissible clearfix" role="alert">
+                                            <div class="container-fluid">
+                                                <div class="col-sm-12">
+                                                    <div class="pull-right">
+                                                        <button type="button" class="btn btn-success"
+                                                                data-dismiss="alert" aria-label="Save"><span
+                                                                aria-hidden="true">Save</span></button>
+                                                        <button type="button" class="btn btn-default"
+                                                                data-dismiss="alert" aria-label="Close"><span
+                                                                aria-hidden="true">Cancel</span></button>
+                                                    </div>
+                                                    <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
 
                                 <div class="col-sm-12 col-xs-12">
                                     <div class="module-block messages-block">

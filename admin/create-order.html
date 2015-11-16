@@ -307,14 +307,14 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td>Item Code</td>
-                                                        <td>Description</td>
+                                                        <td>Item Name</td>
                                                         <td>Unit</td>
                                                         <td>Unit Price</td>
                                                         <td>Quantity</td>
-                                                        <td>Discount</td>
+                                                        <td>Available</td>
+                                                        <td>Item Discounts</td>
+                                                        <td>Tax Rеate</td>
                                                         <td class="text-right">Total</td>
-                                                        <td>&nbsp;</td>
                                                     </tr>
                                                     </thead>
                                                     <tbody style="background-color: #fff;">
@@ -326,10 +326,15 @@
                                                                 </label>
                                                             </div>
                                                         </td>
-                                                        <td>DR4411</td>
-                                                        <td>Coca-Cola Beveragge Drink</td>
-                                                        <td>Sachet</td>
-                                                        <td>$ 500</td>
+                                                        <td>
+                                                            <div class="fast-search custom">
+                                                                <input type="text" class="input-transparent" placeholder="Start typing SKU or item..."/>
+                                                                <div class="fast-search-result"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
                                                         <td>
                                                             <div class="spinbox">
                                                                 <button type="button" class="spinbox-down"></button>
@@ -338,75 +343,8 @@
                                                             </div>
                                                         </td>
                                                         <td></td>
-                                                        <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
-                                                        <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" value="option1">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>DR4411</td>
-                                                        <td>Coca-Cola Beveragge Drink</td>
-                                                        <td>Sachet</td>
-                                                        <td>$ 500</td>
-                                                        <td>
-                                                            <div class="spinbox">
-                                                                <button type="button" class="spinbox-down"></button>
-                                                                <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                                                <button type="button" class="spinbox-up"></button>
-                                                            </div>
-                                                        </td>
                                                         <td></td>
-                                                        <td class="td-gray text-right f_helvetcia"><b>$ 6,000</b></td>
-                                                        <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" value="option1">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="fast-search">
-                                                                <input type="text" class="input-transparent" />
-                                                                <div class="fast-search-result"></div>
-                                                            </div>
-                                                        </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td class="td-gray"></td>
-                                                        <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" value="option1">
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="fast-search">
-                                                                <input type="text" class="input-transparent" />
-                                                                <div class="fast-search-result"></div>
-                                                            </div>
-                                                        </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td class="td-gray"></td>
-                                                        <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td class="td-gray text-right f_helvetcia"><b></b></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -419,15 +357,15 @@
                                                     <br class="hidden-lg">
 
                                                     <div class="clearfix">
-                                                        <dl class="dl-horizontal padd_l13 total-table">
-                                                            <dt>Gross Discounts:</dt>
-                                                            <dd class="f_helvetcia"><b>$ 940</b></dd>
-                                                            <dt>Sub Total (include discount of $ 160):</dt>
-                                                            <dd class="f_helvetcia"><b>$ 8,940</b></dd>
-                                                            <dt>Tax (VAT 5%):</dt>
-                                                            <dd class="f_helvetcia"><b>$ 540</b></dd>
+                                                        <dl class="dl-horizontal padd_l total-table">
+                                                            <dt class="text-muted">Gross Discounts:</dt>
+                                                            <dd class="f_helvetcia text-right"><b>$ 940</b></dd>
+                                                            <dt class="text-muted">Sub Total (include discount of $ 160):</dt>
+                                                            <dd class="f_helvetcia text-right"><b>$ 8,940</b></dd>
+                                                            <dt class="text-muted">Tax (VAT 5%):</dt>
+                                                            <dd class="f_helvetcia text-right"><b>$ 540</b></dd>
                                                             <dt><b>TOTAL:</b></dt>
-                                                            <dd class="f_helvetcia"><b>$ 9,640</b></dd>
+                                                            <dd class="f_helvetcia text-right"><b>$ 9,640</b></dd>
                                                         </dl>
                                                     </div>
                                                 </div>
@@ -448,11 +386,11 @@
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg" />
                                                 <div class="col-lg-2 col-lg-offset-2 col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-0">
-                                                    <div class="panel-cart panel panel-default">
+                                                    <div class="panel-cart panel panel-default panel-checkbox-color">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
-                                                                    <input type="checkbox" value="">
+                                                                    <input type="checkbox" value="" disabled="disabled">
                                                                     Credits
                                                                 </label>
                                                             </div>
@@ -463,7 +401,7 @@
                                                                 <small>Available amount</small>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input class="text-right form-control" value="$0,00">
+                                                                <input class="text-right form-control" value="$0,00" disabled="disabled">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -471,11 +409,11 @@
                                                 <div class="clearfix hidden-lg hidden-md"></div>
                                                 <br class="hidden-lg hidden-md" />
                                                 <div class="col-lg-2 col-xs-12 col-md-4">
-                                                    <div class="panel-cart panel panel-success">
+                                                    <div class="panel-cart panel panel-checkbox-color">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
-                                                                    <input type="checkbox" value="">
+                                                                    <input type="checkbox" value=""  disabled="disabled">
                                                                     Rebates
                                                                 </label>
                                                             </div>
@@ -486,7 +424,7 @@
                                                                 <small>Available amount</small>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input class="text-right form-control" value="$1000,00">
+                                                                <input class="text-right form-control" value="0,00" disabled="disabled">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -494,11 +432,11 @@
                                                 <div class="clearfix hidden-lg hidden-md"></div>
                                                 <br class="hidden-lg hidden-md" />
                                                 <div class="col-lg-2 col-xs-12 col-md-4">
-                                                    <div class="panel-cart panel panel-success">
+                                                    <div class="panel-cart panel panel-checkbox-color">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
-                                                                    <input type="checkbox" value="">
+                                                                    <input type="checkbox" value=""  disabled="disabled">
                                                                     Deposits
                                                                 </label>
                                                             </div>
@@ -509,7 +447,7 @@
                                                                 <small>Available amount</small>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input class="text-right form-control" value="$1000,00">
+                                                                <input class="text-right form-control" value="0,00" disabled="disabled">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -521,8 +459,8 @@
                                     <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-offset-0 col-xs-12">
                                         <div class="module-block">
                                             <div class="pull-right">
-                                                <button class="btn btn-danger">Cancel order</button>
-                                                <button class="btn btn-info">Create An Order <span class="glyphicon icon-lilist"></span></button>
+                                                <button class="btn btn-info" disabled="disabled">Create An Order <span class="glyphicon icon-lilist"></span></button>
+                                                <button class="btn btn-default">Cancel</button>
                                             </div>
                                         </div>
                                     </div>
