@@ -1067,6 +1067,10 @@ table.table-tr-bottom-border tr th {
     padding-right: 8%;
 }
 
+.total-table.dl-horizontal.padd_l40px dd {
+    padding-right: 40px;
+}
+
 .total-table.dl-horizontal.padd_l dd {
     padding-right: 0;
 }
