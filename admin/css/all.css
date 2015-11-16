@@ -250,6 +250,9 @@ input[type=checkbox]:after {
     border-top: 1px solid #d2d2d2;
     padding-top: 18px;
 }
+.module-block.no-border {
+    border-top: none;
+}
 .module-block .panel {
     margin-bottom: 0;
 }
@@ -1124,6 +1127,9 @@ section.content.not_margin_head{
 
 .ptop30 {
     padding-top: 30px;
+}
+.pbottom20 {
+    padding-bottom: 20px;
 }
 
 .messages-block .el .message {
