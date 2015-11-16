@@ -120,8 +120,8 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <section class="row content-header inverse bg-info">
-                        <div class="container-fluid">
+                    <section class="row content-header inverse z_index_99 bg-info">
+                        <div class="container-fluid ">
                             <div class="col-sm-8">
                                 <h1 class="pull-left">
                                     Create an Order
@@ -152,80 +152,150 @@
 
                     </section>
                     <div class="col-sm-12">
-
-                        <section class="content">
-
+                        <section class="content not_margin_head">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-8 col-xs-12" style="border-right: 1px solid #ccc">
-                                        <p class="lead text-uppercase">Customer</p>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-4">
+                                    <div class="col-lg-12 bg_white ptop30 mb">
+                                        <form class="form-horizontal">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="company">Company</label>
-                                                    <input type="text" class="form-control" id="company" placeholder="Company">
+                                                    <div class="input-group not_margin">
+                                                        <div class="inner-addon left-addon">
+                                                            <span class="glyphicon icon-search"></span>
+                                                            <input type="text" class="form-control" placeholder="Search for name">
+                                                        </div>
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-info" type="button">New +</button>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="invoice">Invoice address</label>
-                                                    <textarea class="form-control" id="invoice" placeholder="Invoice address"></textarea>
+                                                    <label class="col-sm-5 control-label text-muted text-left">Shipping Address</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Select an address</option>
+                                                            <option>Select an address 1</option>
+                                                            <option>Select an address 2</option>
+                                                            <option>Select an address 3</option>
+                                                            <option>Select an address 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-5 control-label text-muted text-left">Ship From</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Select an address</option>
+                                                            <option>Select an address 1</option>
+                                                            <option>Select an address 2</option>
+                                                            <option>Select an address 3</option>
+                                                            <option>Select an address 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-5 control-label text-muted text-left">Invoice Address</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Select an address</option>
+                                                            <option>Select an address 1</option>
+                                                            <option>Select an address 2</option>
+                                                            <option>Select an address 3</option>
+                                                            <option>Select an address 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="reference" class="col-sm-5 control-label text-muted text-left">Reference</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="reference" placeholder="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-4">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="analyticaccount">Analytic Account</label>
-                                                    <select class="form-control" id="analyticaccount">
-                                                        <option> </option>
-                                                        <option> </option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="shippingaddress">Shipping Address</label>
-                                                    <textarea class="form-control" id="shippingaddress" placeholder="Shipping Address"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="form-group">
-                                                    <label for="pricelist">Pricelist</label>
-                                                    <select class="form-control" id="pricelist">
-                                                        <option>Public Pricelist</option>
-                                                        <option> </option>
-                                                    </select>
+                                                    <label class="col-sm-5 text-left text-muted">Issue Date</label>
+                                                    <div class="date col-sm-7">
+                                                        <div class="inner-addon left-addon">
+                                                            <i class="glyphicon icon-calendar"></i>
+                                                            <input type="text" class="form-control datepicker" size="8" />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="orderingcontact">Ordering Contact</label>
-                                                    <textarea class="form-control" id="orderingcontact" placeholder="Invoice address">Promasidor Company 284, Derrty St. NY</textarea>
+                                                    <label class="col-sm-5 text-left text-muted">Shipment Date</label>
+                                                    <div class="col-sm-7 date">
+                                                        <div class="inner-addon left-addon">
+                                                            <i class="glyphicon icon-calendar"></i>
+                                                            <input type="text" class="form-control datepicker" size="8" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email" class="col-sm-5 text-left text-muted control-label">Email</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="email" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone" class="col-sm-5 text-left text-muted control-label">Phone</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="currency" class="col-sm-5 text-left text-muted control-label">Currency</label>
+                                                    <div class="col-sm-7">
+                                                        <input type="text" class="form-control" id="currency" placeholder="Dollars US ( $ )">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="col-sm-12">
-                                            <p class="lead text-uppercase">Vendor</p>
-                                            <div class="block-icon">
-                                                <div class="block-icon-ico">
-                                                    <span class="glyphicon icon-map"></span>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label class="col-sm-5 text-left text-muted control-label">Price List</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Wholesale</option>
+                                                            <option>Wholesale 1</option>
+                                                            <option>Wholesale 2</option>
+                                                            <option>Wholesale 3</option>
+                                                            <option>Wholesale 4</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <address class="block-icon-content">
-                                                    Apapa Depot<br>
-                                                    12, Apapa Street<br>
-                                                    Apapa, Lagos, Nigeria
-                                                </address>
-                                            </div>
-                                            <div class="block-icon">
-                                                <div class="block-icon-ico">
-                                                    <span class="glyphicon icon-phone"></span>
+                                                <div class="form-group">
+                                                    <label class="col-sm-5 text-left text-muted control-label">Total Are</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Tax Exclusive</option>
+                                                            <option>Tax Exclusive 1</option>
+                                                            <option>Tax Exclusive 2</option>
+                                                            <option>Tax Exclusive 3</option>
+                                                            <option>Tax Exclusive 4</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <address class="block-icon-content">
-                                                    +999-555-777-33
-                                                </address>
+                                                <div class="form-group">
+                                                    <label class="col-sm-5 text-left text-muted control-label">Assigned To</label>
+                                                    <div class="col-sm-7">
+                                                        <select class="form-control">
+                                                            <option>Tracey May</option>
+                                                            <option>Tracey May 1</option>
+                                                            <option>Tracey May 2</option>
+                                                            <option>Tracey May 3</option>
+                                                            <option>Tracey May 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="clearfix"></div>
+                                            <p></p>
+                                        </form>
                                     </div>
                                     <div class="clearfix"></div>
 
                                     <div class="col-sm-12 col-xs-12">
-                                        <div class="module-block no_mobile width_700">
+                                        <div class="module-block no_mobile width_700 no_border">
                                             <div class="fix_width ">
                                                 <table class="table table-create">
                                                     <thead style="color: #999999;">
