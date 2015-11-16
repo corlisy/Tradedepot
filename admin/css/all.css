@@ -640,6 +640,9 @@ hr {
 .content {
     margin: 162px 0 30px 0;
 }
+.content.sub-content-sec {
+    padding-top: 35px;
+}
 .content.sub-content {
     padding-top: 60px;
 }
@@ -709,6 +712,9 @@ hr {
     top: 71px;
     background: #fff;
     padding: 12px 0;
+}
+.sub-content-header.border {
+    border-bottom: 1px solid #e0e0e0;
 }
 
 
