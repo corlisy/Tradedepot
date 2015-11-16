@@ -137,23 +137,13 @@
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
                                     Orders &nbsp;
-                                    <small>ERD1</small>
+                                    <small>
+                                        ERD1
+                                        <span class="fs12 p15 text-info">
+                                            <i class="glyphicon icon-circle text-info" style="font-size: 6px;margin-top: -6px;vertical-align: middle"></i> In Process
+                                        </span>
+                                    </small>
                                 </h1>
-                                <form role="search" class="hidden-xs hidden-sm"
-                                      style="display: inline-block;padding-top: 20px;max-width:300px;">
-                                    <div class="form-group select_type">
-                                        <div class="col-sm-12">
-                                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="">
-                                                <i class="glyphicon icon-circle text-info" style="font-size: 6px; vertical-align: middle"></i> In Process
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">One</a></li>
-                                                <li><a href="#">Two</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
@@ -163,13 +153,20 @@
                                 </ol>
                             </div>
                         </div>
-                        <div class="sub-content-header">
+                        <div class="sub-content-header border">
                             <div class="container-fluid">
                                 <div class="col-sm-12">
+                                    <div class="pull-left">
+                                        <span><i class="text-success glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-success">Paid</span></span>
+                                        <br/>
+                                        <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>Credits&nbsp;&nbsp;<b class="f_helvetcia">$0</b></span>
+                                    </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default">Print <i
-                                                class="glyphicon icon-print"></i></a>
+                                        <a href="#" class="btn btn-default">Print <i class="glyphicon icon-print"></i></a>
                                         <a href="#" class="btn btn-danger">Cancel order</a>
+                                        <a href="/admin/views/distributor_new.html" class="btn btn-info">Edit <i class="icon-edit"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -178,208 +175,158 @@
 
                     <div class="col-sm-12">
 
-                        <section class="content sub-content">
+                        <section class="content sub-content-sec">
                             <div class="">
-                                <div class="col-sm-6 border_left">
-                                    <p class="lead text-uppercase">Vendor</p>
 
-                                    <div class="block-icon">
-                                        <div class="block-icon-ico">
-                                            <span class="glyphicon icon-map"></span>
-                                        </div>
-                                        <address class="block-icon-content">
-                                            Apapa Depot<br>
-                                            12, Apapa Street<br>
-                                            Apapa, Lagos, Nigeria
-                                        </address>
-                                    </div>
-                                    <div class="block-icon">
-                                        <div class="block-icon-ico">
-                                            <span class="glyphicon icon-phone"></span>
-                                        </div>
-                                        <address class="block-icon-content">
-                                            +999-555-777-33
-                                        </address>
+                                <div class="col-sm-12">
+                                    <div class="bg-white col-lg-12 bg_white ptop30 pbottom20 mb">
+                                        <form class="form-horizontal form-empty">
+                                            <div class="col-sm-4">
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Customer</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Bob Name Co</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Shipping Address</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Address st. 23</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Ship From</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Address st. 86</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Invoice Address</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Address st. 23</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Reference</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Reference</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Issue Date</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">16/11/2015</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Shipment Date</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">16/11/2015</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Email</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">email@mail.com</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Phone</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">+999-555-777-33</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Currency</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Dollars US ( $ )</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Price List</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Wholesale</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Total Are</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Tax Exclusive</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-sm-6 control-label">Assigned To</label>
+                                                    <div class="col-sm-6">
+                                                        <p class="form-control-static">Tracey May</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <br class="hidden-sm hidden-md hidden-lg"/>
 
-                                <div class="col-sm-6">
-                                    <div class="col-sm-6">
-                                        <p class="lead text-uppercase">Delivery</p>
-
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" disabled
-                                                       value="option1" checked>
-                                                I will pick it up
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" disabled
-                                                       value="option2">
-                                                Deliver to me
-                                            </label>
-                                        </div>
-
-                                        <br/>
-
-                                        <select class="form-control" id="" style="max-width:210px;">
-                                            <option>Distributors Depot, NY, Der...</option>
-                                            <option>Distributors Depot, NY, Der...</option>
-                                            <option>Distributors Depot, NY, Der=...</option>
-                                        </select>
-
-                                    </div>
-                                    <br class="hidden-sm hidden-md hidden-lg"/>
-
-                                    <div class="col-sm-6">
-                                        <p class="lead text-uppercase">Pickup Location</p>
-
-                                        <div class="block-icon">
-                                            <div class="block-icon-ico">
-                                                <span class="glyphicon icon-map"></span>
-                                            </div>
-                                            <address class="block-icon-content">
-                                                Apapa Depot<br>
-                                                12, Apapa Street<br>
-                                                Apapa, Lagos, Nigeria
-                                            </address>
-                                        </div>
-                                        <div class="block-icon">
-                                            <div class="block-icon-ico">
-                                                <span class="glyphicon icon-phone"></span>
-                                            </div>
-                                            <address class="block-icon-content">
-                                                +999-555-777-33
-                                            </address>
-                                        </div>
-                                    </div>
-                                </div>
 
 
                                 <div class="col-sm-12">
-                                    <div class="module-block no_mobile width_700">
+                                    <div class="module-block no_mobile width_700 no-border">
                                         <div class="fix_width">
                                             <table class="table table-create">
                                                 <thead style="color: #999999;">
                                                 <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" id="blankCheckbox"
-                                                                       value="option1">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Item Code</td>
-                                                    <td>Description</td>
+                                                    <td>Item Name</td>
                                                     <td>Unit</td>
                                                     <td>Unit Price</td>
                                                     <td>Quantity</td>
-                                                    <td>Discount</td>
+                                                    <td>Item Discounts</td>
+                                                    <td>Tax Rate</td>
                                                     <td class="text-right">Total</td>
                                                     <td>&nbsp;</td>
                                                 </tr>
                                                 </thead>
                                                 <tbody style="background-color: #fff;">
                                                 <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" value="option1">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>DR4411</td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>
-                                                        <div class="spinbox">
-                                                            <button type="button" class="spinbox-down"></button>
-                                                            <input type="text"
-                                                                   class="form-control input-mini spinbox-input"
-                                                                   value="5">
-                                                            <button type="button" class="spinbox-up"></button>
-                                                        </div>
-                                                    </td>
+                                                    <td>5</td>
+                                                    <td></td>
                                                     <td></td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span
                                                             class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" value="option1">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>DR4411</td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>
-                                                        <div class="spinbox">
-                                                            <button type="button" class="spinbox-down"></button>
-                                                            <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                                            <button type="button" class="spinbox-up"></button>
-                                                        </div>
-                                                    </td>
+                                                    <td>5</td>
+                                                    <td></td>
                                                     <td></td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" value="option1">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>DR4411</td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>
-                                                        <div class="spinbox">
-                                                            <button type="button" class="spinbox-down"></button>
-                                                            <input type="text"
-                                                                   class="form-control input-mini spinbox-input"
-                                                                   value="3">
-                                                            <button type="button" class="spinbox-up"></button>
-                                                        </div>
-                                                    </td>
+                                                    <td>5</td>
+                                                    <td>10%</td>
                                                     <td>10%</td>
                                                     <td class="f_helvetcia td-gray text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" value="option1">
-                                                            </label>
-                                                        </div>
-                                                    </td>
-                                                    <td>PR001</td>
                                                     <td>Top Tea</td>
                                                     <td>Pack</td>
                                                     <td>$ 0</td>
-                                                    <td>
-                                                        <div class="spinbox">
-                                                            <button type="button" class="spinbox-down"></button>
-                                                            <input type="text"
-                                                                   class="form-control input-mini spinbox-input"
-                                                                   value="1">
-                                                            <button type="button" class="spinbox-up"></button>
-                                                        </div>
-                                                    </td>
-                                                    <td></td>
+                                                    <td>5</td>
+                                                    <td>10%</td>
+                                                    <td>10%</td>
                                                     <td class="td-gray text-right" style="color: #949e00;"><span
                                                             class="icon-gift"></span> Gift
                                                     </td>
@@ -388,14 +335,6 @@
 
                                                 </tbody>
                                             </table>
-                                            <div class="pull-left">
-                                                <button class="btn btn-info">Add new line <span
-                                                        class="glyphicon icon-add"></span></button>
-                                                <button class="btn btn-danger">Delete checked <span
-                                                        class="glyphicon icon-trash"></span></button>
-                                                <button class="btn btn-danger returnSelect">Return selected <span
-                                                        class="glyphicon icon-return"></span></button>
-                                            </div>
                                             <div class="pull-right container-fluid total-block-wrapper">
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg">
@@ -421,120 +360,6 @@
 
                                 <div class="clearfix"></div>
 
-
-                                <div class="col-sm-12 col-xs-12">
-                                    <div class="module-block">
-                                        <div class="row">
-                                            <div class="col-lg-offset-5 col-lg-7 col-xs-offset-0 col-xs-12 col-md-offset-0 col-md-12">
-                                                <div class="col-lg-4 col-xs-12 col-md-4">
-                                                    <div class="panel-cart panel panel-default">
-                                                        <div class="panel-heading">
-                                                            <div class="head checkbox text-uppercase">
-                                                                <label>
-                                                                    <input type="checkbox" value="">
-                                                                    Credits
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-body">
-                                                            <div class="summ h3">
-                                                                $0<br/>
-                                                                <small>Available amount</small>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input class="text-right form-control" value="$0,00">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix hidden-lg hidden-md"></div>
-                                                <br class="hidden-lg hidden-md"/>
-
-                                                <div class="col-lg-4 col-xs-12 col-md-4">
-                                                    <div class="panel-cart panel panel-success">
-                                                        <div class="panel-heading">
-                                                            <div class="head checkbox text-uppercase">
-                                                                <label>
-                                                                    <input type="checkbox" value="">
-                                                                    Rebates
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-body">
-                                                            <div class="summ h3">
-                                                                $250,000<br/>
-                                                                <small>Available amount</small>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input class="text-right form-control" value="$1000,00">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix hidden-lg hidden-md"></div>
-                                                <br class="hidden-lg hidden-md"/>
-
-                                                <div class="col-lg-4 col-xs-12 col-md-4">
-                                                    <div class="panel-cart panel panel-success">
-                                                        <div class="panel-heading">
-                                                            <div class="head checkbox text-uppercase">
-                                                                <label>
-                                                                    <input type="checkbox" value="" checked>
-                                                                    Deposits
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="panel-body">
-                                                            <div class="summ h3">
-                                                                $500,000<br/>
-                                                                <small>Available amount</small>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input class="text-right form-control" value="$1000,00">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="">
-                                                        <br/>
-                                                        <div class="clearfix">
-                                                            <dl class="dl-horizontal total-table">
-                                                                <br class="hidden-lg hidden-md"/>
-                                                                <dt><b>TOTAL:</b></dt>
-                                                                <dd class="f_helvetcia"><b>$ 9,387</b></dd>
-                                                            </dl>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clearfix"></div>
-
-                                <div class="row">
-                                    <div class="row">
-                                        <div class="alert alert-default alert-dismissible clearfix" role="alert">
-                                            <div class="container-fluid">
-                                                <div class="col-sm-12">
-                                                    <div class="pull-right">
-                                                        <button type="button" class="btn btn-success"
-                                                                data-dismiss="alert" aria-label="Save"><span
-                                                                aria-hidden="true">Save</span></button>
-                                                        <button type="button" class="btn btn-default"
-                                                                data-dismiss="alert" aria-label="Close"><span
-                                                                aria-hidden="true">Cancel</span></button>
-                                                    </div>
-                                                    <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="clearfix"></div>
 
                                 <div class="col-sm-12 col-xs-12">
                                     <div class="module-block messages-block">

@@ -1131,6 +1131,12 @@ section.content.not_margin_head{
 .pbottom20 {
     padding-bottom: 20px;
 }
+/*
+Ломай систему блядь
+*/
+.p15 {
+    padding: 15px;
+}
 
 .messages-block .el .message {
     padding-top: 15px;
@@ -1157,6 +1163,10 @@ section.content.not_margin_head{
     padding-right: 38px;
 }
 
+
+.fs12 {
+    font-size: 12px;
+}
 
 .fs16 {
     font-size: 16px;
@@ -1332,4 +1342,15 @@ table tbody.bg_white {
     display: inline-block !important;
     width: auto !important;
     vertical-align: middle !important;
+}
+
+
+.form-horizontal.form-empty label {
+    padding-top: 0;
+    color: #999999;
+}
+.form-horizontal.form-empty .form-control-static {
+    min-height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
