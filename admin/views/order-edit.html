@@ -42,7 +42,7 @@
                             </a>
                         </div>
                         <ul class="nav sidebar-menu">
-                            <li><a href="/admin/"><i class="glyphicon icon-graph sidebar-menu-icons"></i> <span>Dashboard</span></a></li>
+                            <li><a href="/admin"><i class="glyphicon icon-graph sidebar-menu-icons"></i> <span>Dashboard</span></a></li>
                             <li class="header text-uppercase">Orders management</li>
                             <li><a href="/admin/orders.html"><i class="glyphicon icon-orderslist sidebar-menu-icons"></i>
                                 <span>Orders</span> <span class="label label-info pull-right sidebar-menu-icons">4</span></a></li>
@@ -95,7 +95,7 @@
                                     <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="#" class="btn btn-link text-uppercase"
-                                           style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
+                                                style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
                                     </li>
                                 </ul>
                             </li>
@@ -124,8 +124,8 @@
                         <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
                             <div class="form-group">
                                 <div class="inner-addon right-addon">
-                                        <span class="glyphicon icon-search" id="navbar-search-ico"></span>
-                                        <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
+                                    <span class="glyphicon icon-search" id="navbar-search-ico"></span>
+                                    <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
                                 </div>
                             </div>
                         </form>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="glyphicon icon-orderslist"></i>Home</a></li>
+                                    <li><a href="/admin"><i class="glyphicon icon-orderslist"></i>Home</a></li>
                                     <li><a href="/admin/orders.html">Orders</a></li>
                                     <li class="active">ERD1</li>
                                 </ol>
@@ -157,16 +157,15 @@
                             <div class="container-fluid">
                                 <div class="col-sm-12">
                                     <div class="pull-left">
-                                        <span><i class="text-success glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-success">Paid</span></span>
+                                        <span><i class="text-warning glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-warning">Unpaid</span></span>
                                         <br/>
                                         <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span>Credits&nbsp;&nbsp;<b class="f_helvetcia">$0</b></span>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default">Print <i class="glyphicon icon-print"></i></a>
-                                        <a href="#" class="btn btn-danger">Cancel order</a>
-                                        <a href="/admin/views/order-edit.html" class="btn btn-info">Edit <i class="icon-edit"></i></a>
+                                        <a href="#" class="btn btn-success">Save</a>
+                                        <a href="#" class="btn btn-default">Cancel</a>
                                     </div>
                                 </div>
                             </div>
@@ -180,9 +179,8 @@
 
                                 <div class="col-sm-12">
                                     <div class="bg-white col-lg-12 bg_white ptop20 pbottom20 mb">
-                                        <form class="form-horizontal form-empty">
+                                        <form class="form-horizontal">
                                             <div class="col-sm-4">
-
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Customer</label>
                                                     <div class="col-sm-6">
@@ -190,79 +188,109 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Shipping Address</label>
+                                                    <label for="exampleInputShippingAddress" class="col-sm-6 control-label">Shipping Address</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 23</p>
+                                                        <select class="form-control" id="exampleInputShippingAddress">
+                                                            <option>Address st. 23</option>
+                                                            <option>Address st. 23</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Ship From</label>
+                                                    <label for="exampleInputShipFrom" class="col-sm-6 control-label">Ship From</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 86</p>
+                                                        <select class="form-control" id="exampleInputShipFrom">
+                                                            <option>Address st. 86</option>
+                                                            <option>Address st. 68</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Invoice Address</label>
+                                                    <label for="exampleInputInvoiceAddress" class="col-sm-6 control-label">Invoice Address</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 23</p>
+                                                        <select class="form-control" id="exampleInputInvoiceAddress">
+                                                            <option>Address st. 23</option>
+                                                            <option>Address st. 23</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Reference</label>
+                                                    <label for="exampleInputReference" class="col-sm-6 control-label">Reference</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Reference</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Issue Date</label>
-                                                    <div class="col-sm-6">
-                                                        <p class="form-control-static">16/11/2015</p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Shipment Date</label>
-                                                    <div class="col-sm-6">
-                                                        <p class="form-control-static">16/11/2015</p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Email</label>
-                                                    <div class="col-sm-6">
-                                                        <p class="form-control-static">email@mail.com</p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Phone</label>
-                                                    <div class="col-sm-6">
-                                                        <p class="form-control-static">+999-555-777-33</p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Currency</label>
-                                                    <div class="col-sm-6">
-                                                        <p class="form-control-static">Dollars US ( $ )</p>
+                                                        <input type="text" class="form-control" id="exampleInputReference" value="Reference" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Price List</label>
+                                                    <label for="exampleInputIssueDate" class="col-sm-6 control-label">Issue Date</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Wholesale</p>
+                                                        <div class="inner-addon left-addon">
+                                                            <i class="glyphicon icon-calendar"></i>
+                                                            <input type="text" class="form-control datepicker" id="exampleInputIssueDate" value="16/11/2015" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Total Are</label>
+                                                    <label for="exampleInputShipmentDate" class="col-sm-6 control-label">Shipment Date</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Tax Exclusive</p>
+                                                        <div class="inner-addon left-addon">
+                                                            <i class="glyphicon icon-calendar"></i>
+                                                            <input type="text" class="form-control datepicker" id="exampleInputShipmentDate" value="16/11/2015" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-6 control-label">Assigned To</label>
+                                                    <label for="exampleInputEmail" class="col-sm-6 control-label">Email</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Tracey May</p>
+                                                        <select class="form-control" id="exampleInputEmail">
+                                                            <option>email@mail.com</option>
+                                                            <option>email@mail.com</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPhone" class="col-sm-6 control-label">Phone</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control" id="exampleInputPhone">
+                                                            <option>+999-555-777-33</option>
+                                                            <option>+999-555-777-33</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputCurrency" class="col-sm-6 control-label">Currency</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="exampleInputCurrency" placeholder="Dollars US ( $ )" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="exampleInputPriceList" class="col-sm-6 control-label">Price List</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control" id="exampleInputPriceList">
+                                                            <option>Wholesale</option>
+                                                            <option>Wholesale</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputTotalAre" class="col-sm-6 control-label">Total Are</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control" id="exampleInputTotalAre">
+                                                            <option>Tax Exclusive</option>
+                                                            <option>Tax Exclusive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputAssignedTo" class="col-sm-6 control-label">Assigned To</label>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control" id="exampleInputAssignedTo">
+                                                            <option>Tracey May</option>
+                                                            <option>Tracey May</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,17 +299,25 @@
                                 </div>
 
 
-
                                 <div class="col-sm-12">
                                     <div class="module-block no_mobile width_700 no-border">
                                         <div class="fix_width">
                                             <table class="table table-create">
                                                 <thead style="color: #999999;">
                                                 <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" id="blankCheckbox"
+                                                                        value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
                                                     <td>Item Name</td>
                                                     <td>Unit</td>
                                                     <td>Unit Price</td>
                                                     <td>Quantity</td>
+                                                    <td>Available</td>
                                                     <td>Item Discounts</td>
                                                     <td>Tax Rate</td>
                                                     <td class="text-right">Total</td>
@@ -290,10 +326,26 @@
                                                 </thead>
                                                 <tbody style="background-color: #fff;">
                                                 <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>5</td>
+                                                    <td>
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
+                                                            <input type="text"
+                                                                    class="form-control input-mini spinbox-input"
+                                                                    value="5">
+                                                            <button type="button" class="spinbox-up"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td>100</td>
                                                     <td></td>
                                                     <td></td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
@@ -301,32 +353,78 @@
                                                             class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>5</td>
+                                                    <td>
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
+                                                            <input type="text" class="form-control input-mini spinbox-input" value="5">
+                                                            <button type="button" class="spinbox-up"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td>100</td>
                                                     <td></td>
                                                     <td></td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
                                                     <td>Coca-Cola Beveragge Drink</td>
                                                     <td>Sachet</td>
                                                     <td>$ 500</td>
-                                                    <td>5</td>
+                                                    <td>
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
+                                                            <input type="text"
+                                                                    class="form-control input-mini spinbox-input"
+                                                                    value="3">
+                                                            <button type="button" class="spinbox-up"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td>100</td>
                                                     <td>10%</td>
                                                     <td>10%</td>
                                                     <td class="f_helvetcia td-gray text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" value="option1">
+                                                            </label>
+                                                        </div>
+                                                    </td>
                                                     <td>Top Tea</td>
                                                     <td>Pack</td>
                                                     <td>$ 0</td>
-                                                    <td>5</td>
-                                                    <td>10%</td>
-                                                    <td>10%</td>
+                                                    <td>
+                                                        <div class="spinbox">
+                                                            <button type="button" class="spinbox-down"></button>
+                                                            <input type="text"
+                                                                    class="form-control input-mini spinbox-input"
+                                                                    value="1">
+                                                            <button type="button" class="spinbox-up"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td>100</td>
+                                                    <td></td>
+                                                    <td></td>
                                                     <td class="td-gray text-right" style="color: #949e00;"><span
                                                             class="icon-gift"></span> Gift
                                                     </td>
@@ -335,6 +433,14 @@
 
                                                 </tbody>
                                             </table>
+                                            <div class="pull-left">
+                                                <button class="btn btn-info">Add new line <span
+                                                        class="glyphicon icon-add"></span></button>
+                                                <button class="btn btn-danger">Delete checked <span
+                                                        class="glyphicon icon-trash"></span></button>
+                                                <button class="btn btn-danger returnSelect">Return selected <span
+                                                        class="glyphicon icon-return"></span></button>
+                                            </div>
                                             <div class="pull-right container-fluid total-block-wrapper">
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg">
@@ -359,6 +465,97 @@
 
 
                                 <div class="clearfix"></div>
+
+
+                                <div class="col-sm-12 col-xs-12">
+                                    <div class="module-block">
+                                        <div class="row">
+                                            <div class="col-lg-offset-5 col-lg-7 col-xs-offset-0 col-xs-12 col-md-offset-0 col-md-12">
+                                                <div class="col-lg-4 col-xs-12 col-md-4">
+                                                    <div class="panel-cart panel panel-checkbox-color">
+                                                        <div class="panel-heading">
+                                                            <div class="head checkbox text-uppercase">
+                                                                <label>
+                                                                    <input type="checkbox" value="">
+                                                                    Credits
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="summ h3">
+                                                                $0<br/>
+                                                                <small>Available amount</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="text-right form-control" value="$0,00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix hidden-lg hidden-md"></div>
+                                                <br class="hidden-lg hidden-md"/>
+
+                                                <div class="col-lg-4 col-xs-12 col-md-4">
+                                                    <div class="panel-cart panel panel-checkbox-color">
+                                                        <div class="panel-heading">
+                                                            <div class="head checkbox text-uppercase">
+                                                                <label>
+                                                                    <input type="checkbox" value="">
+                                                                    Rebates
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="summ h3">
+                                                                $250,000<br/>
+                                                                <small>Available amount</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="text-right form-control" value="$1000,00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix hidden-lg hidden-md"></div>
+                                                <br class="hidden-lg hidden-md"/>
+
+                                                <div class="col-lg-4 col-xs-12 col-md-4">
+                                                    <div class="panel-cart panel panel-checkbox-color">
+                                                        <div class="panel-heading">
+                                                            <div class="head checkbox text-uppercase">
+                                                                <label>
+                                                                    <input type="checkbox" value="" checked>
+                                                                    Deposits
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="summ h3">
+                                                                $500,000<br/>
+                                                                <small>Available amount</small>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="text-right form-control" value="$1000,00">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="">
+                                                        <br/>
+                                                        <div class="clearfix">
+                                                            <dl class="dl-horizontal total-table">
+                                                                <br class="hidden-lg hidden-md"/>
+                                                                <dt><b>TOTAL:</b></dt>
+                                                                <dd class="f_helvetcia"><b>$ 9,387</b></dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="clearfix"></div>
 
@@ -396,7 +593,7 @@
                                                         <span class="glyphicon icon-mail message_ico"></span>
                                                         <a href="#" class="user-link">
                                                             <img class="img-circle" src="/img/test-client/avatar.jpg"
-                                                                 alt=""><span
+                                                                    alt=""><span
                                                                 class="hidden-sm hidden-xs">Mai Gulera</span>
                                                         </a>
                                                         <span class="date">22/03/2015</span>
@@ -418,7 +615,7 @@
                                                         <span class="glyphicon glyphicon-mail icon-mailarrow message_ico text-warning"></span>
                                                         <a href="#" class="user-link">
                                                             <img class="img-circle" src="/img/test-client/avatar.jpg"
-                                                                 alt=""><span
+                                                                    alt=""><span
                                                                 class="hidden-sm hidden-xs">Mai Gulera</span>
                                                         </a>
                                                     </div>
@@ -428,7 +625,7 @@
                                                         <form class="">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control"
-                                                                       placeholder="Enter message"/>
+                                                                        placeholder="Enter message"/>
                                                                     <span class="input-group-btn">
                                                                         <button type="submit" class="btn btn-default"
                                                                                 style="margin-left: 12px;"><span
@@ -497,7 +694,7 @@
 </div>
 
 
-<script data-main="/admin/js/order_list" src="/js/require.js" async></script>
+<script data-main="/admin/js/view" src="/js/require.js" async></script>
 
 </body>
 </html>
