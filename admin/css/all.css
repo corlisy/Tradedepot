@@ -644,7 +644,7 @@ hr {
     margin: 162px 0 30px 0;
 }
 .content.sub-content-sec {
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .content.sub-content {
     padding-top: 60px;
@@ -718,6 +718,12 @@ hr {
 }
 .sub-content-header.border {
     border-bottom: 1px solid #e0e0e0;
+    padding: 6px 0;
+    height: 61px;
+}
+.sub-content-header .btn {
+    font-size: 16px;
+    margin-top: 6px;
 }
 
 
@@ -1128,6 +1134,9 @@ section.content.not_margin_head{
 .ptop30 {
     padding-top: 30px;
 }
+.ptop20 {
+    padding-top: 20px;
+}
 .pbottom20 {
     padding-bottom: 20px;
 }
@@ -1353,4 +1362,7 @@ table tbody.bg_white {
     min-height: 20px;
     padding-top: 0;
     padding-bottom: 0;
+}
+.form-horizontal.form-empty .form-group {
+    margin-bottom: 8px;
 }
