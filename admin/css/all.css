@@ -184,7 +184,7 @@ input[type=radio]:before {
     position: absolute;
     padding: 10px;
     pointer-events: none;
-    z-index: 10;
+    z-index: 4;
 }
 .left-addon .glyphicon  { left:  0px;}
 .right-addon .glyphicon { right: 0px;}
@@ -715,11 +715,12 @@ hr {
     top: 71px;
     background: #fff;
     padding: 12px 0;
+    z-index: 5;
 }
 .sub-content-header.border {
     border-bottom: 1px solid #e0e0e0;
     padding: 6px 0;
-    height: 61px;
+    min-height: 61px;
 }
 .sub-content-header .btn {
     font-size: 16px;
@@ -1365,4 +1366,8 @@ table tbody.bg_white {
 }
 .form-horizontal.form-empty .form-group {
     margin-bottom: 8px;
+}
+
+.well-custom {
+    overflow: hidden;
 }
