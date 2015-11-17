@@ -14,8 +14,8 @@ requirejs(['./common'], function (common) {
                 {
                     label: "Deposits",
                     fillColor: "transparent",
-                    strokeColor: "rgb(25, 163, 209)",
-                    pointColor: "rgb(25, 163, 209)",
+                    strokeColor: "#669933",
+                    pointColor: "#669933",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "rgb(224, 241, 247)",
                     pointHighlightStroke: "#fff",
@@ -24,8 +24,8 @@ requirejs(['./common'], function (common) {
                 {
                     label: "Rebates",
                     fillColor: "transparent",
-                    strokeColor: "#669933",
-                    pointColor: "#669933",
+                    strokeColor: "rgb(25, 163, 209)",
+                    pointColor: "rgb(25, 163, 209)",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "rgb(224, 241, 247)",
                     pointHighlightStroke: "#fff",
@@ -130,7 +130,32 @@ requirejs(['./common'], function (common) {
 
 
 
-
+        function customTooltip (tooltip, tooltipid) {
+            var tooltipEl = $('#' + tooltipid);
+            if (!tooltip) {
+                tooltipEl.css({
+                    opacity: 0
+                });
+                return;
+            }
+            tooltipEl.removeClass('above below');
+            tooltipEl.addClass(tooltip.yAlign);
+            var innerHtml = '';
+            innerHtml += [
+                '<div class="chartjs-tooltip-section">',
+                '	<span class="chartjs-tooltip-value">' + tooltip.text + '</span>',
+                '</div>'
+            ].join('');
+            tooltipEl.html(innerHtml);
+            tooltipEl.css({
+                opacity: 1,
+                left: tooltip.chart.canvas.offsetLeft + tooltip.x + 'px',
+                top: tooltip.chart.canvas.offsetTop + tooltip.y + 'px',
+                fontFamily: tooltip.fontFamily,
+                fontSize: tooltip.fontSize,
+                fontStyle: tooltip.fontStyle
+            });
+        }
 
 
         var depositsPieOptions = {
@@ -165,7 +190,11 @@ requirejs(['./common'], function (common) {
             datasetFill: true,
             maintainAspectRatio: true,
             responsive: true,
-            showTooltips: false
+            showTooltips: true,
+            customTooltips:
+                function(tooltip) {
+                    customTooltip(tooltip, 'chartjs-tooltip-deposits')
+                }
         };
 
 
@@ -240,7 +269,14 @@ requirejs(['./common'], function (common) {
                 }
             ]
         };
-        new Chart(document.getElementById("rebatesLine").getContext("2d")).Line(rebatesBarChartData, depositsLineOptions);
+
+        var rebatesLineOptions = depositsLineOptions;
+        rebatesLineOptions['customTooltips'] =  function(tooltip) {
+            customTooltip(tooltip, 'chartjs-tooltip-rebates')
+        };
+
+
+        new Chart(document.getElementById("rebatesLine").getContext("2d")).Line(rebatesBarChartData, rebatesLineOptions);
         //======================
 
         var creditsPieChart = new Chart($("#creditsPie").get(0).getContext("2d"));
@@ -258,7 +294,13 @@ requirejs(['./common'], function (common) {
                 label: "other"
             }
         ];
-        creditsPieChart.Doughnut(creditsPieData, depositsPieOptions);
+
+        var creditsLineOptions = depositsLineOptions;
+        creditsLineOptions['customTooltips'] =  function(tooltip) {
+            customTooltip(tooltip, 'chartjs-tooltip-credits')
+        };
+
+        creditsPieChart.Doughnut(creditsPieData, creditsLineOptions);
         //------------------
         var creditsBarChartData = {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -320,7 +362,10 @@ requirejs(['./common'], function (common) {
             datasetStroke: true,
             datasetStrokeWidth: 2,
             datasetFill: true,
-            maintainAspectRatio: true
+            maintainAspectRatio: true,
+            customTooltips: function(tooltip) {
+                customTooltip(tooltip, 'chartjs-tooltip-orders')
+            }
         });
 
 

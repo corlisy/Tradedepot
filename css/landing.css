@@ -170,3 +170,11 @@ footer .copyrights {
     text-align: center;
     line-height: 110px;
 }
+
+.navbar-custom-landing .landing-collapse-ico {
+    font-size: 25px;
+    color: #e87919;
+}
+.navbar-custom-landing .landing-collapse-ico:hover {
+    color: #fff;
+}

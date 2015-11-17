@@ -5,6 +5,16 @@
  */.bootstrap-datetimepicker-widget{list-style:none}.bootstrap-datetimepicker-widget.dropdown-menu{margin:2px 0;padding:4px;width:19em}@media (min-width:768px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}@media (min-width:992px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}@media (min-width:1200px){.bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs{width:38em}}.bootstrap-datetimepicker-widget.dropdown-menu:before,.bootstrap-datetimepicker-widget.dropdown-menu:after{content:'';display:inline-block;position:absolute}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);top:-7px;left:7px}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid white;top:-6px;left:8px}.bootstrap-datetimepicker-widget.dropdown-menu.top:before{border-left:7px solid transparent;border-right:7px solid transparent;border-top:7px solid #ccc;border-top-color:rgba(0,0,0,0.2);bottom:-7px;left:6px}.bootstrap-datetimepicker-widget.dropdown-menu.top:after{border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid white;bottom:-6px;left:7px}.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after{left:auto;right:7px}.bootstrap-datetimepicker-widget .list-unstyled{margin:0}.bootstrap-datetimepicker-widget a[data-action]{padding:6px 0}.bootstrap-datetimepicker-widget a[data-action]:active{box-shadow:none}.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:54px;font-weight:bold;font-size:1.2em;margin:0}.bootstrap-datetimepicker-widget button[data-action]{padding:6px}.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Increment Hours"}.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Increment Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Decrement Hours"}.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Decrement Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Show Hours"}.bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Show Minutes"}.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Toggle AM/PM"}.bootstrap-datetimepicker-widget .btn[data-action="clear"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Clear the picker"}.bootstrap-datetimepicker-widget .btn[data-action="today"]::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Set the date to today"}.bootstrap-datetimepicker-widget .picker-switch{text-align:center}.bootstrap-datetimepicker-widget .picker-switch::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Toggle Date and Time Screens"}.bootstrap-datetimepicker-widget .picker-switch td{padding:0;margin:0;height:auto;width:auto;line-height:inherit}.bootstrap-datetimepicker-widget .picker-switch td span{line-height:2.5;height:2.5em;width:100%}.bootstrap-datetimepicker-widget table{width:100%;margin:0}.bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{text-align:center;border-radius:4px}.bootstrap-datetimepicker-widget table th{height:20px;line-height:20px;width:20px}.bootstrap-datetimepicker-widget table th.picker-switch{width:145px}.bootstrap-datetimepicker-widget table th.disabled,.bootstrap-datetimepicker-widget table th.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget table th.prev::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Previous Month"}.bootstrap-datetimepicker-widget table th.next::after{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0;content:"Next Month"}.bootstrap-datetimepicker-widget table thead tr:first-child th{cursor:pointer}.bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#eee}.bootstrap-datetimepicker-widget table td{height:54px;line-height:54px;width:54px}.bootstrap-datetimepicker-widget table td.cw{font-size:.8em;height:20px;line-height:20px;color:#777}.bootstrap-datetimepicker-widget table td.day{height:20px;line-height:20px;width:20px}.bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#eee;cursor:pointer}.bootstrap-datetimepicker-widget table td.old,.bootstrap-datetimepicker-widget table td.new{color:#777}.bootstrap-datetimepicker-widget table td.today{position:relative}.bootstrap-datetimepicker-widget table td.today:before{content:'';display:inline-block;border:solid transparent;border-width:0 0 7px 7px;border-bottom-color:#337ab7;border-top-color:rgba(0,0,0,0.2);position:absolute;bottom:4px;right:4px}.bootstrap-datetimepicker-widget table td.active,.bootstrap-datetimepicker-widget table td.active:hover{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget table td.active.today:before{border-bottom-color:#fff}.bootstrap-datetimepicker-widget table td.disabled,.bootstrap-datetimepicker-widget table td.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget table td span{display:inline-block;width:54px;height:54px;line-height:54px;margin:2px 1.5px;cursor:pointer;border-radius:4px}.bootstrap-datetimepicker-widget table td span:hover{background:#eee}.bootstrap-datetimepicker-widget table td span.active{background-color:#337ab7;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget table td span.old{color:#777}.bootstrap-datetimepicker-widget table td span.disabled,.bootstrap-datetimepicker-widget table td span.disabled:hover{background:none;color:#777;cursor:not-allowed}.bootstrap-datetimepicker-widget.usetwentyfour td.hour{height:27px;line-height:27px}.bootstrap-datetimepicker-widget.wider{width:21em}.bootstrap-datetimepicker-widget .datepicker-decades .decade{line-height:1.8em !important}.input-group.date .input-group-addon{cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}
 
 
+@font-face
+{
+    font-family: 'HelveticaNeue-UltraLight';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('/fonts/HelveticaNeue-UltraLight.eot');
+    src: url('/fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'), url('/fonts/HelveticaNeue-UltraLight.woff') format('woff'), url('/fonts/HelveticaNeue-UltraLight.ttf') format('truetype'), url('/fonts/HelveticaNeue-UltraLight.svg#HelveticaNeue-Light') format('svg');
+}
+
 select, select.form-control {
     border-radius: 3px;
     font-size: inherit;
@@ -174,7 +184,7 @@ input[type=radio]:before {
     position: absolute;
     padding: 10px;
     pointer-events: none;
-    z-index: 10;
+    z-index: 4;
 }
 .left-addon .glyphicon  { left:  0px;}
 .right-addon .glyphicon { right: 0px;}
@@ -238,7 +248,10 @@ input[type=checkbox]:after {
 .module-block {
     margin-top: 10px;
     border-top: 1px solid #d2d2d2;
-    padding-top: 21px;
+    padding-top: 18px;
+}
+.module-block.no-border {
+    border-top: none;
 }
 .module-block .panel {
     margin-bottom: 0;
@@ -250,6 +263,24 @@ input[type=checkbox]:after {
 
 .module-block .form-group input {
     background-color: #fff;
+}
+
+#transactionsChartLegend ul {
+    height: 20px;
+    margin-bottom: 0px;
+}
+
+#transactionsChartLegend ul li {
+    padding-right: 25px;
+}
+
+#ordersBarWell .media-body .h6 {
+    margin: 5px auto;
+}
+
+.trans_history .label {
+    display: inline-block;
+    width: 72px;
 }
 
 .table td > .checkbox,
@@ -269,6 +300,15 @@ input[type=checkbox]:after {
     padding: 3px 13px;
     vertical-align: middle;
 }
+
+.z_index_99 {
+    z-index: 99 !important;
+}
+
+.no_border {
+    border: 0 !important;
+}
+
 .table>thead {
     color: #999999;
 }
@@ -304,12 +344,40 @@ input[type=checkbox]:after {
     -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, .15);
     box-shadow: 1px 1px 15px rgba(0, 0, 0, .15);
 }
+
+.fast-search.custom .fast-search-result {
+    width: 445px;
+}
+
+.fast-search.custom .fast-search-result {
+    height: 105px;
+}
+
+.fast-search.custom .fast-search-result {
+    padding: 3px 0;
+}
+
 .fast-search .fast-search-result .fast-search-elem {
     width: 100%;
     display: block;
     padding: 2px 5px;
     color: #484848;
     text-decoration:none;
+}
+
+.n-side-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.n-side-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.custom .fast-search-elem {
+    padding: 2px 5px;
 }
 
 .fast-search .fast-search-result .fast-search-elem:hover {
@@ -532,7 +600,9 @@ hr {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
 }
+
 /*
 .navbar-custom-menu {
     margin-right: 30px;
@@ -600,6 +670,9 @@ hr {
 
 .content {
     margin: 162px 0 30px 0;
+}
+.content.sub-content-sec {
+    padding-top: 30px;
 }
 .content.sub-content {
     padding-top: 60px;
@@ -670,6 +743,16 @@ hr {
     top: 71px;
     background: #fff;
     padding: 12px 0;
+    z-index: 5;
+}
+.sub-content-header.border {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 6px 0;
+    min-height: 61px;
+}
+.sub-content-header .btn {
+    font-size: 16px;
+    margin-top: 6px;
 }
 
 
@@ -950,6 +1033,12 @@ table.table-tr-bottom-border tr th {
     border-color: #ccc;
 }
 
+.btn-default:hover {
+    color: #333;
+    background-color: #E6E6E6;
+    border-color: #ADADAD;
+}
+
 .total-table {
     width: 450px;
     float: right;
@@ -979,6 +1068,10 @@ table.table-tr-bottom-border tr th {
     padding-right: 8%;
 }
 
+.total-table.dl-horizontal.padd_l40px dd {
+    padding-right: 40px;
+}
+
 .total-table.dl-horizontal.padd_l dd {
     padding-right: 0;
 }
@@ -996,6 +1089,10 @@ table.table-tr-bottom-border tr th {
 
 .f_helvetcia {
     font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
+}
+
+.f_helvetcia_ul {
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight',  'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica;
 }
 
 @media (max-width: 768px) {
@@ -1016,6 +1113,13 @@ table.table-tr-bottom-border tr th {
         font-size: 25px;
     }
 }
+
+@media (max-width: 970px) {
+    .pull-right.no_fl_in_mobile {
+        float: none !important;
+    }
+}
+
 .select-custom1 {
     width: 100%
 }
@@ -1038,12 +1142,48 @@ table.table-tr-bottom-border tr th {
     margin-bottom: 14px;
 }
 
+.text-left {
+    text-align: left !important;
+}
 
 .messages-block .el .message_ico {
     padding-right: 18px;
     height: 100%;
     min-width: 32px;
     font-size: 17px;
+}
+
+section.content.not_margin_head{
+    margin-top: 130px;
+}
+
+.input-group.not_margin .input-group-btn button{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.input-group.not_margin input {
+    border-radius: 4px !important;
+}
+
+.bg_white {
+    background-color: white;
+}
+
+.ptop30 {
+    padding-top: 30px;
+}
+.ptop20 {
+    padding-top: 20px;
+}
+.pbottom20 {
+    padding-bottom: 20px;
+}
+/*
+Ломай систему блядь
+*/
+.p15 {
+    padding: 15px;
 }
 
 .messages-block .el .message {
@@ -1072,8 +1212,72 @@ table.table-tr-bottom-border tr th {
 }
 
 
+.fs12 {
+    font-size: 12px;
+}
+
 .fs16 {
     font-size: 16px;
+}
+.fs11 {
+    font-size: 11px;
+}
+
+.badge {
+    border-radius: 2px;
+}
+
+.badge.text-muted {
+    color: #fff;
+    background-color: #d2d2d2;
+}
+
+.fs28 {
+    font-size: 28px;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.mb7 {
+    margin-bottom: 7px;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.pr0 {
+    padding-right: 0;
+}
+
+
+
+h2.name small {
+    font-size: 54%;
+}
+
+.bull-text span {
+    margin-right: 8px;
+}
+
+.table-td-no-pl td {
+    padding-left: 0 !important;
+}
+
+.table-td-padd-custom1 td {
+    padding-bottom: 0px !important;
+    padding-top: 5px !important;
+}
+
+.text-approve {
+    color: #65e3ac;
+}
+
+.h0 {
+    font-size: 40px;
+    line-height: 40px;
 }
 
 .btn.padd25 {
@@ -1136,6 +1340,10 @@ address .glyphicon {
     vertical-align: middle;
 }
 
+address a, address a:hover {
+    color: #484848;
+}
+
 table tbody.bg_white {
     background: #fff;
 }
@@ -1157,4 +1365,59 @@ table tbody.bg_white {
     vertical-align: middle;
     height: 10px;
     margin-right: 5px;
+}
+
+.sidebar-menu-icons {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.chartjs-tooltip {
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 999;
+    white-space: nowrap;
+}
+
+.only_mobile_adapt.form-inline .form-group {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.only_mobile_adapt.form-inline .input-group {
+    display: inline-table !important;
+    vertical-align: middle !important;
+}
+
+.only_mobile_adapt.form-inline .form-control {
+    display: inline-block !important;
+    width: auto !important;
+    vertical-align: middle !important;
+}
+
+
+.form-horizontal.form-empty label {
+    padding-top: 0;
+    color: #999999;
+}
+.form-horizontal.form-empty .form-control-static {
+    min-height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.form-horizontal.form-empty .form-group {
+    margin-bottom: 8px;
+}
+
+.well-custom {
+    overflow: hidden;
 }
