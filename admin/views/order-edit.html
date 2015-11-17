@@ -121,7 +121,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+                        <form class="navbar-form navbar-right hidden-xs hidden-sm hidden-md" role="search">
                             <div class="form-group">
                                 <div class="inner-addon right-addon">
                                     <span class="glyphicon icon-search" id="navbar-search-ico"></span>
@@ -136,7 +136,7 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Orders &nbsp;
+                                    Orders
                                     <small>
                                         ERD1
                                         <span class="fs12 p15 text-info">
@@ -166,8 +166,8 @@
                                         </span>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-success">Save</a>
-                                        <a href="#" class="btn btn-default">Cancel</a>
+                                        <a href="#" class="btn btn-success btn-sm">Save</a>
+                                        <a href="#" class="btn btn-default btn-sm">Cancel</a>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +261,7 @@
                                                 <div class="form-group">
                                                     <label for="exampleInputCurrency" class="col-sm-6 control-label">Currency</label>
                                                     <div class="col-sm-6">
-                                                        <input type="text" class="form-control" id="exampleInputCurrency" placeholder="Dollars US ( $ )" />
+                                                        <input type="text" class="form-control" id="exampleInputCurrency" placeholder="Dollars US ( $ )"  disabled="disabled"/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -348,8 +348,12 @@
                                                         </div>
                                                     </td>
                                                     <td>100</td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 80px;" placeholder=""/>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 60px;" placeholder=""/>
+                                                    </td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span
                                                             class="glyphicon glyphicon-remove"></span></a></td>
@@ -373,8 +377,12 @@
                                                         </div>
                                                     </td>
                                                     <td>100</td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 80px;" placeholder=""/>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 60px;" placeholder=""/>
+                                                    </td>
                                                     <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
@@ -399,8 +407,12 @@
                                                         </div>
                                                     </td>
                                                     <td>100</td>
-                                                    <td>10%</td>
-                                                    <td>10%</td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 80px;" placeholder="" value="10%"/>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 60px;" placeholder="" value="10%"/>
+                                                    </td>
                                                     <td class="f_helvetcia td-gray text-right"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
@@ -425,8 +437,12 @@
                                                         </div>
                                                     </td>
                                                     <td>100</td>
-                                                    <td></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 80px;" placeholder="" value="10%"/>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="input-transparent" style="width: 60px;" placeholder="" value="10%"/>
+                                                    </td>
                                                     <td class="td-gray text-right" style="color: #949e00;"><span
                                                             class="icon-gift"></span> Gift
                                                     </td>

@@ -14,7 +14,7 @@ requirejs(['./common'], function (common) {
                     '<div class="col-sm-10 n-side-padding">' +
                     el[0]+
                     '</div>' +
-                    '<div class="col-sm-1 n-side-padding fs11 text-right">' +
+                    '<div class="col-sm-1 n-side-padding pr20 fs11 text-right">' +
                     el[1]+
                     '</div>' +
                     '<div class="col-sm-1 n-side-padding fs11 text-right">' +
