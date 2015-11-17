@@ -748,7 +748,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 71px;
+    top: 70px;
     background: #fff;
     padding: 12px 0;
     z-index: 5;
@@ -1002,6 +1002,14 @@ hr {
     font-size: 9px;
     color: #c1c0c0;
 }
+
+#collapse_button.icon-downarrow {
+    margin-left: 0px;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #484848;
+}
+
 .main-menu .icon-order {
     margin-left: 8px;
 }
@@ -1108,9 +1116,16 @@ table.table-tr-bottom-border tr th {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight',  'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica;
 }
 
+.sub-content-payments {
+    font-size: 14px;
+}
 @media (max-width: 768px) {
-    .total-table {
-        width: 100%;
+    .text-info {
+        font-size: 12px;
+    }
+
+    .sub-content-payments {
+        font-size: 11px;
     }
 
     .total-table.dl-horizontal dd {

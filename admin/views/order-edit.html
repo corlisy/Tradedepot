@@ -159,16 +159,25 @@
                                     <div class="pull-left">
                                         <span><i class="text-warning glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-warning">Unpaid</span></span>
                                         <br/>
-                                        <span class="hidden-xs">
-                                            <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="sub-content-payments">
+                                            <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;
+                                            <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;
                                             <span>Credits&nbsp;&nbsp;<b class="f_helvetcia">$0</b></span>
                                         </span>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-success btn-sm">Save</a>
-                                        <a href="#" class="btn btn-default btn-sm">Cancel</a>
+                                        <div class="hidden-xs hidden-md">
+                                           <a href="#" class="btn btn-success btn-sm">Save</a>
+                                           <a href="#" class="btn btn-default btn-sm">Cancel</a>                                  
+                                       </div>
+                                       <div class="btn-group">
+                                        <button class="btn btn-default btn-xs dropdown-toggle hidden-lg hidden-sm"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-downarrow" id="collapse_button"></i></button>
+                                        <ul class="dropdown-menu pull-right" style="margin-top:10px;">
+                                            <li><a href="#">Save</a></li>
+                                            <li><a href="/admin/views/order.html">Cancel</a></li>
+                                        </ul>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +193,7 @@
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Customer</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Bob Name Co</p>
+                                                        <div style="padding-top:7px;"><b class="form-control-static f_helvetcia">Bob Name Co</b></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -354,7 +363,7 @@
                                                     <td>
                                                         <input type="text" class="input-transparent" style="width: 60px;" placeholder=""/>
                                                     </td>
-                                                    <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
+                                                    <td class="td-gray f_helvetcia text-right text-nowrap"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span
                                                             class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
@@ -383,7 +392,7 @@
                                                     <td>
                                                         <input type="text" class="input-transparent" style="width: 60px;" placeholder=""/>
                                                     </td>
-                                                    <td class="td-gray f_helvetcia text-right"><b>$ 6,000</b></td>
+                                                    <td class="td-gray f_helvetcia text-righ text-nowrapt"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
@@ -413,7 +422,7 @@
                                                     <td>
                                                         <input type="text" class="input-transparent" style="width: 60px;" placeholder="" value="10%"/>
                                                     </td>
-                                                    <td class="f_helvetcia td-gray text-right"><b>$ 6,000</b></td>
+                                                    <td class="f_helvetcia td-gray text-right text-nowrap"><b>$ 6,000</b></td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
                                                 </tr>
                                                 <tr>
@@ -443,7 +452,7 @@
                                                     <td>
                                                         <input type="text" class="input-transparent" style="width: 60px;" placeholder="" value="10%"/>
                                                     </td>
-                                                    <td class="td-gray text-right" style="color: #949e00;"><span
+                                                    <td class="td-gray text-right text-nowrap" style="color: #949e00;"><span
                                                             class="icon-gift"></span> Gift
                                                     </td>
                                                     <td class="td-gray"><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
@@ -582,15 +591,17 @@
                                         <div class="alert alert-default alert-dismissible clearfix" role="alert">
                                             <div class="container-fluid">
                                                 <div class="col-sm-12">
+                                                    <div class="pull-left hidden-sm hidden-xs">
+                                                        <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
+                                                    </div>
                                                     <div class="pull-right">
                                                         <button type="button" class="btn btn-success"
-                                                                data-dismiss="alert" aria-label="Save"><span
-                                                                aria-hidden="true">Save</span></button>
+                                                        data-dismiss="alert" aria-label="Save"><span
+                                                        aria-hidden="true">Save</span></button>
                                                         <button type="button" class="btn btn-default"
-                                                                data-dismiss="alert" aria-label="Close"><span
-                                                                aria-hidden="true">Cancel</span></button>
+                                                        data-dismiss="alert" aria-label="Close"><span
+                                                        aria-hidden="true">Cancel</span></button>
                                                     </div>
-                                                    <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
                                                 </div>
                                             </div>
                                         </div>
