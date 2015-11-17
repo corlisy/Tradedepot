@@ -109,7 +109,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+                        <form class="navbar-form navbar-right hidden-xs hidden-sm hidden-md" role="search">
                             <div class="form-group">
                                 <div class="inner-addon right-addon">
                                         <span class="glyphicon icon-search" id="navbar-search-ico"></span>
@@ -170,7 +170,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 control-label text-muted text-left">Shipping Address</label>
+                                                    <label class="col-sm-5 control-label text-muted ">Shipping Address</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Select an address</option>
@@ -182,7 +182,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 control-label text-muted text-left">Ship From</label>
+                                                    <label class="col-sm-5 control-label text-muted ">Ship From</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Select an address</option>
@@ -194,7 +194,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 control-label text-muted text-left">Invoice Address</label>
+                                                    <label class="col-sm-5 control-label text-muted ">Invoice Address</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Select an address</option>
@@ -206,7 +206,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="reference" class="col-sm-5 control-label text-muted text-left">Reference</label>
+                                                    <label for="reference" class="col-sm-5 control-label text-muted ">Reference</label>
                                                     <div class="col-sm-7">
                                                         <input type="text" class="form-control" id="reference" placeholder="">
                                                     </div>
@@ -214,8 +214,8 @@
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 text-left text-muted">Issue Date</label>
-                                                    <div class="date col-sm-7">
+                                                    <label class="col-sm-5 text-muted text-right">Issue Date</label>
+                                                    <div class="date col-sm-7 date">
                                                         <div class="inner-addon left-addon">
                                                             <i class="glyphicon icon-calendar"></i>
                                                             <input type="text" class="form-control datepicker" size="8" />
@@ -223,7 +223,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 text-left text-muted">Shipment Date</label>
+                                                    <label class="col-sm-5 text-muted text-right">Shipment Date</label>
                                                     <div class="col-sm-7 date">
                                                         <div class="inner-addon left-addon">
                                                             <i class="glyphicon icon-calendar"></i>
@@ -232,27 +232,27 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="email" class="col-sm-5 text-left text-muted control-label">Email</label>
+                                                    <label for="email" class="col-sm-5 text-muted control-label">Email</label>
                                                     <div class="col-sm-7">
                                                         <input type="text" class="form-control" id="email" placeholder="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="phone" class="col-sm-5 text-left text-muted control-label">Phone</label>
+                                                    <label for="phone" class="col-sm-5 text-muted control-label">Phone</label>
                                                     <div class="col-sm-7">
                                                         <input type="text" class="form-control" id="phone" placeholder="">
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="currency" class="col-sm-5 text-left text-muted control-label">Currency</label>
+                                                    <label for="currency" class="col-sm-5 text-muted control-label">Currency</label>
                                                     <div class="col-sm-7">
-                                                        <input type="text" class="form-control" id="currency" placeholder="Dollars US ( $ )">
+                                                        <input type="text" class="form-control" id="currency" placeholder="Dollars US ( $ )" disabled="disabled">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 text-left text-muted control-label">Price List</label>
+                                                    <label class="col-sm-5 text-muted control-label">Price List</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Wholesale</option>
@@ -264,7 +264,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 text-left text-muted control-label">Total Are</label>
+                                                    <label class="col-sm-5 text-muted control-label">Total Are</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Tax Exclusive</option>
@@ -276,7 +276,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="col-sm-5 text-left text-muted control-label">Assigned To</label>
+                                                    <label class="col-sm-5 text-muted control-label">Assigned To</label>
                                                     <div class="col-sm-7">
                                                         <select class="form-control">
                                                             <option>Tracey May</option>
@@ -334,7 +334,6 @@
                                                         </td>
                                                         <td></td>
                                                         <td></td>
-                                                        <td></td>
                                                         <td>
                                                             <div class="spinbox">
                                                                 <button type="button" class="spinbox-down"></button>
@@ -343,14 +342,19 @@
                                                             </div>
                                                         </td>
                                                         <td></td>
-                                                        <td></td>
+                                                        <td>
+                                                            <input type="text" class="input-transparent" style="width: 80px;" placeholder=""/>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" class="input-transparent" style="width: 60px;" placeholder=""/>
+                                                        </td>
                                                         <td class="td-gray text-right f_helvetcia"><b></b></td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
                                                 <div class="col-lg-5 col-md-6 col-sm-10 col-xs-12">
                                                     <button class="btn btn-info">Add new line <span class="glyphicon icon-add"></span></button>
-                                                    <button class="btn btn-default disabled">Delete checked <span class="glyphicon icon-trash"></span></button>
+                                                    <button class="btn btn-default disabled" disabled="disabled">Delete checked <span class="glyphicon icon-trash"></span></button>
                                                 </div>
                                                 <div class="pull-right container-fluid total-block-wrapper">
                                                     <div class="clearfix hidden-lg"></div>
@@ -386,7 +390,7 @@
                                                 <div class="clearfix hidden-lg"></div>
                                                 <br class="hidden-lg" />
                                                 <div class="col-lg-2 col-lg-offset-2 col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-0">
-                                                    <div class="panel-cart panel panel-default panel-checkbox-color">
+                                                    <div class="panel-cart panel panel-default panel-disable panel-checkbox-color">
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
@@ -413,7 +417,7 @@
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
-                                                                    <input type="checkbox" value=""  disabled="disabled">
+                                                                    <input type="checkbox" value="">
                                                                     Rebates
                                                                 </label>
                                                             </div>
@@ -424,7 +428,7 @@
                                                                 <small>Available amount</small>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input class="text-right form-control" value="0,00" disabled="disabled">
+                                                                <input class="text-right form-control" value="0,00">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -436,7 +440,7 @@
                                                         <div class="panel-heading">
                                                             <div class="head checkbox text-uppercase">
                                                                 <label>
-                                                                    <input type="checkbox" value=""  disabled="disabled">
+                                                                    <input type="checkbox" value="" >
                                                                     Deposits
                                                                 </label>
                                                             </div>
@@ -447,7 +451,7 @@
                                                                 <small>Available amount</small>
                                                             </div>
                                                             <div class="form-group">
-                                                                <input class="text-right form-control" value="0,00" disabled="disabled">
+                                                                <input class="text-right form-control" value="0,00">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -459,7 +463,7 @@
                                     <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 col-xs-offset-0 col-xs-12">
                                         <div class="module-block">
                                             <div class="pull-right">
-                                                <button class="btn btn-info" disabled="disabled">Create An Order <span class="glyphicon icon-lilist"></span></button>
+                                                <button class="btn btn-default disabled" disabled="disabled">Create An Order <span class="glyphicon icon-order"></span></button>
                                                 <button class="btn btn-default">Cancel</button>
                                             </div>
                                         </div>
