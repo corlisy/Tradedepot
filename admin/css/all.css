@@ -1108,9 +1108,16 @@ table.table-tr-bottom-border tr th {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight',  'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica;
 }
 
+.sub-content-payments {
+    font-size: 14px;
+}
 @media (max-width: 768px) {
-    .total-table {
-        width: 100%;
+    .text-info {
+        font-size: 12px;
+    }
+
+    .sub-content-payments {
+        font-size: 12px;
     }
 
     .total-table.dl-horizontal dd {

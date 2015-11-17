@@ -159,13 +159,13 @@
                                     <div class="pull-left">
                                         <span><i class="text-warning glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-warning">Unpaid</span></span>
                                         <br/>
-                                        <span class="hidden-xs">
+                                        <span class="sub-content-payments">
                                             <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                             <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                             <span>Credits&nbsp;&nbsp;<b class="f_helvetcia">$0</b></span>
                                         </span>
                                     </div>
-                                    <div class="pull-right">
+                                    <div class="pull-right hidden-xs">
                                         <a href="#" class="btn btn-success btn-sm">Save</a>
                                         <a href="#" class="btn btn-default btn-sm">Cancel</a>
                                     </div>
@@ -184,7 +184,7 @@
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Customer</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Bob Name Co</p>
+                                                        <div style="padding-top:7px;"><b class="form-control-static f_helvetcia">Bob Name Co</b></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -582,15 +582,17 @@
                                         <div class="alert alert-default alert-dismissible clearfix" role="alert">
                                             <div class="container-fluid">
                                                 <div class="col-sm-12">
+                                                    <div class="pull-left hidden-sm hidden-xs">
+                                                        <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
+                                                    </div>
                                                     <div class="pull-right">
                                                         <button type="button" class="btn btn-success"
-                                                                data-dismiss="alert" aria-label="Save"><span
-                                                                aria-hidden="true">Save</span></button>
+                                                        data-dismiss="alert" aria-label="Save"><span
+                                                        aria-hidden="true">Save</span></button>
                                                         <button type="button" class="btn btn-default"
-                                                                data-dismiss="alert" aria-label="Close"><span
-                                                                aria-hidden="true">Cancel</span></button>
+                                                        data-dismiss="alert" aria-label="Close"><span
+                                                        aria-hidden="true">Cancel</span></button>
                                                     </div>
-                                                    <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
                                                 </div>
                                             </div>
                                         </div>
