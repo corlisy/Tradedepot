@@ -181,7 +181,7 @@ input[type=radio]:before {
 .inner-addon {
     position: relative;
 }
-.inner-addon .glyphicon {
+.inner-addon>.glyphicon {
     position: absolute;
     padding: 10px;
     pointer-events: none;
