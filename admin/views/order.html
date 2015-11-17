@@ -159,16 +159,27 @@
                                     <div class="pull-left">
                                         <span><i class="text-success glyphicon icon-order"></i> <b class="fs16 f_helvetcia">Payments</b>&nbsp;&nbsp;&nbsp;<span class="text-success">Paid</span></span>
                                         <br/>
-                                        <span class="hidden-xs hidden-sm">
-                                            <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="sub-content-payments">
+                                            <span>Deposits&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;
+                                            <span>Rebates&nbsp;&nbsp;<b class="f_helvetcia">$1000</b></span>&nbsp;&nbsp;
                                             <span>Credits&nbsp;&nbsp;<b class="f_helvetcia">$0</b></span>
                                         </span>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-sm hidden-xs">Print <i class="glyphicon icon-print"></i></a>
-                                        <a href="#" class="btn btn-danger btn-sm">Cancel order</a>
-                                        <a href="/admin/views/order-edit.html" class="btn btn-info btn-sm">Edit <i class="icon-edit"></i></a>
+                                        <div class="hidden-xs hidden-md">
+                                            <a href="#" class="btn btn-default btn-sm">Print <i class="glyphicon icon-print"></i></a>
+                                            <a href="#" class="btn btn-danger btn-sm">Cancel order</a>
+                                            <a href="/admin/views/order-edit.html" class="btn btn-info btn-sm">Edit <i class="icon-edit"></i></a>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn btn-default btn-xs dropdown-toggle hidden-lg hidden-sm"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-downarrow" id="collapse_button"></i></button>
+                                            <ul class="dropdown-menu pull-right" style="margin-top:10px;">
+                                                <li><a href="/admin/views/order-edit.html">Edit</a></li>
+                                                <li><a href="#">Cancel Order</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Print</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

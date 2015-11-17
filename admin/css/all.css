@@ -1002,6 +1002,14 @@ hr {
     font-size: 9px;
     color: #c1c0c0;
 }
+
+#collapse_button.icon-downarrow {
+    margin-left: 0px;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #484848;
+}
+
 .main-menu .icon-order {
     margin-left: 8px;
 }
@@ -1117,7 +1125,7 @@ table.table-tr-bottom-border tr th {
     }
 
     .sub-content-payments {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .total-table.dl-horizontal dd {
