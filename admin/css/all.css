@@ -20,7 +20,7 @@ select, select.form-control {
     font-size: inherit;
     line-height: inherit;
     border: 1px solid #ccc;
-    padding: 6px 18% 6px 9px;
+    padding: 6px 16px 6px 9px;
     box-shadow: none;
     background-position: 96% center;
 }
@@ -1028,6 +1028,7 @@ hr {
     min-width: 710px;
 }
 
+
 .form-inline.no_wrap .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -1039,6 +1040,7 @@ hr {
     width: auto;
     vertical-align: middle;
 }
+
 
 table.table-tr-bottom-border tr * {
     border-top: 0 !important;
