@@ -130,7 +130,6 @@ body {
 }
 .alert-default {
     line-height: 33px;
-    margin-bottom:0;
     color: inherit;
     border-color: #fff;
     background-color: #fff;
@@ -689,7 +688,7 @@ hr {
 
 .content-header {
     background-color: #fff;
-    min-height: 70px;
+    min-height: 71px;
     border-bottom: 1px solid #e0e0e0;
     position: fixed;
     top: 60px;
@@ -748,7 +747,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 70px;
+    top: 71px;
     background: #fff;
     padding: 12px 0;
     z-index: 5;
@@ -1224,6 +1223,9 @@ section.content.not_margin_head{
 
 .messages-block .el .date {
     color: #999999;
+    font-size: 11px;
+    padding-top: 8px;
+    float: right;
 }
 
 .messages-block .el .text_block {
@@ -1236,7 +1238,7 @@ section.content.not_margin_head{
 
 .messages-block .el .user-link span {
     color: #484848;
-    padding-right: 38px;
+    padding-right: 1px;
 }
 
 
