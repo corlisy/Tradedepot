@@ -52,6 +52,11 @@
     background-position: -40px 0;
 }
 
+.navbar .user_menu.dropdown-toggle {
+    padding-top: 12px;
+    padding-right: 0px;
+}
+
 .navbar-custom {
     width: 100%;
     margin-top: 20px;
