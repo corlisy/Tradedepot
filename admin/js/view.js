@@ -1,7 +1,7 @@
 requirejs(['./common'], function (common) {
     require(['jquery', 'bootstrap', 'moment.min', 'bootstrap-datetimepicker.min', 'chartjs', 'chartjshb'], function ($) {
         'use strict';
-        $('.datepicker').datetimepicker({format: 'DD/MM/YYYY' });
+        $('.datepicker').datetimepicker({format: 'DD MMM YYYY', defaultDate: "11/11/2015"});
 
         var rndSF = function() {
             return Math.round(Math.random()*500);

@@ -270,10 +270,6 @@ input[type=checkbox]:after {
     margin-bottom: 0px;
 }
 
-#transactionsChartLegend ul li {
-    padding-right: 25px;
-}
-
 #ordersBarWell .media-body .h6 {
     margin: 5px auto;
 }
