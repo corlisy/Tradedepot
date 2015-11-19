@@ -29,7 +29,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
             </button>
-            <a class="navbar-brand" href="/client-index.html">
+            <a class="navbar-brand" href="/client/index.html">
                 <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
                 <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
             </a>
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="/client-shopping-cart.html" class="user-menu">
+                    <a href="/client/shopping-cart.html" class="user-menu">
                         <span class="summ">$ 9,100</span>
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                     </a>
@@ -76,7 +76,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/client-user-orders.html"><span class="glyphicon glyphicon-list"></span> Orders</a></li>
+                        <li><a href="/client/user-orders.html"><span class="glyphicon glyphicon-list"></span> Orders</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                         <li role="separator" class="divider"></li>
@@ -119,132 +119,140 @@
 <div class="container main-container">
     <div class="row">
         <div class="client-header text-left col-sm-6">
-            <h2><span class="text-uppercase">Search product</span></h2>
+            <h2><span class="text-uppercase">Orders</span></h2>
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
-                <li class="active">Search product</li>
+                <li class="active">Orders</li>
             </ol>
         </div>
         <div class="col-sm-6">
-            <div class="pull-right">
-                <a href="/client-search.html" class="btn btn-link btn-lg text-info">
-                    <span class="glyphicon glyphicon-th"></span>
-                </a>
-                <a href="#" class="btn btn-link btn-lg text-info disabled">
-                    <span class="glyphicon glyphicon-th-list"></span>
-                </a>
-            </div>
+            <form role="search" style="padding-top: 20px;">
+                <div class="form-group">
+                    <div class="col-sm-offset-6">
+                        <div class="inner-addon right-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <input type="text" class="form-control" placeholder="Search Orders">
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+
+
 
     <div class="row">
-        <div class="container-fluid">
-            24 results for: "sun"
-            <br/>
-            <br/>
-            <div class="input-group">
-                <input type="text" class="form-control input-lg" aria-label="..." value="Sun">
-                <div class="input-group-btn">
-                    <a href="#" class="btn btn-info btn-lg">Search</a>
+        <div class="col-sm-12">
+            <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#inprocess" aria-controls="home" role="tab" data-toggle="tab">In Process <span class="label label-info">4</span></a></li>
+                    <li role="presentation"><a href="#shipped" aria-controls="profile" role="tab" data-toggle="tab">Shipped</a></li>
+                    <li role="presentation"><a href="#cancelled" aria-controls="messages" role="tab" data-toggle="tab">Cancelled</a></li>
+                    <li role="presentation"><a href="#all" aria-controls="settings" role="tab" data-toggle="tab">All</a></li>
+                    <li class="navbar-right">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="filter"><strong>4</strong> orders placed in</label>&nbsp;
+                                <select class="form-control" id="filter">
+                                    <option>past 3 months</option>
+                                    <option>past 6 months</option>
+                                    <option>past 12 months</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="inprocess">
+                        <br/>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <td>Order ID</td>
+                                <td>Status</td>
+                                <td>Shipped State</td>
+                                <td>Date Added</td>
+                                <td>Total</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>DR4411</td>
+                                <td><span class="text-success">&bull; Open</span></td>
+                                <td><span class="text-warning">Pending</span></td>
+                                <td>22/03/2015</td>
+                                <td>$ 6,000</td>
+                                <td>
+                                    <a href="#" class="btbn btn-link">Edit</a>
+                                    <a href="#" class="btbn btn-link">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DR4411</td>
+                                <td><span class="text-warning">&bull; Pending</span></td>
+                                <td><span class="text-warning">Pending</span></td>
+                                <td>22/03/2015</td>
+                                <td>$ 1,500</td>
+                                <td>
+                                    <a href="#" class="btbn btn-link">Edit</a>
+                                    <a href="#" class="btbn btn-link">View</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="shipped">
+                        <br/>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <td>Order ID</td>
+                                <td>Status</td>
+                                <td>Shipped State</td>
+                                <td>Date Added</td>
+                                <td>Total</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>DR4411</td>
+                                <td><span class="text-info">&bull; Shipped</span></td>
+                                <td><span class="text-info">Shipped</span></td>
+                                <td>22/03/2015</td>
+                                <td>$ 6,000</td>
+                                <td>
+                                    <a href="#" class="btbn btn-link">Edit</a>
+                                    <a href="#" class="btbn btn-link">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DR4411</td>
+                                <td><span class="text-success">&bull; Delivered</span></td>
+                                <td><span class="text-info">Shipped</span></td>
+                                <td>22/03/2015</td>
+                                <td>$ 1,500</td>
+                                <td>
+                                    <a href="#" class="btbn btn-link">Edit</a>
+                                    <a href="#" class="btbn btn-link">View</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="cancelled">...</div>
+                    <div role="tabpanel" class="tab-pane" id="all">...</div>
                 </div>
+
             </div>
-            <br/>
-            <div class="clearfix"></div>
-
-            <div class="row product-list-table">
-                <div class="container-fluid">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th><a href="#" class="btn btn-link">Item name <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
-                            <th><a href="#" class="btn btn-link">Discount <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
-                            <th><a href="#" class="btn btn-link">Unit <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
-                            <th><a href="#" class="btn btn-link">Price <span class="glyphicon glyphicon-resize-vertical"></span></a></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="col-sm-8">
-                                <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
-                                <div class="name h4">Briella Sunvita&nbsp;&nbsp;<span class="label label-danger">new</span><br/><small>Non Diary Products</small></div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="pull-right">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td>20-200g</td>
-                            <th>from $50</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-8">
-                                <div class="prev-img"><img src="/img/test-client/prod2.jpg" /></div>
-                                <div class="name h4">Long Coca-cola beverage drink&nbsp;&nbsp;<br/><small>Non Diary Products</small></div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="pull-right">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td>10%</td>
-                            <td>20-200g</td>
-                            <th>from $50</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-8">
-                                <div class="prev-img"><img src="/img/test-client/prod1.jpg" /></div>
-                                <div class="name h4">Briella Sunvita&nbsp;&nbsp;<span class="label label-danger">new</span><br/><small>Non Diary Products</small></div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="pull-right">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td>20-200g</td>
-                            <th>from $50</th>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="text-center">
-                <nav>
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-
-
-
         </div>
+
     </div>
-
-
-
 
 
 </div>

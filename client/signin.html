@@ -23,13 +23,13 @@
     <script data-main="/js/app/client" src="/js/require.js" async></script>
 </head>
 <body class="fuelux">
-<nav class="navbar navbar-custom" role="navigation">
+<nav class="navbar navbar-custom navbar-custom-2 navbar-custom-3" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="glyphicon glyphicon-menu-hamburger"></i>
             </button>
-            <a class="navbar-brand" href="/client-index.html">
+            <a class="navbar-brand" href="/client/index.html">
                 <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
                 <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
             </a>
@@ -50,65 +50,73 @@
 
 <div class="container main-container">
     <div class="row">
-        <div class="client-header text-left col-sm-6">
-            <h2><span>Distributor Request Form</span><br/><small>asdsadada as dasd </small></h2>
+        <div class="text-center col-sm-12">
+            <h2 style="font-size: 32px;">Sign in to promasidor.tradedepot.co<br/><small style="color:#484848;font-size:14px;">Enter your email address and password</small></h2>
         </div>
     </div>
 
     <div class="row">
         <div class="container-fluid">
-            <div class="module-block">
-                <div class="col-sm-8 col-sm-offset-1">
-                    <form class="form-horizontal" style="margin-top:30px;">
-                        <div class="form-group">
-                            <label for="inp1" class="col-sm-6 control-label">Company Name <span class="req"></span></label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inp1">
+            <div class="modal modal-emulator modal-info" id="clientSignin" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <form class="form-horizontal signin_client">
+                                            <div class="form-group signin_email">
+                                                <div class="inner-addon left-addon" style="color: #b1b1b1">
+                                                    <i class="glyphicon icon-user"></i>
+                                                    <input type="email" class="form-control signin_email icon" placeholder="Email address">
+                                                    <i class="glyphicon icon-pass signin_paswword"></i>
+                                                    <input type="password" class="form-control signin_paswword icon" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-info btn-block">Sign in</button>
+                                            </div>
+                                            <br/>
+                                            <br/>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-12" style="">
+                                        <div class="row footer_modal">
+                                            <div class="pull-left">
+                                                <label>
+                                                    <input type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="#forgot">Forgot Your Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <label for="inp2" class="col-sm-6 control-label">Full Company Address <span class="req"></span></label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inp2"><br/>
-                                <input type="text" class="form-control" id="inp3">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inp4" class="col-sm-6 control-label">Contact Phone Number <span class="req"></span></label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inp4">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inp5" class="col-sm-6 control-label">E-mail Address <span class="req"></span></label>
-                            <div class="col-sm-6">
-                                <input type="email" class="form-control" id="inp5">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inp5" class="col-sm-6 control-label">What type of business is your company into? <span class="req"></span></label>
-                            <div class="col-sm-6">
-                                <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-offset-6 col-sm-6">
-                                <button type="submit" class="btn btn-info btn-lg">Submit</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
+    <br/>
+    <p class="text-center" style="margin-top: 10px">
+        To start using TradeDepot, you'll need to be invited by your organization's administrator
+        <br/>
+        <br/>
+        <a href="#" class="big_link">Sign in to a different team</a>
+    </p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 </div>
 
 
