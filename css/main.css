@@ -27,7 +27,12 @@
 .soc-ico.in {
     background-position: -105px 0;
 }
-
+.label.label_ico {
+    font-size: 10px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
 .big-ico {
     display: inline-block;
     background-repeat: no-repeat;
