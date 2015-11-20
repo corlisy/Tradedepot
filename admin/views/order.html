@@ -4,6 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Order view</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#ff8b02">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -206,19 +226,19 @@
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Shipping Address</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 23</p>
+                                                        <p class="form-control-static" data-toggle="popover" title="Address st. 23" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Address st. 23</p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Ship From</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 86</p>
+                                                        <p class="form-control-static" data-toggle="popover" title="Address st. 86" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Address st. 86</p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="col-sm-6 control-label">Invoice Address</label>
                                                     <div class="col-sm-6">
-                                                        <p class="form-control-static">Address st. 23</p>
+                                                        <p class="form-control-static" data-toggle="popover" title="Address st. 23" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Address st. 23</p>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
@@ -516,6 +536,16 @@
 
 
 <script data-main="/admin/js/order_list" src="/js/require.js" async></script>
-
+<script src="/js/lib/jQuery-2.1.4.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'auto bottom',
+        trigger: 'hover',
+        container: 'body'
+    });
+});
+</script>
 </body>
 </html>
