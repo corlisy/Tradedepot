@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#ff8b02">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!--<link rel="stylesheet" href="/admin/css/main.css">-->
+    <link rel="stylesheet" href="/admin/css/all.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link href="/css/icomoon.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/js/lib/html5shiv.min.js"></script>
+    <script src="/js/lib/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+<div class="container-fluid">
+    <div class="row">
+        <div class="menu-sidebar">
+            <nav class="navbar navbar-sidebar">
+                <div class="nav-header">
+                    <a class="nav-header-logo" href="/admin">
+                        <img src="/admin/img/logo.png" />
+                    </a>
+                    <a class="nav-header-logo-mini" href="/admin">
+                        <img src="/admin/img/logo_mini.png" />
+                    </a>
+                </div>
+                <div class="container-fluid main-menu" id="main-menu">
+                    <div class="row">
+                        <div class="sidebar-btn text-center">
+                            <a href="/admin/create-order.html" class="btn btn-info btn-block" style="color:#fff">
+                                <span>Create an Order</span> <i class="glyphicon icon-order"></i>
+                            </a>
+                        </div>
+                        <ul class="nav sidebar-menu">
+                            <li class="active"><a href="/admin/"><i class="glyphicon icon-graph sidebar-menu-icons"></i> <span>Dashboard</span></a></li>
+                            <li class="header text-uppercase">Orders management</li>
+                            <li><a href="/admin/orders.html"><i class="glyphicon icon-orderslist sidebar-menu-icons"></i> <span>Orders</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/returns.html"><i class="glyphicon icon-return sidebar-menu-icons"></i> <span>Returns</span> </a></li>
+                            <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist sidebar-menu-icons"></i> <span>Delivery Invoices</span></a></li>
+                            <li class="header text-uppercase">Distributor management</li>
+                            <li><a href="/admin/distributors.html"><i class="glyphicon icon-user sidebar-menu-icons"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main-right-col">
+
+            <div class="main">
+
+                <nav class="main-header navbar navbar-fixed-top top-menu" role="navigation">
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="">
+                                <a href="#" class="sidebar-toggle" id="sidebar-toggle">
+                                    <span class="glyphicon icon-list"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" class="sidebar-main-site" role="button">
+                                    <span class=""><i class="glyphicon icon-globe"></i>&nbsp;&nbsp;<span class="hidden-sm hidden-xs">promasidorstore.tradedepot.co</span></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown notifications-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="glyphicon icon-bell"></i>
+                                    <span class="label label-info">34</span>
+                                </a>
+                                <ul class="dropdown-menu menu-notifications">
+                                    <li><a href="#"><span class="glyphicon icon-lilist"></span> Order status changed</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon icon-lilist text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon icon-lilist text-success"></span> Created new Order</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#" class="btn btn-link text-uppercase" style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle user-link" data-toggle="dropdown" style="">
+                                    <img class="img-circle" src="/img/test-client/avatar.jpg" alt=""><span class="hidden-sm hidden-xs">Mai Gulera</span>
+                                    <span class="glyphicon icon-downarrow"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                                    <li role="separator" class="divider hidden-lg hidden-md hidden-sm"></li>
+                                    <li class="hidden-lg hidden-md hidden-sm"><a href="#"><span class="glyphicon icon-logout"></span> Logout</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="hidden-sm hidden-xs" data-toggle="control-sidebar">
+                                    <i class="glyphicon icon-logout"></i><span style="padding-left: 8px;">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right hidden-xs hidden-sm hidden-md" role="search">
+                            <div class="form-group">
+                                <div class="inner-addon right-addon">
+                                        <span class="glyphicon icon-search" id="navbar-search-ico"></span>
+                                        <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+
+                <div class="container-fluid">
+                    <section class="row content-header">
+                        <div class="container-fluid">
+                            <div class="col-xs-6">
+                                <h1>
+                                    Dashboard
+                                </h1>
+                            </div>
+                            <div class="col-xs-6 hidden-xs">
+                                <ol class="breadcrumb">
+                                    <li><a href="#"><i class="glyphicon icon-graph"></i>Home</a></li>
+                                    <li class="active">Dashboard</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </section>
+                    <div class="col-sm-12">
+
+                        <section class="content">
+
+                            <div class="row">
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="box box-xs panel panel-default">
+                                        <div class="panel-heading clearfix">
+                                            <span class="panel-title pull-left">Orders</span>
+                                            <div class="pull-right">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annual <i class="glyphicon icon-downarrow"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">All</a></li>
+                                                    <li><a href="#">Todo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="panel-body-num">234,675</div>
+                                            <div class="clearfix panel-body-num-stat">
+                                                <div class="pull-left">Total</div>
+                                                <div class="pull-right text-success">13% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="box box-xs panel panel-default">
+                                        <div class="panel-heading clearfix">
+                                            <span class="panel-title pull-left">Returns</span>
+                                            <div class="pull-right">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Today <i class="glyphicon icon-downarrow"></i></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">All</a></li>
+                                                    <li><a href="#">Todo</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="panel-body-num">234,675</div>
+                                            <div class="clearfix panel-body-num-stat">
+                                                <div class="pull-left">Total</div>
+                                                <div class="pull-right text-danger">4% <i class="glyphicon glyphicon-arrow-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="box box-xs panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title">Awaiting payments</span>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <div class="panel-body-num-stat" style="font-size: 24px;">154,500,454,445</div>
+                                            <div class="clearfix panel-body-num-stat">
+                                                <span class="text-info">23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-xs-12">
+                                    <div class="box box-xs panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title">Overdue</span>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <div class="panel-body-num-stat" style="font-size: 24px;">113,234,675.85</div>
+                                            <div class="clearfix panel-body-num-stat">
+                                                <span class="text-info">23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">Order Volumes</span>
+                                            <div class="pull-right">
+                                                <a href="#" data-toggle="dropdown">Month</a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="chart">
+                                                <canvas id="salesChart" style="height: 235px;"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">Total Returns by Product</span>
+                                            <div class="pull-right">
+                                                <a href="#" data-toggle="dropdown">Month</a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="row pie-block">
+                                                <div class="col-md-6">
+                                                    <div class="chart-responsive">
+                                                        <canvas id="pieChart" height="150" style="width: 100%"></canvas>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="nav nav-pills nav-stacked pie-list">
+                                                        <li>
+                                                            <a href="#" class="clearfix">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-red"></i> Product name 1 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="clearfix">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-green"></i> Product name 2 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>18%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="clearfix">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-yellow"></i> Product name 3 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="clearfix">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-red"></i> Product name 4 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>28%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="clearfix">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6 col-xs-6"><i class="glyphicon icon-circle text-green"></i> Product name 5 </div>
+                                                                    <div class="col-sm-3 col-xs-2 text-center text-default"><b>35%</b></div>
+                                                                    <div class="col-sm-3 col-xs-4 text-right"><span class="text-default">134</span>/220</div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">TOP 5 Distributors</span>
+                                        </div>
+                                        <div class="panel-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-right text-success">13% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Duis aute irure dolo</div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-right text-success">3% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Lorem ipsum dolor sit amet</div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-right text-success">12% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
+                                                            <div class="col-xs-3 text-center text-default hidden-text"><b>67,855,654.94</b></div>
+                                                            <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">TOP 5 Products</span>
+                                        </div>
+                                        <div class="panel-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-center text-default"><b>145</b></div>
+                                                            <div class="col-xs-3 text-right text-success">13% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Duis aute irure dolo</div>
+                                                            <div class="col-xs-3 text-center text-default"><b>145</b></div>
+                                                            <div class="col-xs-3 text-right text-success">3% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Lorem ipsum dolor sit amet</div>
+                                                            <div class="col-xs-3 text-center text-default"><b>145</b></div>
+                                                            <div class="col-xs-3 text-right text-success">12% <i class="glyphicon glyphicon-arrow-up"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
+                                                            <div class="col-xs-3 text-center text-default"><b>145</b></div>
+                                                            <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="clearfix">
+                                                        <div class="row">
+                                                            <div class="col-xs-6 text-filed">Sed ut perspiciatis</div>
+                                                            <div class="col-xs-3 text-center text-default"><b>145</b></div>
+                                                            <div class="col-xs-3 text-right text-danger">12% <i class="glyphicon glyphicon-arrow-down"></i></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">Total Sales Volume by Distributor</span>
+                                            <div class="pull-right">
+                                                <a href="#" data-toggle="dropdown">Month</a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="chart">
+                                                <canvas id="hbChart" style="height: 250px;"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">Recent Sign-up Reguests</span>
+                                        </div>
+                                        <div class="panel-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-3 text-default hidden-text"><div class="pull-left height_fix"></div><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-3 text-default hidden-text"><div class="pull-left height_fix"></div><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 text-filed">Duis aute irure dolo</div>
+                                                            <div class="col-xs-3 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-3 text-default hidden-text"><div class="pull-left height_fix"></div><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 text-filed">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-3 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-3 text-default hidden-text"><div class="pull-left height_fix"></div><b>22/03/2015</b></div>
+                                                            <div class="col-xs-6 text-filed">Lorem ipsum dolor sit amet</div>
+                                                            <div class="col-xs-3 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-footer text-center">
+                                            <a href="#" class="btn btn-default text-uppercase">more SIGN-UP REGUESTS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 list_with_ico">
+                                    <div class="box panel panel-default">
+                                        <div class="panel-heading clearfix text-center">
+                                            <span class="panel-title pull-left">Recently Added Distributors</span>
+                                        </div>
+                                        <div class="panel-body no-padding">
+                                            <ul class="nav nav-pills nav-stacked">
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-4 text-default hidden-text"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-2 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-4 text-default hidden-text"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-2 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-4 text-default hidden-text"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-2 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="elem clearfix">
+                                                        <a class="row block_link" href="#">
+                                                            <div class="col-xs-6 user-link text-filed hidden-text"><img class="img-circle" src="/img/test-client/avatar.jpg" alt="">Excepteur sint occaecat</div>
+                                                            <div class="col-xs-4 text-default hidden-text"><b>22/03/2015</b></div>
+                                                            <div class="col-xs-2 text-right text-info link">View</div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-footer text-center">
+                                            <a href="#" class="btn btn-default text-uppercase">more DISTRIBUTORS</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+                <footer class="main-footer">
+                    <div class="pull-right hidden-xs" style="color: #c1c0c0">
+                        Powered by&nbsp;&nbsp;<img src="/img/tradedepot-logo-mini.png" style="max-height:18px;"/>
+                    </div>
+                    &copy; 2015 Promasidor, Inc. All rights reserved.
+                </footer>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script data-main="/admin/js/index" src="/js/require.js" async></script>
+
+</body>
+</html>

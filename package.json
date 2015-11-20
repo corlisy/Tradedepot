@@ -1,0 +1,13 @@
+{
+  "name": "Tradedepot",
+  "version": "0.0.1",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "*",
+    "bootstrap-sweetalert": "^0.4.2",
+    "gmsmith": "^0.5.0",
+    "grunt-contrib-copy": "*",
+    "grunt-exec": "*",
+    "grunt-spritesmith": "*"
+  }
+}
