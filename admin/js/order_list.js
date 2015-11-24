@@ -2,6 +2,13 @@ requirejs(['./common'], function (common) {
     require(['jquery', 'bootstrap', 'sweetalert'], function ($) {
         $("head").append($("<link rel='stylesheet' href='/css/lib/sweetalert.css'>"));
         $("head").append($("<link rel='stylesheet' href='/css/lib/sweetalert_tpl.css'>"));
+
+        $('[data-toggle="popover"]').popover({
+            placement : 'auto bottom',
+            trigger: 'hover',
+            container: 'body'
+        });
+
         $('button.returnSelect').click(function(e) {
             swal({
                 title: "Why are you returning this?",
