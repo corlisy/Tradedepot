@@ -45,7 +45,35 @@
     <script data-main="/js/app/client" src="/js/require.js" async></script>
 </head>
 <body>
-<header id="header"></header>
+<header id="header_noauth"></header>
+<div class="container-fluid main-nav">
+    <nav class="navbar navbar-client">
+        <div class="container">
+            <div class="row">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">First Category</a></li>
+                <li><a href="#">Second Category</a></li>
+                <li><a href="#">Third Category</a></li>
+                <li><a href="#">Fourth Category</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon icon-dots"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Some Category</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <div class="inner-addon right-addon">
+                        <i class="glyphicon icon-search"></i>
+                        <input type="text" class="form-control" placeholder="Search Product">
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </nav>
+</div>
 
 <div class="container-fluid">
     <div class="row">

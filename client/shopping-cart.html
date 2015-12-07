@@ -45,98 +45,7 @@
     <script data-main="/js/app/client" src="/js/require.js" async></script>
 </head>
 <body class="fuelux">
-<nav class="navbar navbar-custom" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="glyphicon glyphicon-menu-hamburger"></i>
-            </button>
-            <a class="navbar-brand" href="/client/index.html">
-                <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
-                <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
-            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#" class="user-menu">
-                        <span class="summ">$ 9,100</span>
-                        <span class="glyphicon glyphicon-shopping-cart"></span>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="user-menu dropdown-toggle pull-left" data-toggle="dropdown" role="button">
-                        <span class="glyphicon glyphicon-bell"></span>&nbsp;&nbsp;
-                        <span class="label label-primary" style="font-size: 10px;position: absolute;top: 0;right: 0">42</span>
-                    </a>
-                    <div class="clearfix"></div>
-                    <ul class="dropdown-menu menu-notifications">
-                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Order status changed</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-list text-danger"></span> ERD4 Order status changed to Balance Due</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-list text-success"></span> Created new Order</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li>
-                            <a href="#" class="btn btn-link text-uppercase" style="padding-top: 10px;padding-bottom: 15px;">More notifications</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-top: 8px;">
-                        <img class="img-circle" src="/img/test-client/avatar.jpg" alt="" style="max-width: 35px;max-height: 35px;" /> Mai Gulera
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu text-uppercase">
-                        <li>
-                            <a href="#">
-                                <span class="lead">Financial monitor</span>
-                                <div class="" style="width: 350px;height: 150px;"></div>
-                            </a>
-                        </li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-ruble"></span> Account balance</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/client/user-orders.html#"><span class="glyphicon glyphicon-list"></span> Orders</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="container-fluid main-nav">
-    <nav class="navbar navbar-client">
-        <div class="container">
-            <div class="row">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">First Category</a></li>
-                    <li><a href="#">Second Category</a></li>
-                    <li><a href="#">Third Category</a></li>
-                    <li><a href="#">Fourth Category</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-horizontal"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Some Category</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <div class="inner-addon right-addon">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <input type="text" class="form-control" placeholder="Search Product">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </nav>
-</div>
+<header id="header"></header>
 
 <div class="container main-container">
     <div class="row">
@@ -149,24 +58,22 @@
         </div>
     </div>
 
-
     <div class="row">
         <div class="col-sm-6" style="border-right: 1px solid #ccc">
-            <p class="lead text-uppercase">Vendor</p>
-            <div class="block-icon">
+            <h4 class="text-uppercase f_helvetcia">Vendor</h4>
+            <div class="block-icon custom">
                 <div class="block-icon-ico">
-                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <span class="glyphicon icon-map"></span>
                 </div>
                 <address class="block-icon-content">
-                    Coca-Cola Company<br>
-                    795 Folsom Ave, Suite 600<br>
-                    San Francisco, CA 94107<br>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                    Coca-Cola Company<br/>
+                    284, Derrty St.<br/>
+                    NY, United States of America<br/>
                 </address>
             </div>
-            <div class="block-icon">
+            <div class="block-icon mt0">
                 <div class="block-icon-ico">
-                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span class="glyphicon icon-phone"></span>
                 </div>
                 <address class="block-icon-content">
                     +999-555-777-33
@@ -175,9 +82,9 @@
         </div>
         <div class="col-sm-6">
             <div class="col-sm-6">
-                <p class="lead text-uppercase">Delivery</p>
+                <h4 class="text-uppercase f_helvetcia">Delivery</h4>
 
-                <div class="radio">
+                <div class="radio block-icon custom">
                     <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
                         I will pick it up
@@ -189,15 +96,23 @@
                         Deliver to me
                     </label>
                 </div>
+                <div class="mt15">
+                    <select name="select" class="select-custom1">
+                        <option value="">Distributors Depot, NY, Distributors Depot, NY</option>
+                        <option value="">Distributors Depot, NY, Distributors Depot, NY</option>
+                        <option value="">Distributors Depot, NY, Distributors Depot, NY</option>
+                        <option value="">Distributors Depot, NY, Distributors Depot, NY</option>
+                    </select>
+                </div>
 
             </div>
             <div class="col-sm-6">
-                <p class="lead text-uppercase">Pickup Location</p>
+                <h4 class="text-uppercase f_helvetcia">Pickup Location</h4>
 
 
-                <div class="block-icon">
+                <div class="block-icon custom">
                     <div class="block-icon-ico">
-                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span class="glyphicon icon-map"></span>
                     </div>
                     <address class="block-icon-content">
                         Apapa Depot<br>
@@ -205,9 +120,9 @@
                         Apapa, Lagos, Nigeria
                     </address>
                 </div>
-                <div class="block-icon">
+                <div class="block-icon mt0">
                     <div class="block-icon-ico">
-                        <span class="glyphicon glyphicon-phone-alt"></span>
+                        <span class="glyphicon icon-phone"></span>
                     </div>
                     <address class="block-icon-content">
                         +999-555-777-33
@@ -229,13 +144,13 @@
                                     </label>
                                 </div>
                             </td>
-                            <td>Item Code</td>
-                            <td>Description</td>
-                            <td>Unit</td>
-                            <td>Unit Price</td>
-                            <td>Quantity</td>
-                            <td>Discount</td>
-                            <td>Total</td>
+                            <td class="text-muted">Item Code</td>
+                            <td class="text-muted">Description</td>
+                            <td class="text-muted">Unit</td>
+                            <td class="text-muted">Unit Price</td>
+                            <td class="text-muted">Quantity</td>
+                            <td class="text-muted">Discount</td>
+                            <td class="text-muted text-right">Total</td>
                             <td>&nbsp;</td>
                         </tr>
                     </thead>
@@ -253,21 +168,15 @@
                         <td>Sachet</td>
                         <td>$ 500</td>
                         <td>
-                            <div class="spinbox" data-initialize="spinbox" id="mySpinbox">
+                            <div class="spinbox">
+                                <button type="button" class="spinbox-down"></button>
                                 <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                <div class="spinbox-buttons btn-group btn-group-vertical">
-                                    <button type="button" class="btn btn-default spinbox-up btn-xs">
-                                        <span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-                                    </button>
-                                    <button type="button" class="btn btn-default spinbox-down btn-xs">
-                                        <span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-                                    </button>
-                                </div>
+                                <button type="button" class="spinbox-up"></button>
                             </div>
                         </td>
                         <td></td>
-                        <td>$ 6,000</td>
-                        <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                        <td class="text-right f_helvetcia"><b>$ 6,000</b></td>
+                        <td><a href="#" class="text-danger"><span class="glyphicon icon-close"></span></a></td>
                     </tr>
                     <tr>
                         <td>
@@ -282,42 +191,85 @@
                         <td>Sachet</td>
                         <td>$ 500</td>
                         <td>
-                            <div class="spinbox" data-initialize="spinbox" id="mySpinbox">
+                            <div class="spinbox">
+                                <button type="button" class="spinbox-down"></button>
                                 <input type="text" class="form-control input-mini spinbox-input" value="5">
-                                <div class="spinbox-buttons btn-group btn-group-vertical">
-                                    <button type="button" class="btn btn-default spinbox-up btn-xs">
-                                        <span class="glyphicon glyphicon-chevron-up"></span><span class="sr-only">Increase</span>
-                                    </button>
-                                    <button type="button" class="btn btn-default spinbox-down btn-xs">
-                                        <span class="glyphicon glyphicon-chevron-down"></span><span class="sr-only">Decrease</span>
-                                    </button>
-                                </div>
+                                <button type="button" class="spinbox-up"></button>
                             </div>
                         </td>
                         <td>10%</td>
-                        <td>$ 1,500</td>
-                        <td><a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+                        <td class="text-right f_helvetcia"><b>$ 1,500</b></td>
+                        <td><a href="#" class="text-danger"><span class="glyphicon icon-close"></span></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="option1">
+                                </label>
+                            </div>
+                        </td>
+                        <td>DR4411</td>
+                        <td>Coca-Cola Beveragge Drink</td>
+                        <td>Sachet</td>
+                        <td>$ 500</td>
+                        <td>
+                            <div class="spinbox">
+                                <button type="button" class="spinbox-down"></button>
+                                <input type="text" class="form-control input-mini spinbox-input" value="5">
+                                <button type="button" class="spinbox-up"></button>
+                            </div>
+                        </td>
+                        <td>10%</td>
+                        <td class="text-right f_helvetcia"><b>$ 1,440</b></td>
+                        <td><a href="#" class="text-danger"><span class="glyphicon icon-close"></span></a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="option1">
+                                </label>
+                            </div>
+                        </td>
+                        <td>DR4411</td>
+                        <td>Coca-Cola Beveragge Drink</td>
+                        <td>Sachet</td>
+                        <td>$ 500</td>
+                        <td>
+                            <div class="spinbox">
+                                <button type="button" class="spinbox-down"></button>
+                                <input type="text" class="form-control input-mini spinbox-input" value="5">
+                                <button type="button" class="spinbox-up"></button>
+                            </div>
+                        </td>
+                        <td>10%</td>
+                        <td class="td-gray text-right" style="color: #949e00;"><b><span
+                                class="icon-gift"></span> Gift</b>
+                        </td>
+                        <td></td>
                     </tr>
                     </tbody>
                 </table>
-                <div class="col-sm-4">
-                    <button class="btn btn-danger disabled">Delete checked</button>
+                <div class="pull-left">
+                    <button class="btn btn-danger returnSelect disabled">Delete checked <span class="glyphicon icon-trash"></span></button>
                 </div>
-                <div class="col-sm-4 col-sm-offset-8">
-                    <table class="table table-non-bordered pull-right text-right">
-                        <tr>
-                            <td>Sub Total (include discount of $ 160):</td>
-                            <th>$ 8,940</th>
-                        </tr>
-                        <tr>
-                            <td>Tax (VAT 5%):</td>
-                            <th>$ 540</th>
-                        </tr>
-                        <tr>
-                            <td>TOTAL:</td>
-                            <th>$ 9,640</th>
-                        </tr>
-                    </table>
+                <div class="pull-right container-fluid total-block-wrapper fix_width">
+                    <div class="clearfix hidden-lg"></div>
+                    <br class="hidden-lg">
+
+                    <div class="clearfix">
+                        <dl class="dl-horizontal total-table padd_l35px">
+                            <dt class="text-muted">Gross Discounts:</dt>
+                            <dd class="f_helvetcia text-right"><b>$ 940</b></dd>
+                            <dt class="text-muted">Sub Total (include discount of $ 160):</dt>
+                            <dd class="f_helvetcia text-right"><b>$ 8,940</b></dd>
+                            <dt class="text-muted">Tax (VAT 5%):</dt>
+                            <dd class="f_helvetcia text-right"><b>$ 447</b></dd>
+                            <dt><b>TOTAL:</b></dt>
+                            <dd class="f_helvetcia"><b>$ 9,387</b></dd>
+                        </dl>
+                    </div>
                 </div>
 
             </div>
@@ -326,18 +278,18 @@
 
         <div class="col-sm-12">
             <div class="module-block">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <br/>
-                        <textarea class="form-control" rows="10" placeholder="Additional comments"></textarea>
+                <div class="row mt10">
+                    <div class="col-lg-3 col-sm-12 col-xs-12 ">
+                        <textarea class="form-control" rows="9" placeholder="Additional comments"></textarea>
                     </div>
-                    <div class="col-sm-2">
-                        <br/>
-                        <div class="panel-cart panel panel-default">
+                    <div class="clearfix hidden-lg"></div>
+                    <br class="hidden-lg" />
+                    <div class="col-lg-3 col-xs-12 col-xs-offset-0 col-md-4 col-md-offset-0">
+                        <div class="panel-cart panel panel-default panel-disable panel-checkbox-color">
                             <div class="panel-heading">
                                 <div class="head checkbox text-uppercase">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" value="" disabled="disabled">
                                         Credits
                                     </label>
                                 </div>
@@ -347,13 +299,16 @@
                                     $0<br/>
                                     <small>Available amount</small>
                                 </div>
-                                <button class="btn btn-default btn-block text-right disabled">$0,00</button>
+                                <div class="form-group">
+                                    <input class="text-right form-control" value="$0,00" disabled="disabled">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <br/>
-                        <div class="panel-cart panel panel-success">
+                    <div class="clearfix hidden-lg hidden-md"></div>
+                    <br class="hidden-lg hidden-md" />
+                    <div class="col-lg-3 col-xs-12 col-md-4">
+                        <div class="panel-cart panel panel-checkbox-color">
                             <div class="panel-heading">
                                 <div class="head checkbox text-uppercase">
                                     <label>
@@ -367,17 +322,20 @@
                                     $250,000<br/>
                                     <small>Available amount</small>
                                 </div>
-                                <button class="btn btn-default btn-block text-right">$1000,00</button>
+                                <div class="form-group">
+                                    <input class="text-right form-control" value="0,00">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <br/>
-                        <div class="panel-cart panel panel-success">
+                    <div class="clearfix hidden-lg hidden-md"></div>
+                    <br class="hidden-lg hidden-md" />
+                    <div class="col-lg-3 col-xs-12 col-md-4">
+                        <div class="panel-cart panel panel-checkbox-color">
                             <div class="panel-heading">
                                 <div class="head checkbox text-uppercase">
                                     <label>
-                                        <input type="checkbox" value="">
+                                        <input type="checkbox" value="" >
                                         Deposits
                                     </label>
                                 </div>
@@ -387,7 +345,9 @@
                                     $500,000<br/>
                                     <small>Available amount</small>
                                 </div>
-                                <button class="btn btn-default btn-block text-right disabled">$1000,00</button>
+                                <div class="form-group">
+                                    <input class="text-right form-control" value="0,00">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -395,17 +355,19 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-9 col-sm-offset-3">
             <div class="module-block">
                 <div class="row">
                     <div class="col-sm-12">
-                        <br/>
-                        <div class="pull-right">
-                            TOTAL: <strong>$7,387</strong>
+                        <div class="clearfix">
+                            <dl class="dl-horizontal total-table">
+                                <br class="hidden-lg hidden-md">
+                                <dt><b>TOTAL:</b></dt>
+                                <dd class="f_helvetcia"><b>$ 9,387</b></dd>
+                            </dl>
                         </div>
-                        <div class="clearfix"></div>
                         <br/>
-                        <a class="btn btn-primary pull-right">Create An Order <span class="glyphicon glyphicon-list"></span></a>
+                        <a class="btn btn-primary pull-right">Create An Order <span class="glyphicon icon-order"></span></a>
 
                     </div>
 
@@ -419,39 +381,7 @@
 </div>
 
 
-<footer>
-    <div class="container">
-        <hr/>
-        <div class="footer-content">
-            <div class="col-sm-4">
-                <div class="row">
-                    <p class="pull-left copyrights">&copy; TradeDepot, Inc. All rights reserved.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="row text-center">
-                    Powered by &nbsp;&nbsp;<img src="/img/tradedepot-logo.png" alt="" style="max-width: 100px;" />
-                </div>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="lang-block pull-right">
-                        <div class="dropup">
-                            <button style="width: 200px;text-align: left!important;text-transform: none!important;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-map-marker"></span> English
-                                <span class="caret pull-right" style="margin: 8px 0;"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li><a href="#">Russian</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<footer id="footer"></footer>
 
 
 </body>

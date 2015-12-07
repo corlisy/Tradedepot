@@ -29,3 +29,27 @@
 .sweet-alert button {
     min-width: 95px;
 }
+
+.sweet-alert .btn-primary,
+.sweet-alert .btn-primary:visited,
+.sweet-alert .btn-primary:active,
+{
+    color: #ffffff !important;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+}
+
+
+.sweet-alert .btn-primary:focus,
+.sweet-alert .btn-primary.focus
+{
+     color: #ffffff !important;
+     background-color: #286090 !important;
+     border-color: #122b40 !important;
+}
+
+.sweet-alert .btn-primary:hover,
+{
+     color: #ffffff !important;
+     background-color: #286090 !important;
+ }

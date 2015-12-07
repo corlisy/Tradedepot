@@ -32,6 +32,7 @@
     position: absolute;
     top: 7px;
     right: 0;
+    border-radius: 2px;
 }
 .big-ico {
     display: inline-block;

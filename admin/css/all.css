@@ -1132,14 +1132,6 @@ table.table-tr-bottom-border tr th {
     }
 }
 
-.f_helvetcia {
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica;
-}
-
-.f_helvetcia_ul {
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight',  'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica;
-}
-
 .sub-content-payments {
     font-size: 14px;
 }

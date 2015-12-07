@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TradeDepot</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#ff8b02">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/client.css" rel="stylesheet">
+    <link href="/css/common.css" rel="stylesheet">
+    <link href="/css/datetime.css" rel="stylesheet">
+    <link href="/css/icomoon.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script data-main="/js/app/client" src="/js/require.js" async></script>
+</head>
+<body>
+
+<header id="header"></header>
+
+<div class="container main-container">
+    <div class="row">
+        <div class="client-header text-left col-sm-6 mt10">
+            <h2 class="fs32">
+                <span class="text-uppercase">ERD1 ORDER</span>
+                <small class="head-label fs12 p15 text-success">
+                    <i class="glyphicon icon-circle text-success" style="font-size: 6px;margin-top: -6px;vertical-align: middle"></i> Open
+                </small>
+            </h2>
+            <ol class="breadcrumb">
+                <li><a href="/client/">Home</a></li>
+                <li><a href="/client/">Orders</a></li>
+                <li class="active">ERD1</li>
+            </ol>
+        </div>
+        <div class="col-sm-6 text-right">
+            <div class="head-actions mt30">
+                <button class="btn btn-default">Print <span class="glyphicon icon-print"></span></button>
+                <button class="btn btn-danger mr0">Cancel order</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-6" style="border-right: 1px solid #ccc">
+                    <h4 class="text-uppercase f_helvetcia">Vendor</h4>
+                    <div class="block-icon custom">
+                        <div class="block-icon-ico">
+                            <span class="glyphicon icon-map"></span>
+                        </div>
+                        <address class="block-icon-content">
+                            Coca-Cola Company<br/>
+                            284, Derrty St.<br/>
+                            NY, United States of America<br/>
+                        </address>
+                    </div>
+                    <div class="block-icon mt0">
+                        <div class="block-icon-ico">
+                            <span class="glyphicon icon-phone"></span>
+                        </div>
+                        <address class="block-icon-content">
+                            +999-555-777-33
+                        </address>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-6">
+                        <h4 class="text-uppercase f_helvetcia">Delivery</h4>
+
+                        <div class="radio block-icon custom">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                I will pick it up
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                Deliver to me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-uppercase f_helvetcia">Pickup Location</h4>
+
+
+                        <div class="block-icon custom">
+                            <div class="block-icon-ico">
+                                <span class="glyphicon icon-map"></span>
+                            </div>
+                            <address class="block-icon-content">
+                                Apapa Depot<br>
+                                12, Apapa Street<br>
+                                Apapa, Lagos, Nigeria
+                            </address>
+                        </div>
+                        <div class="block-icon mt0">
+                            <div class="block-icon-ico">
+                                <span class="glyphicon icon-phone"></span>
+                            </div>
+                            <address class="block-icon-content">
+                                +999-555-777-33
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="module-block no_mobile width_700">
+                        <div class="fix_width">
+                            <table class="table table-create v_align b_bottom">
+                                <thead style="color: #999999;">
+                                <tr>
+                                    <td>Item Code</td>
+                                    <td>Description</td>
+                                    <td>Unit</td>
+                                    <td>Unit Price</td>
+                                    <td>Quantity</td>
+                                    <td>Discount</td>
+                                    <td class="text-right">Total</td>
+                                </tr>
+                                </thead>
+                                <tbody style="background-color: #fff;">
+                                <tr height="35">
+                                    <td>DR4411</td>
+                                    <td>Coca-Cola Beveragge Drink</td>
+                                    <td>Sachet</td>
+                                    <td>$ 500</td>
+                                    <td>
+                                        12
+                                    </td>
+                                    <td></td>
+                                    <td class="td-gray text-right f_helvetcia text-nowrap"><b>$ 6,000</b></td>
+                                </tr>
+                                <tr height="35">
+                                    <td>DR4411</td>
+                                    <td>Coca-Cola Beveragge Drink</td>
+                                    <td>Sachet</td>
+                                    <td>$ 500</td>
+                                    <td>
+                                        12
+                                    </td>
+                                    <td></td>
+                                    <td class="td-gray text-right f_helvetcia text-nowrap"><b>$ 6,000</b></td>
+                                </tr>
+                                <tr height="35">
+                                    <td>DR4411</td>
+                                    <td>Coca-Cola Beveragge Drink</td>
+                                    <td>Sachet</td>
+                                    <td>$ 500</td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>10%</td>
+                                    <td class="td-gray text-right f_helvetcia text-nowrap"><b>$ 6,000</b></td>
+                                </tr>
+                                <tr height="35">
+                                    <td>PR001</td>
+                                    <td>Top Tea</td>
+                                    <td>Pack</td>
+                                    <td class="f_helvetcia">$ 0</td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td></td>
+                                    <td class="td-gray text-success text-right text-nowrap" style="color: #949e00;"><span class="icon-gift"></span> Gift</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="pull-right container-fluid total-block-wrapper fix_width">
+                                <div class="clearfix hidden-lg"></div>
+                                <br class="hidden-lg">
+
+                                <div class="clearfix">
+                                    <dl class="dl-horizontal total-table padd_l">
+                                        <dt class="text-muted">Gross Discounts:</dt>
+                                        <dd class="f_helvetcia text-right"><b>$ 940</b></dd>
+                                        <dt class="text-muted">Sub Total (include discount of $ 160):</dt>
+                                        <dd class="f_helvetcia text-right"><b>$ 8,940</b></dd>
+                                        <dt class="text-muted">Tax (VAT 5%):</dt>
+                                        <dd class="f_helvetcia text-right"><b>$ 447</b></dd>
+                                        <dt><b>TOTAL:</b></dt>
+                                        <dd class="f_helvetcia"><b>$ 9,387</b></dd>
+                                    </dl>
+                                </div>
+                                <div class="row">
+                                    <div class="well clearfix pull-right pt0 pb0">
+                                        <dl class="dl-horizontal total-table padd_l total-table-xs">
+                                            <dt>Deposite:</dt>
+                                            <dd class="f_helvetcia"><b>-$ 8,940</b></dd>
+                                            <dt>Rebate:</dt>
+                                            <dd class="f_helvetcia"><b>-$ 8,940</b></dd>
+                                            <dt><b>TOTAL:</b></dt>
+                                            <dd class="f_helvetcia"><b>$ 9,387</b></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="clearfix"></div>
+
+                <div class="container-fluid">
+                    <div class="alert alert-default alert-dismissible clearfix pr0" role="alert">
+                        <div class="container-fluid pr0">
+                            <div class="col-sm-12">
+                                <div class="pull-left hidden-sm hidden-xs">
+                                    <span class="text-info"><i class="icon-notice"></i> You made changes. Please save.</span>
+                                </div>
+                                <div class="pull-right">
+                                    <button type="button" class="btn btn-success"
+                                            data-dismiss="alert" aria-label="Save"><span
+                                            aria-hidden="true">Save</span></button>
+                                    <button type="button" class="btn btn-default"
+                                            data-dismiss="alert" aria-label="Close"><span
+                                            aria-hidden="true">Cancel</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-sm-12 col-xs-12">
+                    <div class="module-block messages-block">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p class="lead text-uppercase">Messages</p>
+                            </div>
+                            <div class="el">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-12">
+                                        <span class="glyphicon icon-mail message_ico"></span>
+                                        <a href="#" class="user-link">
+                                            <img class="img-circle" src="/img/test-client/avatar.jpg"
+                                                    alt=""><span>Mai Gulera</span>
+                                        </a>
+                                        <span class="date">22/03/2015</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 message">
+                                    <div class="col-sm-12 text_block">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="el">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-12">
+                                        <span class="glyphicon glyphicon-mail icon-mailarrow message_ico text-warning"></span>
+                                        <a href="#" class="user-link">
+                                            <img class="img-circle" src="/img/test-client/avatar.jpg"
+                                                    alt=""><span>Mai Gulera</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 message">
+                                    <div class="col-sm-12 text_block">
+                                        <form class="">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"
+                                                        placeholder="Enter message"/>
+                                                            <span class="input-group-btn">
+                                                                <button type="submit" class="btn btn-default"
+                                                                        style="margin-left: 12px;"><span
+                                                                        class="glyphicon icon-smallright"></span>
+                                                                </button>
+                                                        </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-12">
+                    <div class="module-block">
+                        <p class="lead text-uppercase">RECENT ACTIVITIES</p>
+
+                        <table class="table">
+                            <thead style="color: #999999;">
+                            <tr>
+                                <td>Date</td>
+                                <td>Details</td>
+                            </tr>
+                            </thead>
+                            <tbody class="bg_white">
+                            <tr>
+                                <td>22/03/2015</td>
+                                <td>Order has been created</td>
+                            </tr>
+                            <tr>
+                                <td>22/03/2015</td>
+                                <td>Change status to <span class="text-success">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td>22/03/2015</td>
+                                <td>Order has been created</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<footer id="footer"></footer>
+
+
+</body>
+</html>

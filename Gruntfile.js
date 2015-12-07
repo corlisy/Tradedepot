@@ -12,6 +12,18 @@ module.exports = function(grunt) {
                 cwd: 'node_modules/bootstrap/dist/css',
                 src: '*.css',
                 dest: 'css/'
+            },
+            'bootstrap_client-to-bootstrap_clear': {
+                expand: true,
+                cwd: 'css/bootstrap/less/',
+                src: ['**'],
+                dest: 'node_modules/bootstrap/less/'
+            },
+            'bootstrap-client-to-css': {
+                expand: true,
+                cwd: 'node_modules/bootstrap/dist/css',
+                src: '*.css',
+                dest: 'css/client/'
             }
         },
         exec: {

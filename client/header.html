@@ -1,0 +1,176 @@
+<nav class="navbar navbar-custom navbar-custom-2" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="glyphicon icon-list"></i>
+            </button>
+            <a class="navbar-brand" href="/client/index.html">
+                <img src="/img/test-client/logo.png" alt="Client" /><span class="logo-delimetr"></span>
+                <img src="/img/tradedepot-logo-gray.png" alt="TradeDepot" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse pr0">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/client/shopping-cart.html" class="user-menu">
+                        <span class="summ">$ 9,100</span>
+                        <span class="glyphicon icon-cart"></span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="user-menu dropdown-toggle pull-left" data-toggle="dropdown" role="button">
+                        <span class="glyphicon icon-bell"></span>&nbsp;&nbsp;
+                        <span class="label label-info label_ico">42</span>
+                    </a>
+                    <div class="clearfix"></div>
+                    <ul class="dropdown-menu menu-notifications">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon icon-order icons text-default"></span>
+                                <span class="text-default">Order status changed</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon icon-order text-success icons"></span>
+                                <span class="text-default">Created new Order</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="text-success icons">
+                                    <img src="/img/example/notify_avatar.jpg" style="width: 100%" alt="">
+                                </span>
+                                <span class="user_event">
+                                    <span class="glyphicon icon icon-mail"></span>
+                                    <span class="name text-default">Jessie Cole</span>
+                                    <span class="descr text-muted">Excepteur sint occaecat dent...</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon icon-order text-danger icons"></span>
+                                <span class="text-default">ERD4 Order status changed to Balance Due</span>
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="#" class="btn btn-link text-gray text-uppercase more_link">More notifications</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="/client/user.html" class="dropdown-toggle user_menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img class="img-circle" src="/img/test-client/avatar.jpg" alt="" style="max-width: 35px;max-height: 35px;" /> Mai Gulera
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu user_menu_block text-uppercase li_dblock open">
+                        <li>
+                            <a href="#" class="pull-left">
+                                <span class="lead text-gray">Financial monitor</span>
+                            </a>
+                            <span class="text-muted hint pull-right text-lowercase">last month</span>
+                            <div class="clearfix"></div>
+                            <div class="">
+                                <div class="col-sm-4 pr0 graphic_block">
+                                    <div class="well bg-transparent pt0 pb0">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="chart-responsive">
+                                                    <canvas id="rebatesPie_hedaer" style="height: 30px;width: 30px"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt0 f_helvetcia f_weight-normal mt0">REBATES<br/><small>$232,450</small></h5>
+                                            </div>
+                                        </div>
+                                        <div class="chart-responsive">
+                                            <canvas id="rebatesLine_hedaer" style="height: 35px;width: 100%"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="chartjs-tooltip-rebates" class="chartjs-tooltip"></div>
+                                </div>
+                                <div class="col-sm-4 pr0 graphic_block">
+                                    <div class="well bg-transparent pt0 pb0">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="chart-responsive">
+                                                    <canvas id="depositsPie_hedaer" style="height: 30px;width: 30px"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt0 f_helvetcia f_weight-normal mt0">DEPOSITS<br/><small>$232,450</small></h5>
+                                            </div>
+                                        </div>
+                                        <div class="chart-responsive">
+                                            <canvas id="depositsLine_hedaer" style="height: 35px;width: 100%"></canvas>
+                                        </div>
+                                    </div>
+                                    <div id="chartjs-tooltip-deposits" class="chartjs-tooltip"></div>
+                                </div>
+                                <div class="col-sm-4 graphic_block">
+                                    <div class="well bg-transparent pt0 pb0 border-none">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="chart-responsive">
+                                                    <canvas id="creditsPie_hedaer" style="height: 30px;width: 30px"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="mt0 f_helvetcia f_weight-normal mt0">CREDITS<br/><small>$2,450</small></h5>
+                                            </div>
+                                        </div>
+                                        <div class="chart-responsive">
+                                            <canvas id="creditsLine_hedaer" style="height: 35px;width: 100%"></canvas>
+                                        </div>
+                                        <div id="chartjs-tooltip-credits" class="chartjs-tooltip"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="/client/balance.html" class="text-gray"><span class="glyphicon icon icon-graph"></span> Account balance</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/client/orders-list.html" class="text-gray"><span class="glyphicon icon icon-order"></span> Orders</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/client/profile.html" class="text-gray"><span class="glyphicon icon icon-user"></span> Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/client/index_noauth.html" class="text-gray"><span class="glyphicon icon icon-logout"></span> Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid main-nav">
+    <nav class="navbar navbar-client">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">First Category</a></li>
+                    <li><a href="#">Second Category</a></li>
+                    <li><a href="#">Third Category</a></li>
+                    <li><a href="#">Fourth Category</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon icon-dots"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Some Category</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right header-search" role="search">
+                    <div class="form-group">
+                        <div class="inner-addon right-addon">
+                            <i class="glyphicon icon-search"></i>
+                            <input type="text" id="q" class="header-search-inp form-control text-right" placeholder="Search products...">
+                            <a href="#" id="resetSearch" class="">
+                                <span class="glyphicon icon-close" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>

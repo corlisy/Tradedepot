@@ -1,18 +1,146 @@
 .fs28 {
   font-size: 28px;
 }
+.fs32 {
+  font-size: 32px;
+}
+.fs18 {
+  font-size: 18px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs12 {
+  font-size: 12px;
+}
+.fs40 {
+  font-size: 40px;
+}
 .ml0 {
   margin-left: 0;
+}
+.mr0 {
+  margin-right: 0;
+}
+.mt0 {
+  margin-top: 0;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.mr50 {
+  margin-right: 50px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.pt25 {
+  padding-top: 25px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mt15 {
+  margin-top: 15px;
 }
 .mb7 {
   margin-bottom: 7px;
 }
 .pl0 {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 .pr0 {
-  padding-right: 0;
+  padding-right: 0 !important;
+}
+.pt0 {
+  padding-top: 0;
+}
+.pb0 {
+  padding-bottom: 0 !important;
+}
+.pr10 {
+  padding-right: 10px ;
+}
+.pl10 {
+  padding-left: 10px ;
 }
 .pr20 {
   padding-right: 15px !important;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.border-none {
+  border: 0 !important;
+}
+.f_helvetcia {
+  font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.f_helvetcia_ul {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'HelveticaNeue-Light', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+}
+.f_weight-normal {
+  font-weight: normal;
+}
+.text-gray {
+  color: #484848;
+}
+a.text-gray {
+  color: #494949 !important;
+}
+a.text-gray:hover {
+  color: #EC6906 !important;
+}
+a.text-danger {
+  color: #ea5b5b !important;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #ea5b5b !important;
+}
+a.text-info {
+  color: #005ba4 !important;
+}
+a.text-info:hover a.text-info:focus {
+  color: #005ba4 !important;
+}
+.va_middle {
+  vertical-align: middle !important;
+}
+.b_bottom {
+  border-bottom: 1px solid #ddd;
+}
+dt.text-left {
+  text-align: left;
+}
+table.v_align td {
+  vertical-align: middle !important;
+}
+table .btn-link {
+  text-decoration: underline;
+  margin: 0 5px;
+}
+table .btn-link:hover {
+  text-decoration: none;
+}
+table.b_bottom {
+  border-bottom: 1px solid #ddd;
+}
+.text-black {
+  color: #000;
 }

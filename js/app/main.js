@@ -9,7 +9,12 @@ requirejs.config({
         'owl': '/js/lib/owl.carousel.min',
         'jquery.spritely': '/js/lib/jquery.spritely',
         'jQuery.tipsy': '/js/lib/jquery.tipsy',
-        'bootstrap-multiselect': '/js/lib/bootstrap-multiselect'
+        'bootstrap-multiselect': '/js/lib/bootstrap-multiselect',
+        'chartjs': 'chartjs/Chart.min',
+        'sweetalert': '/js/lib/sweetalert.min',
+        'chartjshb': 'chartjs/Chart.HorizontalBar',
+        'masonry': '/js/lib/masonry',
+        'imagesLoaded': '/js/lib/images_loader'
     },
     shim: {
         'bootstrap': {
@@ -26,11 +31,48 @@ requirejs.config({
         },
         'jquery.tipsy': {
             deps:['jquery']
+        },
+        'chartjshb': {
+            deps:['chartjs']
+        },
+        'imagesLoaded': {
+            deps: ['jquery']
+        },
+        'masonry': {
+            deps: ['jquery', 'imagesLoaded', 'jquery-bridge']
         }
     }
 });
 
 require(['jquery', 'bootstrap', 'jquery.spritely', 'jquery.tipsy', 'bootstrap-multiselect'], function ($, bootstrap) {
+    $('.spinbox').each(function() {
+        $(this).find('.spinbox-down').on('click', function() {
+            var v = $(this).parent().find('input.spinbox-input').val();
+            if (v > 0) $(this).parent().find('input.spinbox-input').val(--v);
+        });
+        $(this).find('.spinbox-up').on('click', function() {
+            var v = $(this).parent().find('input.spinbox-input').val();
+            $(this).parent().find('input.spinbox-input').val(++v);
+        });
+    });
+
+
+    $('.panel-checkbox-color input[type=checkbox]').each(function() {
+        if (this.checked) {
+            $(this).parents('.panel-checkbox-color ').addClass('panel-success');
+        } else {
+            $(this).parents('.panel-checkbox-color ').removeClass('panel-success');
+        }
+    });
+
+    $('.panel-checkbox-color input[type=checkbox]').on('change', function() {
+        if (this.checked) {
+            $(this).parents('.panel-checkbox-color ').addClass('panel-success');
+        } else {
+            $(this).parents('.panel-checkbox-color ').removeClass('panel-success');
+        }
+    });
+
     $('.nav a').on('click', function(){
         var menu = $(this).parents('.navbar-collapse');
         if ($(menu).hasClass('collapsing') || $(menu).hasClass('in')) {
