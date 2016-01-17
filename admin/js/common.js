@@ -7,7 +7,8 @@ requirejs.config({
         'lodash': 'lodash.min',
         'chartjs': 'chartjs/Chart.min',
         'sweetalert': '/js/lib/sweetalert.min',
-        'chartjshb': 'chartjs/Chart.HorizontalBar'
+        'chartjshb': 'chartjs/Chart.HorizontalBar',
+        'minicolors': 'jquery.minicolors.min'
     },
     shim: {
         'bootstrap': {
@@ -15,6 +16,9 @@ requirejs.config({
         },
         'chartjshb': {
             deps:['chartjs']
+        },
+        'minicolors': {
+            deps:['jquery']
         }
     }
 });
@@ -90,5 +94,43 @@ require(['jquery', 'bootstrap', 'lodash'], function ($, bootstrap, _) {
             */
             $(this).data('toggle', true);
         }
-    })
+    });
+
+    $('#settings-menu').on('click', function() {
+        if ($(this).data('toggle')) {
+            $('.menu-sidebar-second').hide();
+            $(this).data('toggle', false);
+        } else {
+            $('.menu-sidebar-second').show();
+            $(this).data('toggle', true);
+        }
+        return false;
+    });
+
+    $('.btn-label').on('click', function() {
+        var text = $(this).text(),
+            id = $(this).data('id'),
+            last = $('#filter-selected span:last-child');
+
+
+        if ($(this).hasClass('active')) {
+            $('#filter-selected').find("[data-id='" + id + "']").remove();
+            last = $('#filter-selected span:last-child');
+            if (last.text()[last.text().length-1] == ',') {
+                $(last).text(last.text().slice(0, last.text().length-1));
+            }
+        } else {
+            var el = $('<span data-id="'+id+'"></span>').text(text);
+            if (last.text()[last.text().length-1] != ',') {
+                $(last).text(last.text() + ',');
+            }
+            $('#filter-selected').append(el);
+        }
+        if ($('#filter-selected:empty').length) {
+            $('.empty-filter').show();
+        } else {
+            $('.empty-filter').hide();
+        }
+
+    });
 });

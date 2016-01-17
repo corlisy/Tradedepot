@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
+    <title>Team Members</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
@@ -69,7 +69,7 @@
                             <li><a href="/admin/returns.html"><i class="glyphicon icon-return sidebar-menu-icons"></i> <span>Returns</span> </a></li>
                             <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist sidebar-menu-icons"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
-                            <li class="active"><a href="/admin/distributors.html"><i class="glyphicon icon-user sidebar-menu-icons"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/distributors.html"><i class="glyphicon icon-user sidebar-menu-icons"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
 
             <div class="menu-sidebar-second">
                 <ul class="nav sidebar-menu">
-                    <li><a href="/admin/settings/teams.html"><span>Team Members</span></a></li>
+                    <li class="active"><a href="/admin/settings/teams.html"><span>Team Members</span></a></li>
                     <li><a href="/admin/settings/depots.html"><span>Depots/Warehouses</span></a></li>
                     <li><a href="/admin/settings/config.html"><span>Configurations</span></a></li>
                     <li><a href="/admin/settings/theme.html"><span>Themes/Styles</span></a></li>
@@ -93,7 +93,6 @@
             </div>
 
             <div class="main">
-
                 <nav class="main-header navbar navbar-fixed-top top-menu" role="navigation">
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav navbar-left">
@@ -148,8 +147,8 @@
                         <form class="navbar-form navbar-right hidden-xs hidden-sm hidden-md" role="search">
                             <div class="form-group">
                                 <div class="inner-addon right-addon">
-                                        <span class="glyphicon icon-search" id="navbar-search-ico"></span>
-                                        <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
+                                    <span class="glyphicon icon-search" id="navbar-search-ico"></span>
+                                    <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
                                 </div>
                             </div>
                         </form>
@@ -160,124 +159,98 @@
                         <div class="container-fluid">
                             <div class="col-sm-6">
                                 <h1 class="pull-left">
-                                    Distributors
+                                    Team Members
                                 </h1>
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="glyphicon icon-user"></i>Home</a></li>
-                                    <li class="active">Distributors</li>
+                                    <li><a href="/admin/"><i class="glyphicon icon-settings"></i>Home</a></li>
+                                    <li><a href="/admin/settings/">Settings</a></li>
+                                    <li class="active">Team Members</li>
                                 </ol>
                             </div>
                         </div>
-
-                    </section>
-                    <div class="col-sm-12">
-
-                        <section class="content">
-
-                            <div>
-
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation">
-                                        <a href="#invoices" aria-controls="home" role="tab" data-toggle="tab">
-                                            Distributors
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="active">
-                                        <a href="#all" aria-controls="settings" role="tab" data-toggle="tab">Sign Up Requests <span class="label label-info">4</span></a>
-                                    </li>
-                                    <div class="clearfix hidden-md hidden-lg"></div>
-                                    <li class="navbar-right">
-                                        <br class="hidden-md hidden-lg hidden-sm" />
-                                        <form class="form-inline no_wrap">
-                                            <div class="form-group">
-                                                <label for="filter"><strong>4</strong> orders placed in</label>&nbsp;
-                                                <select class="form-control" id="filter">
-                                                    <option>past 3 months</option>
-                                                    <option>past 6 months</option>
-                                                    <option>past 12 months</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </li>
-                                </ul>
-
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active no_mobile" id="invoices">
-                                        <br/>
-                                        <table class="table table-hover tr_pointer">
-                                            <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
-                                                <td>Status</td>
-                                                <td>Date Added</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                        <div class="sub-content-header border">
+                            <div class="container-fluid">
+                                <div class="col-sm-12">
+                                    <div class="pull-left">
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="all">
-                                        <br/>
-                                        <table class="table table-hover tr_pointer">
-                                            <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
-                                                <td>Status</td>
-                                                <td>Date Added</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-sm">Add New User <i class="glyphicon icon-add"></i></a>
                                     </div>
                                 </div>
-
                             </div>
-
+                        </div>
+                    </section>
+                    <div class="col-sm-12">
+                        <section class="content sub-content-sec">
+                            <div>
+                                <br/>
+                                <table class="table table-hover tr_pointer">
+                                    <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Description</td>
+                                        <td>Status</td>
+                                        <td>Created</td>
+                                        <td>Last Update</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr onclick="document.location.href='/admin/settings/team_view.html'">
+                                        <td>Bessie Ray</td>
+                                        <td>1202 n jefferson st</td>
+                                        <td><span class="text-success">&bull; Active</span></td>
+                                        <td>22/03/2015</td>
+                                        <td>22/03/2015</td>
+                                        <td>
+                                            <a href="/admin/settings/team_view.html">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr onclick="document.location.href='/admin/settings/team_view.html'">
+                                        <td>Micheal Woods</td>
+                                        <td>1202 n jefferson st</td>
+                                        <td><span class="text-success">&bull; Active</span></td>
+                                        <td>22/03/2015</td>
+                                        <td>22/03/2015</td>
+                                        <td>
+                                            <a href="/admin/settings/team_view.html">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr onclick="document.location.href='/admin/settings/team_view.html'">
+                                        <td>Glenda Peters</td>
+                                        <td>1202 n jefferson st</td>
+                                        <td><span class="text-success">&bull; Active</span></td>
+                                        <td>22/03/2015</td>
+                                        <td>22/03/2015</td>
+                                        <td>
+                                            <a href="/admin/settings/team_view.html">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr onclick="document.location.href='/admin/settings/team_view.html'">
+                                        <td>Isaac Williamson</td>
+                                        <td>1202 n jefferson st</td>
+                                        <td><span class="text-success">&bull; Active</span></td>
+                                        <td>22/03/2015</td>
+                                        <td>22/03/2015</td>
+                                        <td>
+                                            <a href="/admin/settings/team_view.html">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr onclick="document.location.href='/admin/settings/team_view.html'">
+                                        <td>Stephanie Lewis</td>
+                                        <td>1202 n jefferson st</td>
+                                        <td><span class="text-danger">&bull; Deactive</span></td>
+                                        <td>22/03/2015</td>
+                                        <td>22/03/2015</td>
+                                        <td>
+                                            <a href="/admin/settings/team_view.html">View</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </section>
 
                     </div>

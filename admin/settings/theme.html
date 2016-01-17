@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
+    <title>Themes/Styles</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="/admin/css/all.css">
     <link rel="stylesheet" href="/css/common.css">
     <link href="/css/icomoon.css" rel="stylesheet">
+    <link href="/css/jquery.minicolors.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,9 +42,7 @@
     <script src="/js/lib/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-
-
+<body class="">
 <div class="container-fluid">
     <div class="row">
         <div class="menu-sidebar">
@@ -69,7 +69,7 @@
                             <li><a href="/admin/returns.html"><i class="glyphicon icon-return sidebar-menu-icons"></i> <span>Returns</span> </a></li>
                             <li><a href="/admin/invoices.html"><i class="glyphicon icon-lilist sidebar-menu-icons"></i> <span>Delivery Invoices</span></a></li>
                             <li class="header text-uppercase">Distributor management</li>
-                            <li class="active"><a href="/admin/distributors.html"><i class="glyphicon icon-user sidebar-menu-icons"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
+                            <li><a href="/admin/distributors.html"><i class="glyphicon icon-user sidebar-menu-icons"></i> <span>Distributors</span> <span class="label label-info pull-right">4</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <li><a href="/admin/settings/teams.html"><span>Team Members</span></a></li>
                     <li><a href="/admin/settings/depots.html"><span>Depots/Warehouses</span></a></li>
                     <li><a href="/admin/settings/config.html"><span>Configurations</span></a></li>
-                    <li><a href="/admin/settings/theme.html"><span>Themes/Styles</span></a></li>
+                    <li class="active"><a href="/admin/settings/theme.html"><span>Themes/Styles</span></a></li>
                     <li><a href="/admin/settings/audit.html"><span>Audit Trails</span></a></li>
                 </ul>
             </div>
@@ -148,135 +148,106 @@
                         <form class="navbar-form navbar-right hidden-xs hidden-sm hidden-md" role="search">
                             <div class="form-group">
                                 <div class="inner-addon right-addon">
-                                        <span class="glyphicon icon-search" id="navbar-search-ico"></span>
-                                        <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
+                                    <span class="glyphicon icon-search" id="navbar-search-ico"></span>
+                                    <input class="form-control" id="navbar-search-input" placeholder="Search" type="text">
                                 </div>
                             </div>
                         </form>
                     </div>
                 </nav>
+
                 <div class="container-fluid">
                     <section class="row content-header">
                         <div class="container-fluid">
-                            <div class="col-sm-6">
-                                <h1 class="pull-left">
-                                    Distributors
+                            <div class="col-xs-6">
+                                <h1>
+                                    Themes/Styles
                                 </h1>
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <ol class="breadcrumb">
-                                    <li><a href="/admin/"><i class="glyphicon icon-user"></i>Home</a></li>
-                                    <li class="active">Distributors</li>
+                                    <li><a href="/admin/"><i class="glyphicon icon-settings"></i>Home</a></li>
+                                    <li><a href="/admin/settings/">Settings</a></li>
+                                    <li class="active">Themes & Styles</li>
                                 </ol>
                             </div>
                         </div>
-
                     </section>
                     <div class="col-sm-12">
 
                         <section class="content">
 
-                            <div>
-
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation">
-                                        <a href="#invoices" aria-controls="home" role="tab" data-toggle="tab">
-                                            Distributors
-                                        </a>
-                                    </li>
-                                    <li role="presentation" class="active">
-                                        <a href="#all" aria-controls="settings" role="tab" data-toggle="tab">Sign Up Requests <span class="label label-info">4</span></a>
-                                    </li>
-                                    <div class="clearfix hidden-md hidden-lg"></div>
-                                    <li class="navbar-right">
-                                        <br class="hidden-md hidden-lg hidden-sm" />
-                                        <form class="form-inline no_wrap">
-                                            <div class="form-group">
-                                                <label for="filter"><strong>4</strong> orders placed in</label>&nbsp;
-                                                <select class="form-control" id="filter">
-                                                    <option>past 3 months</option>
-                                                    <option>past 6 months</option>
-                                                    <option>past 12 months</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </li>
-                                </ul>
-
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active no_mobile" id="invoices">
-                                        <br/>
-                                        <table class="table table-hover tr_pointer">
-                                            <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
-                                                <td>Status</td>
-                                                <td>Date Added</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="">
+                                <div class="box panel panel-default">
+                                    <div class="panel-heading clearfix text-center">
+                                        <span class="panel-title pull-left">Buttons Color</span>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="all">
-                                        <br/>
-                                        <table class="table table-hover tr_pointer">
-                                            <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                <td>Company</td>
-                                                <td>Status</td>
-                                                <td>Date Added</td>
-                                                <td>&nbsp;</td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            <tr onclick="document.location.href='/admin/views/distributor.html'">
-                                                <td>Bessie Ray</td>
-                                                <td>1202 n jefferson st</td>
-                                                <td><span class="text-warning">&bull; Waiting to approve</span></td>
-                                                <td>22/03/2015</td>
-                                                <td>
-                                                    <a href="/admin/views/distributor.html">View</a>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="panel-body no-padding">
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="btn1">Button 1</label>
+                                                <input type="text" id="btn1" class="form-control minicolors" data-control="btn1" value="#337ec2">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="btn2">Button 2</label>
+                                                <input type="text" id="btn2" class="form-control minicolors" data-control="btn2" value="#337ec2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box panel panel-default">
+                                    <div class="panel-heading clearfix text-center">
+                                        <span class="panel-title pull-left">Lables Color</span>
+                                    </div>
+                                    <div class="panel-body no-padding">
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lbl1">Lable 1</label>
+                                                <input type="text" id="lbl1" class="form-control minicolors" data-control="lbl1" value="#337ec2">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lbl2">Lable 2</label>
+                                                <input type="text" id="lbl2" class="form-control minicolors" data-control="lbl2" value="#337ec2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box panel panel-default">
+                                    <div class="panel-heading clearfix text-center">
+                                        <span class="panel-title pull-left">Images</span>
+                                    </div>
+                                    <div class="panel-body no-padding">
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lbl1">Logo 1</label>
+                                                <div class="avatar">
+                                                    <div class="logo-prev"></div>
+                                                    <div class="btn btn-info mr0 mt0">Choose...</div><br>
+                                                    <div class="mt10 text-muted"><small>JPG, GIF or PNG Max Size of 1M</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lbl2">Logo 2</label>
+                                                <div class="avatar">
+                                                    <div class="logo-prev logo-prev-big"></div>
+                                                    <div class="btn btn-info mr0 mt0">Choose...</div><br>
+                                                    <div class="mt10 text-muted"><small>JPG, GIF or PNG Max Size of 1M</small></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
+
 
                         </section>
 
@@ -298,7 +269,7 @@
 </div>
 
 
-<script data-main="/admin/js/order_list" src="/js/require.js" async></script>
+<script data-main="/admin/js/theme" src="/js/require.js" async></script>
 
 </body>
 </html>
