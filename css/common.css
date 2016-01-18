@@ -83,7 +83,7 @@
   padding-right: 15px !important;
 }
 .bg-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .border-none {
   border: 0 !important;
